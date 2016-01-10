@@ -11,11 +11,16 @@ if ( !defined( 'ABSPATH' ) )
 		<!-- Page Content goes here -->
 		<div class="row">
 			<?php
+			ob_start();
+			?>
+				<div class="col s12">
+					<h6><?php _e('Select the predefined button styles to import','btnsx'); ?></h6>
+				</div>
+			<?php
+			$html_head = ob_get_clean();
 	    	ob_start();
 			?>
 				<div class="col s12">
-					<h6><?php _e( 'One Click Import', 'btnsx' ); ?></h6>
-					<div class="divider" style="background-color:#f7f7f7;"></div>
 					<br>
 					<button id="btnsx-click-import" class="btn btn-import btn-settings"><?php _e( 'Import', 'btnsx' ); ?></button>
 				</div>
@@ -29,6 +34,38 @@ if ( !defined( 'ABSPATH' ) )
 		        			'icon_class'	=>	'fa fa-star',
 		        			'text'			=>	__( 'Demo Buttons', 'btnsx' ),
 		        			'elements'		=> array(
+		        				array(
+									'type'			=>	'html',
+									'value'			=>	$html_head
+								),
+		        				array(
+		        					'type'			=>	'checkbox',
+		        					'id'			=>	'btnsx_opt_predefined_style_classic',
+		        					'name'			=>	'btnsx_opt_predefined_style[]',
+		        					'label'			=>	__( 'Classic', 'btnsx' ),
+		        					'value'			=>	'3208'
+		        				),
+		        				array(
+		        					'type'			=>	'checkbox',
+		        					'id'			=>	'btnsx_opt_predefined_style_flat',
+		        					'name'			=>	'btnsx_opt_predefined_style[]',
+		        					'label'			=>	__( 'Flat', 'btnsx' ),
+		        					'value'			=>	'1259'
+		        				),
+		        				array(
+		        					'type'			=>	'checkbox',
+		        					'id'			=>	'btnsx_opt_predefined_style_gradient',
+		        					'name'			=>	'btnsx_opt_predefined_style[]',
+		        					'label'			=>	__( 'Gradient', 'btnsx' ),
+		        					'value'			=>	'3804'
+		        				),
+		        				array(
+		        					'type'			=>	'checkbox',
+		        					'id'			=>	'btnsx_opt_predefined_style_outlined',
+		        					'name'			=>	'btnsx_opt_predefined_style[]',
+		        					'label'			=>	__( 'Outlined', 'btnsx' ),
+		        					'value'			=>	'3770'
+		        				),
 		        				array(
 									'type'			=>	'html',
 									'value'			=>	$html

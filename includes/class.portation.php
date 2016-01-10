@@ -70,16 +70,22 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 		/**
 		 * Function to import pre-made buttons
 		 * @since  0.1
+		 * @param  string    $file
+		 * @param  string    $type
 		 * @return string
 		 */
 		public function one_click_import( $file ) {
 			// check for nonce
 			check_ajax_referer( 'btnsx-import', 'security' );
 
+			$local_file = BTNSX__PLUGIN_DIR . 'assets/buttons.json';
+
+			$predefined = array();
 			if( $file === '' ) {
-				$file = BTNSX__PLUGIN_DIR . 'assets/buttons.json';
+				$file = $local_file;
+				$predefined = isset($_POST['buttons']) ? $_POST['buttons'] : array();
 			}
-			
+
 			$buttons = self::parse( $file );
 
 			$newButtons = array();
@@ -87,94 +93,107 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 				$newButtons = $buttons;
 				$buttons = array();
 				foreach ( $newButtons as $key => $value ) {
-					foreach ( $value as $k => $v ) {
-						$buttons[$k] = $v;
+					if( !empty($predefined) ){
+						foreach ( $value as $k => $v ) {
+							if( in_array($k, array_filter($predefined)) ){
+								$buttons[$k] = $v;
+							}
+						}
+					} 
+					if( $file != $local_file ) {
+						foreach ( $value as $k => $v ) {
+							$buttons[$k] = $v;
+						}
 					}
 				}
 			}
-
-			$data = array(); $title = array(); $taxonomies = array();
-			// store the json data in proper format
-			foreach ( $buttons as $key => $value ) {
-				$val = (array) $value->{ 'data' };
-				$id = $val['btnsx_id'];
-				$title[ $id ] = $value->{ 'title' };
-				$tags = (array) $value->{ 'tags' };
-				$packs = (array) $value->{ 'packs' };
-				$post_type = $value->{ 'type' };
-				// store tags as an array
-				foreach ( $tags as $t => $g ) {
-					if( is_object( $g ) ){ //  && $g->object_id == $id
-						$taxonomies[ $id ][ 'btnsx_tag' ][] = $g->name;
+			
+			if( !empty($buttons) ){
+				$data = array(); $title = array(); $taxonomies = array();
+				// store the json data in proper format
+				foreach ( $buttons as $key => $value ) {
+					$val = (array) $value->{ 'data' };
+					$id = $val['btnsx_id'];
+					$title[ $id ] = $value->{ 'title' };
+					$tags = (array) $value->{ 'tags' };
+					$packs = (array) $value->{ 'packs' };
+					$post_type = $value->{ 'type' };
+					// store tags as an array
+					foreach ( $tags as $t => $g ) {
+						if( is_object( $g ) ){ //  && $g->object_id == $id
+							$taxonomies[ $id ][ 'btnsx_tag' ][] = $g->name;
+						}
 					}
-				}
-				// store packs as an array
-				foreach ( $packs as $p => $k ) {
-					if( is_object( $k ) ){
-						$taxonomies[ $id ][ 'btnsx_pack' ][] = $k->name;
+					// store packs as an array
+					foreach ( $packs as $p => $k ) {
+						if( is_object( $k ) ){
+							$taxonomies[ $id ][ 'btnsx_pack' ][] = $k->name;
+						}
 					}
-				}
-				$d = array();
-				// convert deep object values to array
-				foreach ( $val as $k => $v ) {
-					if( is_object( $v ) ){
-						$v = (array) $v;
+					$d = array();
+					// convert deep object values to array
+					foreach ( $val as $k => $v ) {
+						if( is_object( $v ) ){
+							$v = (array) $v;
+						}
+						$d[ $k ] = $v;
 					}
-					$d[ $k ] = $v;
+					$data[ $post_type ][ $val['btnsx_id'] ] = $d;
 				}
-				$data[ $post_type ][ $val['btnsx_id'] ] = $d;
-			}
-			$buttons_args = array(
-				'post_type' => 'buttons-x',
-				'posts_per_page' => -1
-			);
-			// The Query to get all currently stored button titles
-			$title_query = new WP_Query( $buttons_args );
-			$title_array = array();
-			// The Loop
-			if ( $title_query->have_posts() ) {
-				while ( $title_query->have_posts() ) {
-					$title_query->the_post();
-					$title_array[] = get_the_title();
+				$buttons_args = array(
+					'post_type' => 'buttons-x',
+					'posts_per_page' => -1
+				);
+				// The Query to get all currently stored button titles
+				$title_query = new WP_Query( $buttons_args );
+				$title_array = array();
+				// The Loop
+				if ( $title_query->have_posts() ) {
+					while ( $title_query->have_posts() ) {
+						$title_query->the_post();
+						$title_array[] = get_the_title();
+					}
+				} else {
+					// no posts found
+				}
+				/* Restore original Post Data */
+				wp_reset_postdata();
+				global $btnsx_settings;
+				foreach ( $data as $type => $value ) {
+					foreach( $value as $id => $val ) {
+						$title[ $id ] = isset( $title[ $id ] ) ? $title[ $id ] : __( 'No Title', 'btnsx' );
+						if( !in_array( $title[ $id ], ( $type === 'buttons-x' ? $title_array : '' ) ) ) {
+							$args = array(
+								'post_title'	=> $title[ $id ], // The title of post.
+								'post_status'	=> 'publish',
+								'post_type'		=> $type, // Our custom post type.
+							);
+							$pack = 'btnsx_pack';
+							$tag = 'btnsx_tag';
+							$post_id 		= wp_insert_post( $args );
+							if( isset( $taxonomies[ $id ][ 'btnsx_pack' ] ) ) {
+								$packs 		= wp_set_object_terms( $post_id, $taxonomies[ $id ][ 'btnsx_pack' ], $pack );
+							}
+							if( isset( $taxonomies[ $id ][ 'btnsx_tag' ] ) ) {
+								$tags 		= wp_set_object_terms( $post_id, $taxonomies[ $id ][ 'btnsx_tag' ], $tag );
+							}
+							if ( is_wp_error( $packs ) ) {
+								echo sprintf( __( 'Error assigning packs for button %d.', 'btnsx' ), $post_id );
+							}
+							if ( is_wp_error( $tags ) ) {
+								echo sprintf( __( 'Error assigning tags for button %d.', 'btnsx' ), $post_id );
+							}
+							if( $type == 'buttons-x' ){
+								update_post_meta( $post_id, 'btnsx', $val );
+							}
+							echo sprintf( __( 'Button "%s" imported successfully.', 'btnsx' ), $title[ $id ] ) . '|';
+						} else {
+							echo sprintf( __( 'Button with same name "%s" already exists.', 'btnsx' ), $title[ $id ] ) . '|';
+						}
+					}
 				}
 			} else {
-				// no posts found
-			}
-			/* Restore original Post Data */
-			wp_reset_postdata();
-			global $btnsx_settings;
-			foreach ( $data as $type => $value ) {
-				foreach( $value as $id => $val ) {
-					$title[ $id ] = isset( $title[ $id ] ) ? $title[ $id ] : __( 'No Title', 'btnsx' );
-					if( !in_array( $title[ $id ], ( $type === 'buttons-x' ? $title_array : '' ) ) ) {
-						$args = array(
-							'post_title'	=> $title[ $id ], // The title of post.
-							'post_status'	=> 'publish',
-							'post_type'		=> $type, // Our custom post type.
-						);
-						$pack = 'btnsx_pack';
-						$tag = 'btnsx_tag';
-						$post_id 		= wp_insert_post( $args );
-						if( isset( $taxonomies[ $id ][ 'btnsx_pack' ] ) ) {
-							$packs 		= wp_set_object_terms( $post_id, $taxonomies[ $id ][ 'btnsx_pack' ], $pack );
-						}
-						if( isset( $taxonomies[ $id ][ 'btnsx_tag' ] ) ) {
-							$tags 		= wp_set_object_terms( $post_id, $taxonomies[ $id ][ 'btnsx_tag' ], $tag );
-						}
-						if ( is_wp_error( $packs ) ) {
-							echo sprintf( __( 'Error assigning packs for button %d.', 'btnsx' ), $post_id );
-						}
-						if ( is_wp_error( $tags ) ) {
-							echo sprintf( __( 'Error assigning tags for button %d.', 'btnsx' ), $post_id );
-						}
-						if( $type == 'buttons-x' ){
-							update_post_meta( $post_id, 'btnsx', $val );
-						}
-						echo sprintf( __( 'Button "%s" imported successfully.', 'btnsx' ), $title[ $id ] ) . '|';
-					} else {
-						echo sprintf( __( 'Button with same name "%s" already exists.', 'btnsx' ), $title[ $id ] ) . '|';
-					}
-				}
+				echo __( 'No button selected.', 'btnsx' );
 			}
 
 			wp_die();
@@ -196,16 +215,24 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 						var json = '';
 						$( '#btnsx-click-import' ).on( 'click', function( e ) {
 							e.preventDefault();
+							var buttons = [];
+							$('input[name="btnsx_opt_predefined_style[]"]').each(function(){
+								if($(this).is(':checked')){
+									buttons.push($(this).val());
+								}
+							});
+							console.log(buttons);
 							btnText = '<?php _e( "Import", 'btnsx' ); ?>';
 							// disble the button to avoid multiple clicks
 						  	$( this ).attr( 'disabled', 'disabled' ).html( '<i class="fa fa-refresh fa-spin"></i>' );
 						  	var data = {
 								'action'	: 'one_click_import',							// wp ajax action
-								'security'	: '<?php echo $import_nonce; ?>'			// nonce value created earlier
+								'security'	: '<?php echo $import_nonce; ?>',			// nonce value created earlier
+								'buttons'	: buttons
 							};
 							// fire ajax
 						  	$.post( ajaxurl, data, function( response ) {
-						  		// console.log( response );
+						  		console.log( response );
 						  		var split = response.split( '|' );
 						  		// if nonce fails then not authorized else settings saved
 						  		if( response === '-1' ){

@@ -1973,27 +1973,6 @@ if( !class_exists( 'Btnsx' ) ) {
 					)
         		),
 				array(
-        			'icon_class'	=>	'fa fa-link',
-        			'text'			=>	__( 'Predefined', 'btnsx' ),
-        			'group'			=>	'style',
-        			'elements'		=> array(
-						array(
-							'type'			=>	'select',
-							'id'			=>	'btnsx_opt_predefined_style',
-							'name'			=>	'btnsx_opt_predefined_style',
-							'placeholder'	=>	__( 'Choose type', 'btnsx' ),
-							'label'			=>	__( 'Predefined Style', 'btnsx' ),
-							'tooltip'		=>	__( 'Choose a predefined style for your button. This option is just to for you to load a predefined style. Make sure you save the button as this option is not saved.', 'btnsx' ),
-							'options'		=>	array(
-								''				=> __( 'None', 'btnsx' ),
-								'flat'			=> __( 'Flat', 'btnsx' ),
-								'material'		=> __( 'Material', 'btnsx' ),
-							),
-							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_predefined_style' ) )
-						)
-					)
-        		),
-				array(
         			'icon_class'	=>	'fa fa-css3',
         			'text'			=>	__( 'Custom CSS', 'btnsx' ),
         			'group'			=>	'expert',
@@ -2939,10 +2918,10 @@ if( !class_exists( 'Btnsx' ) ) {
 		        $box_shadow = '';
 
 		        if( is_array($shadow_horizontal) ){
-		        	$shadow_horizontal = array_filter($shadow_horizontal);
+		        	$shadow_horizontal = array_filter($shadow_horizontal,'is_numeric');
 		        }
 		        if( is_array($shadow_vertical) ){
-		        	$shadow_vertical = array_filter($shadow_vertical);
+		        	$shadow_vertical = array_filter($shadow_vertical,'is_numeric');
 		        }
 
 		        if( empty($shadow_horizontal) && empty($shadow_vertical)  ){
@@ -3040,10 +3019,10 @@ if( !class_exists( 'Btnsx' ) ) {
 				$box_shadow_hover = '';
 
 				if( is_array($shadow_horizontal_hover) ){
-		        	$shadow_horizontal_hover = array_filter($shadow_horizontal_hover);
+		        	$shadow_horizontal_hover = array_filter($shadow_horizontal_hover,'is_numeric');
 		        }
 		        if( is_array($shadow_vertical_hover) ){
-		        	$shadow_vertical_hover = array_filter($shadow_vertical_hover);
+		        	$shadow_vertical_hover = array_filter($shadow_vertical_hover,'is_numeric');
 		        }
 
 		        if( empty($shadow_horizontal_hover) && empty($shadow_vertical_hover)  ){

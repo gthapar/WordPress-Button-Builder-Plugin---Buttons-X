@@ -133,6 +133,7 @@ I manage technical queries through my [official ticketing system](http://gautamt
 I manage technical queries through support forums under the support tab on this page. I will do my best to answer within 48 hours.
 
 [Follow on Twitter](http://www.twitter.com/btnsx/)
+
 [Official Website](http://btn.sx/1UAVlhk)
 
 == Installation ==
@@ -177,6 +178,7 @@ Nothing yet..
 
  - Addition: Predefined button styles.
  - Improvement: Font weight selection.
+ - Fixed: Box shadow not appearing on frontend.
 
 = 1.7.7 = 
 
