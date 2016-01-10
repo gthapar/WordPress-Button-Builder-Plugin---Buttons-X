@@ -176,8 +176,8 @@ Nothing yet..
 
 = 1.7.8 = 
 
- - Addition: Predefined button styles.
- - Improvement: Font weight selection.
+ - Addition: Predefined button styles added under Import > Demo Buttons.
+ - Improvement: Font weight selection mechanism for Google Fonts improved.
  - Fixed: Box shadow not appearing on frontend.
 
 = 1.7.7 = 

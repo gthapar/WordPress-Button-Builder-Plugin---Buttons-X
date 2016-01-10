@@ -295,7 +295,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		        <div class="wrap about-wrap">
 		            <h1><?php printf( __( 'Welcome to Buttons X %1$s', 'btnsx' ), BTNSX__VERSION ); ?></h1>
 		            <div class="about-text">
-		            	<?php printf( __( 'Thank you for installing! This is the inital release of the lite version.', 'btnsx' ), BTNSX__VERSION ); ?>
+		            	<?php printf( __( 'Thank you for installing!.', 'btnsx' ), BTNSX__VERSION ); ?>
 		            	<br><br>
 		            	<!-- Social Buttons -->
 			            	<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://www.button.sx" data-text="Build any kind of button imaginable right from your WordPress Dashboard with Buttons X!" data-via="btnsx" data-related="gautam_thapar" data-hashtags="ButtonsX">Tweet</a>
@@ -310,6 +310,13 @@ if( !class_exists( 'Btnsx' ) ) {
 		            <div class="wp-badge btnsx-badge"><span class="dashicons-before dashicons-btnsx-logo"></span><?php printf( __( 'Version %1$s', 'btnsx' ), BTNSX__VERSION ); ?></div>
 		            <hr>
 		            <div class="feature-section one-col">
+		            	<h4><?php printf( __( 'v%1$s', 'btnsx' ), BTNSX__VERSION ); ?> Changelog</h4>
+		            	<ol>
+		            		<li>Addition: Predefined button styles added under Import > Demo Buttons.</li>
+							<li>Improvement: Font weight selection mechanism for Google Fonts improved.</li>
+							<li>Fixed: Box shadow not appearing on frontend.</li>
+		            	</ol>
+		            	<br>
 		            	<h3><?php _e('Introduction','btnsx'); ?></h3>
 		            	<br>
 		            	<p><?php _e( 'Hi there,', 'btnsx' ); ?></p>
