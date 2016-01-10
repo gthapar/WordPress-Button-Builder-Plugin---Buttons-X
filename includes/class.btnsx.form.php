@@ -252,8 +252,8 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				'tooltip'			=>	NULL,
 				'min'				=>	0,
 				'max'				=>	100,
-				'on_text'			=>	__( 'On', 'btnsx' ),
-				'off_text'			=>	__( 'Off', 'btnsx' ),
+				'on_text'			=>	__( 'On', 'buttons-x' ),
+				'off_text'			=>	__( 'Off', 'buttons-x' ),
 				'step'				=>	1,
 				'value'				=>	NULL,
 				'options'			=>	array(),
@@ -369,7 +369,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 
 				case 'select': 
 
-					$input_props['select_placeholder'] = ( $input['placeholder'] != NULL ) ? $input['placeholder'] : __('Choose your option','btnsx');
+					$input_props['select_placeholder'] = ( $input['placeholder'] != NULL ) ? $input['placeholder'] : __('Choose your option','buttons-x');
 					$input_props['placeholder'] = NULL;
 					$input_props['class'] = ( $input['class'] != NULL ) ? 'class="' . $input['class'] . '"' : 'class="btnsx-select"';
 
@@ -390,8 +390,8 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 									$highlight = isset( $input['copy_ids']['highlight'] ) ? $input['copy_ids']['highlight'] : '';
 									$old_select = isset( $input['copy_ids']['old_select'] ) ? $input['copy_ids']['old_select'] : '';
 									$new_select = isset( $input['copy_ids']['new_select'] ) ? $input['copy_ids']['new_select'] : '';
-									$normal_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'normal' ? __( 'Copy to normal', 'btnsx' ) : '';
-									$hover_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'hover' ? __( 'Copy to hover', 'btnsx' ) : '';
+									$normal_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'normal' ? __( 'Copy to normal', 'buttons-x' ) : '';
+									$hover_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'hover' ? __( 'Copy to hover', 'buttons-x' ) : '';
 									echo '<button id="' . $input['id'] . '_copy_btn" class="btnsx-copy-field" data-highlight="' . $highlight . '" data-old-select="' . $old_select . '" data-new-select="' . $new_select . '">' . $normal_text . $hover_text . '</button>';
 								}	
 							?>
@@ -500,11 +500,11 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'trbl': 
 
 					$trbl_fields = array(
-						'all'		=>	__( 'All Sides', 'btnsx' ),
-						'top'		=>	__( 'Top', 'btnsx' ),
-						'bottom'	=>	__( 'Bottom', 'btnsx' ),
-						'left'		=>	__( 'Left', 'btnsx' ),
-						'right'		=>	__( 'Right', 'btnsx' )
+						'all'		=>	__( 'All Sides', 'buttons-x' ),
+						'top'		=>	__( 'Top', 'buttons-x' ),
+						'bottom'	=>	__( 'Bottom', 'buttons-x' ),
+						'left'		=>	__( 'Left', 'buttons-x' ),
+						'right'		=>	__( 'Right', 'buttons-x' )
 					);
 
 					foreach ( $trbl_fields as $key => $label ) { ?>
@@ -540,8 +540,8 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 								$new_input = isset( $input['copy_ids']['new_input'] ) ? $input['copy_ids']['new_input'] : '';
 								$old_color = isset( $input['copy_ids']['old_color'] ) ? $input['copy_ids']['old_color'] : '';
 								$new_color = isset( $input['copy_ids']['new_color'] ) ? $input['copy_ids']['new_color'] : '';
-								$normal_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'normal' ? __( 'Copy to normal', 'btnsx' ) : '';
-								$hover_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'hover' ? __( 'Copy to hover', 'btnsx' ) : '';
+								$normal_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'normal' ? __( 'Copy to normal', 'buttons-x' ) : '';
+								$hover_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'hover' ? __( 'Copy to hover', 'buttons-x' ) : '';
 								echo '<button id="' . $input['id'] . '_copy_btn" class="btnsx-copy-field" data-highlight="' . $highlight . '" data-old-input="' . $old_input . '" data-new-input="' . $new_input . '" data-old-color="' . $old_color . '" data-new-color="' . $new_color . '" data-old-select data-new-select>' . $normal_text . $hover_text . '</button>';
 							}	
 						?>
@@ -562,10 +562,10 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 
 				case 'font': 
 					$font_fields = array(
-						'size'		=>	__( 'Font Size', 'btnsx' ),
-						'family'	=>	__( 'Font Family', 'btnsx' ),
-						'weight'	=>	__( 'Font Weight', 'btnsx' ),
-						'style'		=>	__( 'Font Style', 'btnsx' )
+						'size'		=>	__( 'Font Size', 'buttons-x' ),
+						'family'	=>	__( 'Font Family', 'buttons-x' ),
+						'weight'	=>	__( 'Font Weight', 'buttons-x' ),
+						'style'		=>	__( 'Font Style', 'buttons-x' )
 					);
 
 					foreach ( $font_fields as $key => $label ) {
@@ -590,14 +590,14 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 	    							'type'			=>	'select',
 	    							'id'			=>	$input['id'] . '_' . $key,
 	    							'name'			=>	$input['name'] . '_' . $key,
-	    							'placeholder'	=>	__( 'Choose font style', 'btnsx' ),
+	    							'placeholder'	=>	__( 'Choose font style', 'buttons-x' ),
 	    							'label'			=>	$label,
 	    							'tooltip'		=>	$input['tooltip'][$key],
 	    							'options'		=>	array(
-	    								'normal'		=> __( 'Normal', 'btnsx' ),
-	    								'italic'		=> __( 'Italic', 'btnsx' ),
-	    								'oblique'		=> __( 'Oblique', 'btnsx' ),
-	    								'inherit'		=> __( 'Inherit', 'btnsx' )
+	    								'normal'		=> __( 'Normal', 'buttons-x' ),
+	    								'italic'		=> __( 'Italic', 'buttons-x' ),
+	    								'oblique'		=> __( 'Oblique', 'buttons-x' ),
+	    								'inherit'		=> __( 'Inherit', 'buttons-x' )
 	    							),
 	    							'value'			=>	isset( $input['value'][$key] ) ? $input['value'][$key] : NULL
 	    						)
@@ -610,33 +610,33 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 	    							'type'			=>	'select',
 	    							'id'			=>	$input['id'] . '_' . $key,
 	    							'name'			=>	$input['name'] . '_' . $key,
-	    							'placeholder'	=>	__( 'Choose font weight', 'btnsx' ),
+	    							'placeholder'	=>	__( 'Choose font weight', 'buttons-x' ),
 	    							'label'			=>	$label,
 	    							'tooltip'		=>	$input['tooltip'][$key],
 	    							'options'		=>	array(
-	    								'normal'		=> __( 'Normal', 'btnsx' ),
-	    								'bold'			=> __( 'Bold', 'btnsx' ),
-	    								'bolder'		=> __( 'Bolder', 'btnsx' ),
-	    								'lighter'		=> __( 'Lighter', 'btnsx' ),
-	    								'100'			=> __( '100', 'btnsx' ),
-	    								'100italic'		=> __( '100 Italic', 'btnsx' ),
-	    								'200'			=> __( '200', 'btnsx' ),
-	    								'200italic'		=> __( '200 Italic', 'btnsx' ),
-	    								'300'			=> __( '300', 'btnsx' ),
-	    								'300italic'		=> __( '300 Italic', 'btnsx' ),
-	    								'400'			=> __( '400', 'btnsx' ),
-	    								'400italic'		=> __( '400 Italic', 'btnsx' ),
-	    								'500'			=> __( '500', 'btnsx' ),
-	    								'500italic'		=> __( '500 Italic', 'btnsx' ),
-	    								'600'			=> __( '600', 'btnsx' ),
-	    								'600italic'		=> __( '600 Italic', 'btnsx' ),
-	    								'700'			=> __( '700', 'btnsx' ),
-	    								'700italic'		=> __( '700 Italic', 'btnsx' ),
-	    								'800'			=> __( '800', 'btnsx' ),
-	    								'800italic'		=> __( '800 Italic', 'btnsx' ),
-	    								'900'			=> __( '900', 'btnsx' ),
-	    								'900italic'		=> __( '900 Italic', 'btnsx' ),
-	    								'inherit'		=> __( 'Inherit', 'btnsx' )
+	    								'normal'		=> __( 'Normal', 'buttons-x' ),
+	    								'bold'			=> __( 'Bold', 'buttons-x' ),
+	    								'bolder'		=> __( 'Bolder', 'buttons-x' ),
+	    								'lighter'		=> __( 'Lighter', 'buttons-x' ),
+	    								'100'			=> __( '100', 'buttons-x' ),
+	    								'100italic'		=> __( '100 Italic', 'buttons-x' ),
+	    								'200'			=> __( '200', 'buttons-x' ),
+	    								'200italic'		=> __( '200 Italic', 'buttons-x' ),
+	    								'300'			=> __( '300', 'buttons-x' ),
+	    								'300italic'		=> __( '300 Italic', 'buttons-x' ),
+	    								'400'			=> __( '400', 'buttons-x' ),
+	    								'400italic'		=> __( '400 Italic', 'buttons-x' ),
+	    								'500'			=> __( '500', 'buttons-x' ),
+	    								'500italic'		=> __( '500 Italic', 'buttons-x' ),
+	    								'600'			=> __( '600', 'buttons-x' ),
+	    								'600italic'		=> __( '600 Italic', 'buttons-x' ),
+	    								'700'			=> __( '700', 'buttons-x' ),
+	    								'700italic'		=> __( '700 Italic', 'buttons-x' ),
+	    								'800'			=> __( '800', 'buttons-x' ),
+	    								'800italic'		=> __( '800 Italic', 'buttons-x' ),
+	    								'900'			=> __( '900', 'buttons-x' ),
+	    								'900italic'		=> __( '900 Italic', 'buttons-x' ),
+	    								'inherit'		=> __( 'Inherit', 'buttons-x' )
 	    							),
 	    							'value'			=>	isset( $input['value'][$key] ) ? $input['value'][$key] : NULL
 	    						)
@@ -649,7 +649,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 	    							'type'			=>	'select',
 	    							'id'			=>	$input['id'] . '_' . $key,
 	    							'name'			=>	$input['name'] . '_' . $key,
-	    							'placeholder'	=>	__( 'Choose font family', 'btnsx' ),
+	    							'placeholder'	=>	__( 'Choose font family', 'buttons-x' ),
 	    							'label'			=>	$label,
 	    							'tooltip'		=>	$input['tooltip'][$key],
 	    							'options'		=>	$this->google_webfonts( $input['value'][$key] ),
@@ -665,8 +665,8 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'color-states': 
 
 					$color_fields = array(
-						'normal' =>	__( 'Normal', 'btnsx' ),
-						'hover'	=>	__( 'Hover', 'btnsx' )
+						'normal' =>	__( 'Normal', 'buttons-x' ),
+						'hover'	=>	__( 'Hover', 'buttons-x' )
 					);
 
 					$i = 0;
@@ -703,8 +703,8 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'gradient': 
 
 					$gradient_fields = array(
-						'location'	=>	__( 'Location', 'btnsx' ),
-						'color'		=>	__( 'Color', 'btnsx' )
+						'location'	=>	__( 'Location', 'buttons-x' ),
+						'color'		=>	__( 'Color', 'buttons-x' )
 					);
 
 					$i = 0;
@@ -747,12 +747,12 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'box-shadow': 
 
 					$shadow_fields = array(
-						'horizontal'	=>	__( 'Horizontal', 'btnsx' ),
-						'vertical'		=>	__( 'Vertical', 'btnsx' ),
-						'blur'			=>	__( 'Blur', 'btnsx' ),
-						'spread'		=>	__( 'Spread', 'btnsx' ),
-						'position'		=>	__( 'Position', 'btnsx' ),
-						'color'			=>	__( 'Color', 'btnsx' )
+						'horizontal'	=>	__( 'Horizontal', 'buttons-x' ),
+						'vertical'		=>	__( 'Vertical', 'buttons-x' ),
+						'blur'			=>	__( 'Blur', 'buttons-x' ),
+						'spread'		=>	__( 'Spread', 'buttons-x' ),
+						'position'		=>	__( 'Position', 'buttons-x' ),
+						'color'			=>	__( 'Color', 'buttons-x' )
 					);
 
 					foreach ( $shadow_fields as $key => $label ) { 
@@ -793,8 +793,8 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 	    							'tooltip'		=>	$input['tooltip'][$key],
 	    							'class'			=>	'btnsx-select',
 	    							'options'		=>	array(
-	    								' '		=> __( 'Outset', 'btnsx' ),
-	    								'inset'			=> __( 'Inset', 'btnsx' )
+	    								' '		=> __( 'Outset', 'buttons-x' ),
+	    								'inset'			=> __( 'Inset', 'buttons-x' )
     								),
 	    							'value'			=>	isset( $input['value'][$key] ) ? $input['value'][$key] : NULL
 	    						)
@@ -807,11 +807,11 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'radius': 
 
 					$radius_fields = array(
-						'all'			=>	__( 'All Sides', 'btnsx' ),
-						'top_left'		=>	__( 'Top Left', 'btnsx' ),
-						'top_right'		=>	__( 'Top Right', 'btnsx' ),
-						'bottom_left'	=>	__( 'Bottom Left', 'btnsx' ),
-						'bottom_right'	=>	__( 'Bottom Right', 'btnsx' )
+						'all'			=>	__( 'All Sides', 'buttons-x' ),
+						'top_left'		=>	__( 'Top Left', 'buttons-x' ),
+						'top_right'		=>	__( 'Top Right', 'buttons-x' ),
+						'bottom_left'	=>	__( 'Bottom Left', 'buttons-x' ),
+						'bottom_right'	=>	__( 'Bottom Right', 'buttons-x' )
 					);
 
 					foreach ( $radius_fields as $key => $label ) {
@@ -848,8 +848,8 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 									$highlight = isset( $input['copy_ids']['highlight'] ) ? $input['copy_ids']['highlight'] : '';
 									$old_input = isset( $input['copy_ids']['old_input'] ) ? $input['copy_ids']['old_input'] : '';
 									$new_input = isset( $input['copy_ids']['new_input'] ) ? $input['copy_ids']['new_input'] : '';
-									$normal_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'normal' ? __( 'Copy to normal', 'btnsx' ) : '';
-									$hover_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'hover' ? __( 'Copy to hover', 'btnsx' ) : '';
+									$normal_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'normal' ? __( 'Copy to normal', 'buttons-x' ) : '';
+									$hover_text = isset( $input['copy_text'] ) && $input['copy_text'] === 'hover' ? __( 'Copy to hover', 'buttons-x' ) : '';
 									echo '<button id="' . $input['id'] . '_copy_btn" class="btnsx-copy-field" data-highlight="' . $highlight . '" data-old-input="' . $old_input . '" data-new-input="' . $new_input . '" data-old-color="" data-new-color="" data-old-select data-new-select>' . $normal_text . $hover_text . '</button>';
 								}	
 							?>
@@ -860,7 +860,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 							<div class="file-field input-field">
 						    	<input class="file-path btnsx-input-upload validate" type="text" <?php echo implode( ' ', $input_props ); ?>/>
 						    	<div class="btn">
-						    		<span><?php _e( 'UPLOAD', 'btnsx' ); ?></span>
+						    		<span><?php _e( 'UPLOAD', 'buttons-x' ); ?></span>
 						    		<input <?php echo $file_props['id']; ?> class="btnsx-btn-upload" type="file"/>
 						    	</div>
 						    </div>
@@ -893,9 +893,9 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'border': 
 
 					$border_fields = array(
-						'size'		=>	__( 'Size', 'btnsx' ),
-						'style'		=>	__( 'Style', 'btnsx' ),
-						'color'		=>	__( 'Color', 'btnsx' )
+						'size'		=>	__( 'Size', 'buttons-x' ),
+						'style'		=>	__( 'Style', 'buttons-x' ),
+						'color'		=>	__( 'Color', 'buttons-x' )
 					);
 
 					foreach ( $border_fields as $key => $label ) { 
@@ -934,17 +934,17 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 								    'label'			=>	$label,
 								    'tooltip'		=>	$input['tooltip'][$key],
 								    'options'		=>	array(
-								    	'none'		=> __( 'None', 'btnsx' ),
-								    	'hidden'	=> __( 'Hidden', 'btnsx' ),
-								    	'dotted'	=> __( 'Dotted', 'btnsx' ),
-								    	'dashed'	=> __( 'Dashed', 'btnsx' ),
-								    	'solid'		=> __( 'Solid', 'btnsx' ),
-								    	'double'	=> __( 'Double', 'btnsx' ),
-								    	'groove'	=> __( 'Groove', 'btnsx' ),
-								    	'ridge'		=> __( 'Ridge', 'btnsx' ),
-								    	'inset'		=> __( 'Inset', 'btnsx' ),
-								    	'outset'	=> __( 'Outset', 'btnsx' ),
-								    	'inherit'	=> __( 'Inherit', 'btnsx' ),
+								    	'none'		=> __( 'None', 'buttons-x' ),
+								    	'hidden'	=> __( 'Hidden', 'buttons-x' ),
+								    	'dotted'	=> __( 'Dotted', 'buttons-x' ),
+								    	'dashed'	=> __( 'Dashed', 'buttons-x' ),
+								    	'solid'		=> __( 'Solid', 'buttons-x' ),
+								    	'double'	=> __( 'Double', 'buttons-x' ),
+								    	'groove'	=> __( 'Groove', 'buttons-x' ),
+								    	'ridge'		=> __( 'Ridge', 'buttons-x' ),
+								    	'inset'		=> __( 'Inset', 'buttons-x' ),
+								    	'outset'	=> __( 'Outset', 'buttons-x' ),
+								    	'inherit'	=> __( 'Inherit', 'buttons-x' ),
 								    ),
 	    							'value'			=>	isset( $input['value'][$key] ) ? $input['value'][$key] : NULL
 	    						)
@@ -953,17 +953,17 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 					}
 
 					$border_sides = array(
-						'top'		=>	__( 'Top', 'btnsx' ),
-						'bottom'	=>	__( 'Bottom', 'btnsx' ),
-						'left'		=>	__( 'Left', 'btnsx' ),
-						'right'		=>	__( 'Right', 'btnsx' )
+						'top'		=>	__( 'Top', 'buttons-x' ),
+						'bottom'	=>	__( 'Bottom', 'buttons-x' ),
+						'left'		=>	__( 'Left', 'buttons-x' ),
+						'right'		=>	__( 'Right', 'buttons-x' )
 					);
 
 					?>
 					
 					<div class="row">
 						<div class="col m12">
-							<label style="float:left;padding-left:0.75rem;margin-top:1.2rem;"><?php _e('Sides','btnsx'); ?></label>
+							<label style="float:left;padding-left:0.75rem;margin-top:1.2rem;"><?php _e('Sides','buttons-x'); ?></label>
 						</div>
 					<?php 
 						foreach ( $border_sides as $key => $label ) {
@@ -989,9 +989,9 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'background-image': 
 
 					$bg_image_fields = array(
-						'image'		=>	__( 'Background Image', 'btnsx' ),
-						// 'repeat'	=>	__( 'Background Repeat', 'btnsx' ),
-						'position'	=>	__( 'Background Position', 'btnsx' )
+						'image'		=>	__( 'Background Image', 'buttons-x' ),
+						// 'repeat'	=>	__( 'Background Repeat', 'buttons-x' ),
+						'position'	=>	__( 'Background Position', 'buttons-x' )
 					);
 
 					foreach ( $bg_image_fields as $key => $label ) { 
@@ -1016,11 +1016,11 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 	    							'label'			=>	$label,
 	    							'tooltip'		=>	isset( $input['tooltip'][$key] ) ? $input['tooltip'][$key] : NULL,
 	    							'options'		=>	array(
-	    								'repeat'	=>	__( 'Repeat', 'btnsx' ),
-	    								'repeat-x'	=>	__( 'Repeat X', 'btnsx' ),
-	    								'repeat-y'	=>	__( 'Repeat Y', 'btnsx' ),
-	    								'no-repeat'	=>	__( 'No Repeat', 'btnsx' ),
-	    								'initial'	=>	__( 'Initial', 'btnsx' )
+	    								'repeat'	=>	__( 'Repeat', 'buttons-x' ),
+	    								'repeat-x'	=>	__( 'Repeat X', 'buttons-x' ),
+	    								'repeat-y'	=>	__( 'Repeat Y', 'buttons-x' ),
+	    								'no-repeat'	=>	__( 'No Repeat', 'buttons-x' ),
+	    								'initial'	=>	__( 'Initial', 'buttons-x' )
 	    							),
 	    							'value'			=>	isset( $input['value'][$key] ) ? $input['value'][$key] : NULL
 	    						)
@@ -1035,16 +1035,16 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 								    'label'			=>	$label,
 								    'tooltip'		=>	isset( $input['tooltip'][$key] ) ? $input['tooltip'][$key] : NULL,
 								    'options'		=>	array(
-								    	'left top'		=> __( 'Left Top', 'btnsx' ),
-								    	'left center'	=> __( 'Left Center', 'btnsx' ),
-								    	'left bottom'	=> __( 'Left Bottom', 'btnsx' ),
-								    	'right top'		=> __( 'Right Top', 'btnsx' ),
-								    	'right center'	=> __( 'Right Center', 'btnsx' ),
-								    	'right bottom'	=> __( 'Right Bottom', 'btnsx' ),
-								    	'center top'	=> __( 'Center Top', 'btnsx' ),
-								    	'center center'	=> __( 'Center Center', 'btnsx' ),
-								    	'center bottom'	=> __( 'Center Bottom', 'btnsx' ),
-								    	'initial'		=> __( 'Initial', 'btnsx' ),
+								    	'left top'		=> __( 'Left Top', 'buttons-x' ),
+								    	'left center'	=> __( 'Left Center', 'buttons-x' ),
+								    	'left bottom'	=> __( 'Left Bottom', 'buttons-x' ),
+								    	'right top'		=> __( 'Right Top', 'buttons-x' ),
+								    	'right center'	=> __( 'Right Center', 'buttons-x' ),
+								    	'right bottom'	=> __( 'Right Bottom', 'buttons-x' ),
+								    	'center top'	=> __( 'Center Top', 'buttons-x' ),
+								    	'center center'	=> __( 'Center Center', 'buttons-x' ),
+								    	'center bottom'	=> __( 'Center Bottom', 'buttons-x' ),
+								    	'initial'		=> __( 'Initial', 'buttons-x' ),
 								    ),
 	    							'value'			=>	isset( $input['value'][$key] ) ? $input['value'][$key] : NULL
 	    						)

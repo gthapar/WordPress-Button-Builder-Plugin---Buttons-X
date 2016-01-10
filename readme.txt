@@ -4,7 +4,7 @@ Donate Link: http://btn.sx/1VHtcaP
 Tags: button, buttons, button plugin, button builder, button maker, button generator, CSS button generator, css3 button generator, responsive buttons, social share, social buttons, morphing buttons
 Requires at least: 4.0
 Tested up to: 4.4.1
-Stable tag: 1.7.8
+Stable tag: 1.7.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,6 +173,12 @@ Coming soon..
 Nothing yet..
 
 == Changelog ==
+
+= 1.7.9 =
+
+ - Fixed: Localisation issues.
+ - Fixed: Widget displaying older buttons at top when selecting a button.
+ - Improved: Add-ons and Packs list data fetching.
 
 = 1.7.8 = 
 

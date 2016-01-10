@@ -74,29 +74,29 @@ if( !class_exists( 'Btnsx' ) ) {
 				<table class="bordered btnsx-comparison">
 		        	<thead>
 		          		<tr>
-		              		<th data-field="id"><?php _e('Features','btnsx'); ?></th>
-		              		<th data-field="name"><?php _e('Free','btnsx'); ?></th>
-		              		<th data-field="price"><?php _e('Pro','btnsx'); ?></th>
+		              		<th data-field="id"><?php _e('Features','buttons-x'); ?></th>
+		              		<th data-field="name"><?php _e('Free','buttons-x'); ?></th>
+		              		<th data-field="price"><?php _e('Pro','buttons-x'); ?></th>
 		          		</tr>
 		        	</thead>
 		        	<tbody>
 		          		<tr>
-		            		<td><?php _e('Dual Buttons','btnsx'); ?></td>
+		            		<td><?php _e('Dual Buttons','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Social Buttons','btnsx'); ?></td>
+				            <td><?php _e('Social Buttons','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Social Counters','btnsx'); ?></td>
+				            <td><?php _e('Social Counters','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('External CSS','btnsx'); ?></td>
+				            <td><?php _e('External CSS','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
@@ -131,110 +131,110 @@ if( !class_exists( 'Btnsx' ) ) {
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Priority Support','btnsx'); ?></td>
+				            <td><?php _e('Priority Support','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Button Packs','btnsx'); ?></td>
+				            <td><?php _e('Button Packs','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Demo Buttons','btnsx'); ?></td>
+				            <td><?php _e('Demo Buttons','buttons-x'); ?></td>
 				            <td><i class="fa fa-check"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Add-ons','btnsx'); ?></td>
+				            <td><?php _e('Add-ons','buttons-x'); ?></td>
 				            <td><i class="fa fa-check"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				          	<td colspan="3"><span style="font-weight:700;"><?php _e('Button Options','btnsx'); ?></span></td>
+				          	<td colspan="3"><span style="font-weight:700;"><?php _e('Button Options','buttons-x'); ?></span></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Import / Export','btnsx'); ?></td>
+				            <td><?php _e('Import / Export','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Secondary Text','btnsx'); ?></td>
+				            <td><?php _e('Secondary Text','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Image as Background','btnsx'); ?></td>
+				            <td><?php _e('Image as Background','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Button as Menu','btnsx'); ?></td>
+				            <td><?php _e('Button as Menu','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Icons','btnsx'); ?></td>
+				            <td><?php _e('Icons','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Animations','btnsx'); ?></td>
+				            <td><?php _e('Animations','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('24 link types','btnsx'); ?></td>
+				            <td><?php _e('24 link types','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Custom CSS','btnsx'); ?></td>
+				            <td><?php _e('Custom CSS','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Custom JS','btnsx'); ?></td>
+				            <td><?php _e('Custom JS','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 				        <tr>
-				            <td><?php _e('Background Image for Preview','btnsx'); ?></td>
+				            <td><?php _e('Background Image for Preview','buttons-x'); ?></td>
 				            <td><i class="fa fa-close"></i></td>
 				            <td><i class="fa fa-check"></i></td>
 				        </tr>
 		          		<tr>
-		            		<td><?php _e('Gradient','btnsx'); ?></td>
+		            		<td><?php _e('Gradient','buttons-x'); ?></td>
 		            		<td><i class="fa fa-check"></i> Limited</td>
 		            		<td><i class="fa fa-check"></i> Unlimited</td>
 		          		</tr>
 		          		<tr>
-		            		<td><?php _e('Shadow','btnsx'); ?></td>
+		            		<td><?php _e('Shadow','buttons-x'); ?></td>
 		           	 		<td><i class="fa fa-check"></i> Limited</td>
 		            		<td><i class="fa fa-check"></i> Unlimited</td>
 		          		</tr>
 		          		<tr>
-		            		<td><?php _e('Google Fonts','btnsx'); ?></td>
+		            		<td><?php _e('Google Fonts','buttons-x'); ?></td>
 		            		<td><i class="fa fa-check"></i></td>
 		            		<td><i class="fa fa-check"></i></td>
 		          		</tr>
 		          		<tr>
-		            		<td><?php _e('Primary Text','btnsx'); ?></td>
+		            		<td><?php _e('Primary Text','buttons-x'); ?></td>
 		            		<td><i class="fa fa-check"></i></td>
 		            		<td><i class="fa fa-check"></i></td>
 		          		</tr>
 		          		<tr>
-		            		<td><?php _e('Border & Border Radius','btnsx'); ?></td>
+		            		<td><?php _e('Border & Border Radius','buttons-x'); ?></td>
 		            		<td><i class="fa fa-check"></i></td>
 		            		<td><i class="fa fa-check"></i></td>
 		          		</tr>
 			          	<tr>
-			            	<td><?php _e('Full Width Buttons','btnsx'); ?></td>
+			            	<td><?php _e('Full Width Buttons','buttons-x'); ?></td>
 			            	<td><i class="fa fa-check"></i></td>
 			            	<td><i class="fa fa-check"></i></td>
 			          	</tr>
 		          		<tr>
-		            		<td><?php _e('Centered Buttons','btnsx'); ?></td>
+		            		<td><?php _e('Centered Buttons','buttons-x'); ?></td>
 		            		<td><i class="fa fa-check"></i></td>
 		            		<td><i class="fa fa-check"></i></td>
 		          		</tr>
@@ -293,9 +293,9 @@ if( !class_exists( 'Btnsx' ) ) {
 		        <!-- Place this tag in your head or just before your close body tag. -->
 				<script src="https://apis.google.com/js/platform.js" async defer></script>
 		        <div class="wrap about-wrap">
-		            <h1><?php printf( __( 'Welcome to Buttons X %1$s', 'btnsx' ), BTNSX__VERSION ); ?></h1>
+		            <h1><?php printf( __( 'Welcome to Buttons X %1$s', 'buttons-x' ), BTNSX__VERSION ); ?></h1>
 		            <div class="about-text">
-		            	<?php printf( __( 'Thank you for installing!.', 'btnsx' ), BTNSX__VERSION ); ?>
+		            	<?php printf( __( 'Thank you for installing!.', 'buttons-x' ), BTNSX__VERSION ); ?>
 		            	<br><br>
 		            	<!-- Social Buttons -->
 			            	<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://www.button.sx" data-text="Build any kind of button imaginable right from your WordPress Dashboard with Buttons X!" data-via="btnsx" data-related="gautam_thapar" data-hashtags="ButtonsX">Tweet</a>
@@ -307,32 +307,38 @@ if( !class_exists( 'Btnsx' ) ) {
 							<div class="g-follow" data-annotation="none" data-height="20" data-href="//plus.google.com/u/0/105722599123710552395" data-rel="publisher"></div>
 							<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200" data-href="https://www.button.sx"></div>
 		            </div>
-		            <div class="wp-badge btnsx-badge"><span class="dashicons-before dashicons-btnsx-logo"></span><?php printf( __( 'Version %1$s', 'btnsx' ), BTNSX__VERSION ); ?></div>
+		            <div class="wp-badge btnsx-badge"><span class="dashicons-before dashicons-btnsx-logo"></span><?php printf( __( 'Version %1$s', 'buttons-x' ), BTNSX__VERSION ); ?></div>
 		            <hr>
 		            <div class="feature-section one-col">
-		            	<h4><?php printf( __( 'v%1$s', 'btnsx' ), BTNSX__VERSION ); ?> Changelog</h4>
+		            	<h4><?php echo 'v' . BTNSX__VERSION . ' '; _e('Changelog'); ?></h4>
+		            	<ol>
+		            		<li>Fixed: Localisation issues.</li>
+							<li>Fixed: Widget displaying older buttons at top when selecting a button.</li>
+							<li>Improved: Add-ons and Packs list data fetching.</li>
+		            	</ol>
+		            	<h4><?php echo 'v1.7.8 '; _e('Changelog'); ?></h4>
 		            	<ol>
 		            		<li>Addition: Predefined button styles added under Import > Demo Buttons.</li>
 							<li>Improvement: Font weight selection mechanism for Google Fonts improved.</li>
 							<li>Fixed: Box shadow not appearing on frontend.</li>
 		            	</ol>
 		            	<br>
-		            	<h3><?php _e('Introduction','btnsx'); ?></h3>
+		            	<h3><?php _e('Introduction','buttons-x'); ?></h3>
 		            	<br>
-		            	<p><?php _e( 'Hi there,', 'btnsx' ); ?></p>
+		            	<p><?php _e( 'Hi there,', 'buttons-x' ); ?></p>
 						<p><?php 
-							echo sprintf( wp_kses(__( 'I am <a href="%s">Gautam Thapar</a> and I am the author of this plugin. I am working hard to make sure you have pleasant experience while using this plugin. In case you face any issues or get stuck somehwere then kindly let me know using the <a href="%s">support forum</a>.', 'btnsx'), array( 'a' => array( 'href' => array() ) ) ), 'http://btn.sx/1JwsbAp', 'https://wordpress.org/support/plugin/buttons-x/' ); 
+							echo sprintf( wp_kses(__( 'I am <a href="%s">Gautam Thapar</a> and I am the author of this plugin. I am working hard to make sure you have pleasant experience while using this plugin. In case you face any issues or get stuck somehwere then kindly let me know using the <a href="%s">support forum</a>.', 'buttons-x'), array( 'a' => array( 'href' => array() ) ) ), 'http://btn.sx/1JwsbAp', 'https://wordpress.org/support/plugin/buttons-x/' ); 
 							echo '&nbsp;'; 
-							_e( 'I will do my best to solve your issues as soon as possible.', 'btnsx' ); 
+							_e( 'I will do my best to solve your issues as soon as possible.', 'buttons-x' ); 
 							?>
 						</p>
-						<p><?php _e( 'This is a <b>LITE version</b> of Buttons X and so it is limited in functionality. But it does contain enough to help you build beautiful CSS3 buttons.', 'btnsx' ); ?></p>
-						<p><?php echo sprintf( wp_kses( __( 'Please try it out and if you feel the plugin is useful then do buy the <a href="%s"><strong>PRO version</strong></a> to unlock all the features.', 'btnsx' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'http://btn.sx/1IUqaqK' ) ); ?></p>
+						<p><?php _e( 'This is a <b>LITE version</b> of Buttons X and so it is limited in functionality. But it does contain enough to help you build beautiful CSS3 buttons.', 'buttons-x' ); ?></p>
+						<p><?php echo sprintf( wp_kses( __( 'Please try it out and if you feel the plugin is useful then do buy the <a href="%s"><strong>PRO version</strong></a> to unlock all the features.', 'buttons-x' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'http://btn.sx/1IUqaqK' ) ); ?></p>
 						<!-- @TODO - Contact Link -->
-						<p><?php _e( 'If you face any issue, please do'); ?> <a target="_blank" href="https://wordpress.org/support/plugin/buttons-x/"><?php _e( 'contact me', 'btnsx' ); ?></a>. <?php _e( 'I will be more than happy to help you!', 'btnsx' ); ?></p>
+						<p><?php _e( 'If you face any issue, please do'); ?> <a target="_blank" href="https://wordpress.org/support/plugin/buttons-x/"><?php _e( 'contact me', 'buttons-x' ); ?></a>. <?php _e( 'I will be more than happy to help you!', 'buttons-x' ); ?></p>
 						<p><?php _e( 'Warm Regards' ); ?>, Gautam Thapar.</p>
 						<br>
-						<h4><?php echo sprintf( wp_kses( __( '<a href="%s"><strong>Try Pro for FREE!</strong></a>', 'btnsx' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'http://btn.sx/1UAVlhk' ) ); ?></h4>
+						<h4><?php echo sprintf( wp_kses( __( '<a href="%s"><strong>Try Pro for FREE!</strong></a>', 'buttons-x' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'http://btn.sx/1UAVlhk' ) ); ?></h4>
 						<br>
 						<!-- Begin MailChimp Signup Form -->
 							<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
@@ -342,10 +348,10 @@ if( !class_exists( 'Btnsx' ) ) {
 							<div id="mc_embed_signup">
 							<form action="//button.us11.list-manage.com/subscribe/post?u=bedf4c5985b18b5ff8b07e766&amp;id=9bc07618db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							    <div id="mc_embed_signup_scroll">
-								<h2><?php _e('Plugin Updates','btnsx'); ?></h2>
-							<div class="indicates-required"><span class="asterisk">*</span> <?php _e('indicates required','btnsx'); ?></div>
+								<h2><?php _e('Plugin Updates','buttons-x'); ?></h2>
+							<div class="indicates-required"><span class="asterisk">*</span> <?php _e('indicates required','buttons-x'); ?></div>
 							<div class="mc-field-group">
-								<label for="mce-EMAIL"><?php _e('Email Address','btnsx'); ?>  <span class="asterisk">*</span>
+								<label for="mce-EMAIL"><?php _e('Email Address','buttons-x'); ?>  <span class="asterisk">*</span>
 							</label>
 								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 							</div>
@@ -367,32 +373,32 @@ if( !class_exists( 'Btnsx' ) ) {
 					    </div>
 		            </div>
 		            <div class="changelog">
-						<h3><?php _e('Helpful Links','btnsx'); ?></h3>
+						<h3><?php _e('Helpful Links','buttons-x'); ?></h3>
 						<div class="feature-section under-the-hood three-col">
 							<div class="col">
-								<h4><a target="_blank" href="https://www.button.sx/product-category/add-ons/"><?php _e('Button Add-ons','btnsx'); ?></a></h4>
+								<h4><a target="_blank" href="https://www.button.sx/product-category/add-ons/"><?php _e('Button Add-ons','buttons-x'); ?></a></h4>
 							</div>
 							<div class="col">
-								<h4><a target="_blank" href="https://www.button.sx/product-category/packs/"><?php _e('Button Packs','btnsx'); ?></a></h4>
+								<h4><a target="_blank" href="https://www.button.sx/product-category/packs/"><?php _e('Button Packs','buttons-x'); ?></a></h4>
 							</div>
 							<div class="col">
-								<h4><a target="_blank" href="https://gautamthapar.atlassian.net/wiki/display/BX/"><?php _e('Documentation','btnsx'); ?></a></h4>
+								<h4><a target="_blank" href="https://gautamthapar.atlassian.net/wiki/display/BX/"><?php _e('Documentation','buttons-x'); ?></a></h4>
 							</div>
 							<div class="col">
-								<h4><a target="_blank" href="http://gautamthapar.ticksy.com/"><?php _e('Pro Support','btnsx'); ?></a></h4>
+								<h4><a target="_blank" href="http://gautamthapar.ticksy.com/"><?php _e('Pro Support','buttons-x'); ?></a></h4>
 							</div>
 							<div class="col">
-								<h4><a target="_blank" href="https://www.button.sx/"><?php _e('Official Website','btnsx'); ?></a></h4>
+								<h4><a target="_blank" href="https://www.button.sx/"><?php _e('Official Website','buttons-x'); ?></a></h4>
 							</div>
 							<div class="col">
-								<h4><a target="_blank" href="https://twitter.com/Gautam_Thapar"><?php _e('Twitter','btnsx'); ?></a></h4>
+								<h4><a target="_blank" href="https://twitter.com/Gautam_Thapar"><?php _e('Twitter','buttons-x'); ?></a></h4>
 							</div>
 						</div>
 					</div>
 					<div class="changelog point-releases">
 					</div>
 		            <div class="changelog point-releases">
-		                <h3><?php _e('Release Notes','btnsx'); ?></h3>
+		                <h3><?php _e('Release Notes','buttons-x'); ?></h3>
 		                <ol>
 		                	<li>Initial Release.</li>
 		                </ol>
@@ -410,8 +416,8 @@ if( !class_exists( 'Btnsx' ) ) {
 		public function screen_meta_view( $views ){
 		    $packs = count(get_terms('btnsx_pack'));
 		    $tags = count(get_terms('btnsx_tag'));
-		    $views['packs'] = "<a href='edit-tags.php?taxonomy=btnsx_pack&post_type=buttons-x'>".__('Packs','btnsx')." <span class='count'>(".$packs.")</span></a>";
-		    $views['tags'] = "<a href='edit-tags.php?taxonomy=btnsx_tag&post_type=buttons-x'>".__('Tags','btnsx')." <span class='count'>(".$tags.")</span></a>";
+		    $views['packs'] = "<a href='edit-tags.php?taxonomy=btnsx_pack&post_type=buttons-x'>".__('Packs','buttons-x')." <span class='count'>(".$packs.")</span></a>";
+		    $views['tags'] = "<a href='edit-tags.php?taxonomy=btnsx_tag&post_type=buttons-x'>".__('Tags','buttons-x')." <span class='count'>(".$tags.")</span></a>";
 		    return $views;
 		}
 
@@ -434,9 +440,9 @@ if( !class_exists( 'Btnsx' ) ) {
 					'id'			=>	'btnsx_opt_preview_background',
 					'name'			=>	'btnsx_opt_preview_background',
 					'placeholder'	=>	' ',
-					'label'			=>	__( 'Background Color', 'btnsx' ),
+					'label'			=>	__( 'Background Color', 'buttons-x' ),
 					'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_preview_background' ) ),
-					'tooltip'		=>	__( 'Changing the color will change the preview background. If you intend to use this button on a coloured background then changing the preview background will give you exact look of the button over a color.', 'btnsx' )
+					'tooltip'		=>	__( 'Changing the color will change the preview background. If you intend to use this button on a coloured background then changing the preview background will give you exact look of the button over a color.', 'buttons-x' )
 				)
         	);
         	echo '<br>';
@@ -464,8 +470,8 @@ if( !class_exists( 'Btnsx' ) ) {
 		public function publishing_actions() {
 		    global $post;
 		    if ( $post->post_type === 'buttons-x' ) {
-		        echo '<div class="misc-pub-section misc-pub-btnsx-options-reset"><i id="btnsx_options_reset_icon" class="fa fa-refresh" style="font-size:16px;color:#82878c;margin-right:10px;"></i><a id="btnsx_options_reset" href="javascript:void(0)">' . __( 'Reset Options', 'btnsx' ) . '</a></div>';
-		        echo '<div class="misc-pub-section misc-pub-btnsx-options-reset"><i id="btnsx_options_clone_icon" class="fa fa-clone" style="font-size:16px;color:#82878c;margin-right:10px;"></i><a id="btnsx_options_clone" href="edit.php?post_type=buttons-x&btnsx-clone=' . $post->ID . '">' . __( 'Clone Button', 'btnsx' ) . '</a></div>';
+		        echo '<div class="misc-pub-section misc-pub-btnsx-options-reset"><i id="btnsx_options_reset_icon" class="fa fa-refresh" style="font-size:16px;color:#82878c;margin-right:10px;"></i><a id="btnsx_options_reset" href="javascript:void(0)">' . __( 'Reset Options', 'buttons-x' ) . '</a></div>';
+		        echo '<div class="misc-pub-section misc-pub-btnsx-options-reset"><i id="btnsx_options_clone_icon" class="fa fa-clone" style="font-size:16px;color:#82878c;margin-right:10px;"></i><a id="btnsx_options_clone" href="edit.php?post_type=buttons-x&btnsx-clone=' . $post->ID . '">' . __( 'Clone Button', 'buttons-x' ) . '</a></div>';
 		    }
 		}
 
@@ -531,8 +537,8 @@ if( !class_exists( 'Btnsx' ) ) {
 	     * @return array
 	     */
 	    public function columns( $defaults ) {
-			$defaults['btnsx_shortcode'] 	= __( 'Shortcode', 'btnsx' );
-		    $defaults['btnsx_preview'] 	= __( 'Preview', 'btnsx' );
+			$defaults['btnsx_shortcode'] 	= __( 'Shortcode', 'buttons-x' );
+		    $defaults['btnsx_preview'] 	= __( 'Preview', 'buttons-x' );
 		    unset( $defaults['date'] );
 		    return $defaults;
 		}
@@ -554,7 +560,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		        ?>
 		        <div class="btnsx">
 			        <!-- Modal Trigger -->
-					<a class="waves-effect waves-light btn modal-trigger" href="#modal<?php echo esc_attr( $id ); ?>"><?php _e( 'Preview', 'btnsx' ); ?></a>
+					<a class="waves-effect waves-light btn modal-trigger" href="#modal<?php echo esc_attr( $id ); ?>"><?php _e( 'Preview', 'buttons-x' ); ?></a>
 					<!-- Modal Structure -->
 					<style type="text/css">
 						#modal<?php echo sanitize_text_field( $id ); ?> .modal-content, #modal<?php echo sanitize_text_field( $id ); ?> .modal-footer {
@@ -606,11 +612,11 @@ if( !class_exists( 'Btnsx' ) ) {
 		public function columns_order( $columns ) {
 		    return array(
 		        'cb' 					=> '<input type="checkbox" />',
-		        'title' 				=> __( 'Title', 'btnsx' ),
-		        'taxonomy-btnsx_pack' 	=> __( 'Packs', 'btnsx' ),
-		        'taxonomy-btnsx_tag' 	=> __( 'Tags', 'btnsx' ),
-		        'btnsx_shortcode' 		=> __( 'Shortcode', 'btnsx' ),
-		        'btnsx_preview' 		=> __( 'Preview', 'btnsx' ),
+		        'title' 				=> __( 'Title', 'buttons-x' ),
+		        'taxonomy-btnsx_pack' 	=> __( 'Packs', 'buttons-x' ),
+		        'taxonomy-btnsx_tag' 	=> __( 'Tags', 'buttons-x' ),
+		        'btnsx_shortcode' 		=> __( 'Shortcode', 'buttons-x' ),
+		        'btnsx_preview' 		=> __( 'Preview', 'buttons-x' ),
 		    );
 		}
 
@@ -619,7 +625,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		 * @since 0.1
 		 */
 		public function load_textdomain() {
-			load_plugin_textdomain( 'btnsx', false, BTNSX__PLUGIN_URL . 'languages' );
+			load_plugin_textdomain( 'buttons-x', false, BTNSX__PLUGIN_URL . 'languages' );
 		}
 
 		/**
@@ -631,7 +637,7 @@ if( !class_exists( 'Btnsx' ) ) {
 			?>
 
 			<div class="error">
-				<p><?php printf( __( 'Buttons X require minimum WordPress version to be %1$s.', 'btnsx' ), BTNSX__MIN_WP_VERSION ); ?></p>
+				<p><?php printf( __( 'Buttons X require minimum WordPress version to be %1$s.', 'buttons-x' ), BTNSX__MIN_WP_VERSION ); ?></p>
 			</div>
 
 			<?php
@@ -780,25 +786,25 @@ if( !class_exists( 'Btnsx' ) ) {
             if( isset( $btnsx_settings['menu_name'] ) ){
                 $button_menu_name = $btnsx_settings['menu_name'];
             } else {
-                $button_menu_name = _x('Buttons', 'admin menu', 'btnsx');
+                $button_menu_name = _x('Buttons', 'admin menu', 'buttons-x');
             }
 
             if( isset( $btnsx_settings['name_singular'] ) ){
                 $button_name_singular = $btnsx_settings['name_singular'];
             } else {
-                $button_name_singular = _x('Button', 'post type singular name', 'btnsx');
+                $button_name_singular = _x('Button', 'post type singular name', 'buttons-x');
             }
 
             if( isset( $btnsx_settings['name_plural'] ) ){
                 $button_name_plural = $btnsx_settings['name_plural'];
             } else {
-                $button_name_plural = _x('Buttons', 'post type general name', 'btnsx');
+                $button_name_plural = _x('Buttons', 'post type general name', 'buttons-x');
             }
 
             if( isset( $btnsx_settings['admin_bar_name'] ) ){
                 $button_admin_bar_name = $btnsx_settings['admin_bar_name'];
             } else {
-                $button_admin_bar_name = _x('Button', 'add new on admin bar', 'btnsx');
+                $button_admin_bar_name = _x('Button', 'add new on admin bar', 'buttons-x');
             }
 
             // Register buttons post
@@ -809,16 +815,16 @@ if( !class_exists( 'Btnsx' ) ) {
                         'singular_name' => $button_name_singular,
                         'menu_name' => $button_menu_name,
                         'name_admin_bar' => $button_admin_bar_name,
-                        'add_new' => _x('Add New', $button_name_singular, 'btnsx'),
-                        'add_new_item' => __('Add New ', 'btnsx') . $button_name_singular,
-                        'new_item' => __('New ', 'btnsx') . $button_name_singular,
-                        'edit_item' => __('Edit ', 'btnsx') . $button_name_singular,
-                        'view_item' => __('View ', 'btnsx') . $button_name_singular,
+                        'add_new' => _x('Add New', $button_name_singular, 'buttons-x'),
+                        'add_new_item' => __('Add New ', 'buttons-x') . $button_name_singular,
+                        'new_item' => __('New ', 'buttons-x') . $button_name_singular,
+                        'edit_item' => __('Edit ', 'buttons-x') . $button_name_singular,
+                        'view_item' => __('View ', 'buttons-x') . $button_name_singular,
                         'all_items' => $button_name_plural,
-                        'search_items' => __('Search ', 'btnsx') . $button_name_plural,
-                        'parent_item_colon' => __('Parent ', 'btnsx') . $button_name_plural . ':',
-                        'not_found' => __('No ', 'btnsx') . $button_name_plural . __(' found.', 'btnsx'),
-                        'not_found_in_trash' => __('No ', 'btnsx') . $button_name_plural . __(' found in Trash.', 'btnsx'),
+                        'search_items' => __('Search ', 'buttons-x') . $button_name_plural,
+                        'parent_item_colon' => __('Parent ', 'buttons-x') . $button_name_plural . ':',
+                        'not_found' => __('No ', 'buttons-x') . $button_name_plural . __(' found.', 'buttons-x'),
+                        'not_found_in_trash' => __('No ', 'buttons-x') . $button_name_plural . __(' found in Trash.', 'buttons-x'),
                     ),
                     'public'                => false,
                     'show_ui'				=> true,
@@ -846,33 +852,33 @@ if( !class_exists( 'Btnsx' ) ) {
 			$post_type_object = get_post_type_object( $post_type );
 			$messages['buttons-x'] = array(
 				0  => '', // Unused. Messages start at index 1.
-				1  => __( 'Button updated.', 'btnsx' ),
-				2  => __( 'Custom field updated.', 'btnsx' ),
-				3  => __( 'Custom field deleted.', 'btnsx' ),
-				4  => __( 'Button updated.', 'btnsx' ),
+				1  => __( 'Button updated.', 'buttons-x' ),
+				2  => __( 'Custom field updated.', 'buttons-x' ),
+				3  => __( 'Custom field deleted.', 'buttons-x' ),
+				4  => __( 'Button updated.', 'buttons-x' ),
 				/* translators: %s: date and time of the revision */
-				5  => isset( $_GET['revision'] ) ? sprintf( __( 'Button restored to revision from %s', 'btnsx' ), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
-				6  => __( 'Button published.', 'btnsx' ),
-				7  => __( 'Button saved.', 'btnsx' ),
-				8  => __( 'Button submitted.', 'btnsx' ),
+				5  => isset( $_GET['revision'] ) ? sprintf( __( 'Button restored to revision from %s', 'buttons-x' ), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+				6  => __( 'Button published.', 'buttons-x' ),
+				7  => __( 'Button saved.', 'buttons-x' ),
+				8  => __( 'Button submitted.', 'buttons-x' ),
 				9  => sprintf(
-					__( 'Button scheduled for: <strong>%1$s</strong>.', 'btnsx' ),
+					__( 'Button scheduled for: <strong>%1$s</strong>.', 'buttons-x' ),
 					// translators: Publish box date format, see http://php.net/date
-					date_i18n( __( 'M j, Y @ G:i', 'btnsx' ), strtotime( $post->post_date ) )
+					date_i18n( __( 'M j, Y @ G:i', 'buttons-x' ), strtotime( $post->post_date ) )
 				),
-				10 => __( 'Button draft updated.', 'btnsx' )
+				10 => __( 'Button draft updated.', 'buttons-x' )
 			);
 
 			// if ( $post_type_object->publicly_queryable ) {
 			// 	$permalink = get_permalink( $post->ID );
 
-			// 	$view_link = sprintf( ' <a href="%s">%s</a>', esc_url( $permalink ), __( 'View button', 'btnsx' ) );
+			// 	$view_link = sprintf( ' <a href="%s">%s</a>', esc_url( $permalink ), __( 'View button', 'buttons-x' ) );
 			// 	$messages[ $post_type ][1] .= $view_link;
 			// 	$messages[ $post_type ][6] .= $view_link;
 			// 	$messages[ $post_type ][9] .= $view_link;
 
 			// 	$preview_permalink = add_query_arg( 'preview', 'true', $permalink );
-			// 	$preview_link = sprintf( ' <a target="_blank" href="%s">%s</a>', esc_url( $preview_permalink ), __( 'Preview Button', 'btnsx' ) );
+			// 	$preview_link = sprintf( ' <a target="_blank" href="%s">%s</a>', esc_url( $preview_permalink ), __( 'Preview Button', 'buttons-x' ) );
 			// 	$messages[ $post_type ][8]  .= $preview_link;
 			// 	$messages[ $post_type ][10] .= $preview_link;
 			// }
@@ -887,17 +893,17 @@ if( !class_exists( 'Btnsx' ) ) {
         public function register_taxonomies() {
 		    // Add new taxonomy, make it hierarchical (like categories)
 		    $labels = array(
-		        'name' 				=> _x( 'Packs', 'btnsx' ),
-		        'singular_name' 	=> _x( 'Pack', 'btnsx' ),
-		        'search_items' 		=> __( 'Search Pack', 'btnsx' ),
-		        'all_items' 		=> __( 'All', 'btnsx' ),
-		        'parent_item' 		=> __( 'Parent Pack', 'btnsx' ),
-		        'parent_item_colon' => __( 'Parent Pack:', 'btnsx' ),
-		        'edit_item' 		=> __( 'Edit Pack', 'btnsx' ),
-		        'update_item' 		=> __( 'Update Pack', 'btnsx' ),
-		        'add_new_item' 		=> __( 'Add New Pack', 'btnsx' ),
-		        'new_item_name' 	=> __( 'New Pack Name', 'btnsx' ),
-		        'menu_name' 		=> __( 'Packs', 'btnsx' )
+		        'name' 				=> _x( 'Packs', 'buttons-x' ),
+		        'singular_name' 	=> _x( 'Pack', 'buttons-x' ),
+		        'search_items' 		=> __( 'Search Pack', 'buttons-x' ),
+		        'all_items' 		=> __( 'All', 'buttons-x' ),
+		        'parent_item' 		=> __( 'Parent Pack', 'buttons-x' ),
+		        'parent_item_colon' => __( 'Parent Pack:', 'buttons-x' ),
+		        'edit_item' 		=> __( 'Edit Pack', 'buttons-x' ),
+		        'update_item' 		=> __( 'Update Pack', 'buttons-x' ),
+		        'add_new_item' 		=> __( 'Add New Pack', 'buttons-x' ),
+		        'new_item_name' 	=> __( 'New Pack Name', 'buttons-x' ),
+		        'menu_name' 		=> __( 'Packs', 'buttons-x' )
 		    );
 		    $args = array(
 		    	'public' 			=> false,
@@ -912,17 +918,17 @@ if( !class_exists( 'Btnsx' ) ) {
 		    register_taxonomy( 'btnsx_pack', array( 'buttons-x' ), $args );
 		    // Add new taxonomy, not hierarchical (like tags)
 		    $labels = array(
-		        'name' 				=> _x( 'Tags', 'btnsx' ),
-		        'singular_name' 	=> _x( 'Tag', 'btnsx' ),
-		        'search_items' 		=> __( 'Search Tag', 'btnsx' ),
-		        'all_items' 		=> __( 'All', 'btnsx' ),
-		        'parent_item' 		=> __( 'Parent Tag', 'btnsx' ),
-		        'parent_item_colon' => __( 'Parent Tag:', 'btnsx' ),
-		        'edit_item' 		=> __( 'Edit Tag', 'btnsx' ),
-		        'update_item' 		=> __( 'Update Tag', 'btnsx' ),
-		        'add_new_item' 		=> __( 'Add New Tag', 'btnsx' ),
-		        'new_item_name' 	=> __( 'New Tag Name', 'btnsx' ),
-		        'menu_name' 		=> __( 'Tags', 'btnsx' )
+		        'name' 				=> _x( 'Tags', 'buttons-x' ),
+		        'singular_name' 	=> _x( 'Tag', 'buttons-x' ),
+		        'search_items' 		=> __( 'Search Tag', 'buttons-x' ),
+		        'all_items' 		=> __( 'All', 'buttons-x' ),
+		        'parent_item' 		=> __( 'Parent Tag', 'buttons-x' ),
+		        'parent_item_colon' => __( 'Parent Tag:', 'buttons-x' ),
+		        'edit_item' 		=> __( 'Edit Tag', 'buttons-x' ),
+		        'update_item' 		=> __( 'Update Tag', 'buttons-x' ),
+		        'add_new_item' 		=> __( 'Add New Tag', 'buttons-x' ),
+		        'new_item_name' 	=> __( 'New Tag Name', 'buttons-x' ),
+		        'menu_name' 		=> __( 'Tags', 'buttons-x' )
 		    );
 		    $args = array(
 		    	'public' 			=> false,
@@ -946,7 +952,7 @@ if( !class_exists( 'Btnsx' ) ) {
 			foreach ( $screens as $screen ) {
 			    add_meta_box(
 			        'btnsx-preview',
-			        __( 'Live Preview', 'btnsx' ),
+			        __( 'Live Preview', 'buttons-x' ),
 			        array( $this, 'preview_callback' ),
 			        $screen,
 			        'normal',
@@ -954,7 +960,7 @@ if( !class_exists( 'Btnsx' ) ) {
 			    );
 			    add_meta_box(
 			        'btnsx-options',
-			        __( 'Buttons X - Options Panel', 'btnsx' ),
+			        'Buttons X - ' . __( 'Options Panel', 'buttons-x' ),
 			        array( $this, 'options_callback' ),
 			        $screen,
 			        'normal',
@@ -962,7 +968,7 @@ if( !class_exists( 'Btnsx' ) ) {
 			    );
 			    add_meta_box(
 			        'btnsx-preview-settings',
-			        __( 'Buttons X - Preview Settings', 'btnsx' ),
+			        'Buttons X - ' . __( 'Preview Settings', 'buttons-x' ),
 			        array( $this, 'preview_settings_callback' ),
 			        $screen,
 			        'side',
@@ -970,7 +976,7 @@ if( !class_exists( 'Btnsx' ) ) {
 			    );
 			    add_meta_box(
 			        'btnsx-shortcode',
-			        __( 'Buttons X - Short Code', 'btnsx' ),
+			        'Buttons X - ' . __( 'Short Code', 'buttons-x' ),
 			        array( $this, 'shortcode_callback' ),
 			        $screen,
 			        'side',
@@ -1153,7 +1159,7 @@ if( !class_exists( 'Btnsx' ) ) {
         	$step = $key + 1;
     		$gradient_options = array(
 				'id'			=>	$id . $step,
-				'text'			=>	__( $label, 'btnsx' ),
+				'text'			=>	__( $label, 'buttons-x' ),
 				'multiple'		=>	true,
 				'clone_class'	=>	$meta_key,
 				'copy'			=>	true,
@@ -1167,8 +1173,8 @@ if( !class_exists( 'Btnsx' ) ) {
 						'name'			=>	$id,
 						'placeholder'	=>	' ',
 						'tooltip'		=>	array(
-							'color' 		=> __( 'Set gradient stop color.', 'btnsx' ),
-					    	'location' 		=> __( 'Set gradient stop location. Must be between 0 and 100.', 'btnsx' )
+							'color' 		=> __( 'Set gradient stop color.', 'buttons-x' ),
+					    	'location' 		=> __( 'Set gradient stop location. Must be between 0 and 100.', 'buttons-x' )
 						),
 					    'value' 		=> array(
 					    	'color' 		=> $result['color'],
@@ -1209,7 +1215,7 @@ if( !class_exists( 'Btnsx' ) ) {
         	$step = $key + 1;
     		$box_shadow_options = array(
 				'id'			=>	$id . $step,
-				'text'			=>	__( $label, 'btnsx' ),
+				'text'			=>	__( $label, 'buttons-x' ),
 				'multiple'		=>	true,
 				'clone_class'	=>	$meta_key,
 				'copy'			=>	true,
@@ -1222,12 +1228,12 @@ if( !class_exists( 'Btnsx' ) ) {
 						'name'			=>	$id,
 						'placeholder'	=>	' ',
 						'tooltip'		=>	array(
-							'horizontal' 	=> __( 'Set horizontal shadow in pixels.', 'btnsx' ),
-					    	'vertical' 		=> __( 'Set vertical shadow in pixels.', 'btnsx' ),
-					    	'blur' 			=> __( 'Set blur radius in pixels.', 'btnsx' ),
-					    	'spread' 		=> __( 'Set shadow spread in pixels.', 'btnsx' ),
-					    	'position' 		=> __( 'Select shadow postion.', 'btnsx' ),
-					    	'color' 		=> __( 'Set shadow color.', 'btnsx' ),
+							'horizontal' 	=> __( 'Set horizontal shadow in pixels.', 'buttons-x' ),
+					    	'vertical' 		=> __( 'Set vertical shadow in pixels.', 'buttons-x' ),
+					    	'blur' 			=> __( 'Set blur radius in pixels.', 'buttons-x' ),
+					    	'spread' 		=> __( 'Set shadow spread in pixels.', 'buttons-x' ),
+					    	'position' 		=> __( 'Select shadow postion.', 'buttons-x' ),
+					    	'color' 		=> __( 'Set shadow color.', 'buttons-x' ),
 						),
 					    'value' 		=> array(
 					    	'horizontal' 	=> $result['horizontal'],
@@ -1349,7 +1355,7 @@ if( !class_exists( 'Btnsx' ) ) {
 								'new_color'		=>	'#btnsx_opt_box_shadow_hover1_color'
 							),
 		        		);
-			        	$box_shadow_options[] = $this->box_shadow_options( $post->ID, $shadow_key, $shadow_id, __( 'Normal', 'btnsx' ), 0, $fields );
+			        	$box_shadow_options[] = $this->box_shadow_options( $post->ID, $shadow_key, $shadow_id, __( 'Normal', 'buttons-x' ), 0, $fields );
 			        }
 			        $shadow_key_hover = 'btnsx_box_shadow_hover';
 			        $shadow_id_hover  = 'btnsx_opt_box_shadow_hover';
@@ -1401,10 +1407,10 @@ if( !class_exists( 'Btnsx' ) ) {
 								'new_color'		=>	'#btnsx_opt_box_shadow_normal1_color'
 							),
 		        		);
-			        	$box_shadow_options[] = $this->box_shadow_options( $post->ID, $shadow_key_hover, $shadow_id_hover, __( 'Hover', 'btnsx' ), 0, $fields );
+			        	$box_shadow_options[] = $this->box_shadow_options( $post->ID, $shadow_key_hover, $shadow_id_hover, __( 'Hover', 'buttons-x' ), 0, $fields );
 			        }
 					$box_shadow_options[] = array(
-						'text'		=>	__( 'CSS', 'btnsx' ),
+						'text'		=>	__( 'CSS', 'buttons-x' ),
 						'elements'		=> array(
 							array(
 								'type'			=>	'pro-banner'
@@ -1416,18 +1422,18 @@ if( !class_exists( 'Btnsx' ) ) {
 					$gradient_options = array();
 					// type
 					$gradient_options[] = array(
-						'text'		=>	__( 'Type', 'btnsx' ),
+						'text'		=>	__( 'Type', 'buttons-x' ),
 						'id'		=>	'btnsx_gradient_type_normal_collapsible',
 						'elements'		=> array(
 							array(
 								'type'			=>	'select',
 								'id'			=>	'btnsx_opt_gradient_type_normal',
 								'name'			=>	'btnsx_opt_gradient_type_normal',
-								'label'			=>	__( 'Normal', 'btnsx' ),
-								'tooltip'		=>	__( 'Select gradient type.', 'btnsx' ),
+								'label'			=>	__( 'Normal', 'buttons-x' ),
+								'tooltip'		=>	__( 'Select gradient type.', 'buttons-x' ),
 								'options'		=>	array(
-									'vertical'		=>	__( 'Vertical ↓', 'btnsx' ),
-									'none'			=>	__( '[ 4 more types are available in Pro version ]', 'btnsx' )
+									'vertical'		=>	__( 'Vertical ↓', 'buttons-x' ),
+									'none'			=>	__( '[ 4 more types are available in Pro version ]', 'buttons-x' )
 								),
 								'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_gradient_type_normal' ) ),
 								'copy'			=>	true,
@@ -1442,11 +1448,11 @@ if( !class_exists( 'Btnsx' ) ) {
 								'type'			=>	'select',
 								'id'			=>	'btnsx_opt_gradient_type_hover',
 								'name'			=>	'btnsx_opt_gradient_type_hover',
-								'label'			=>	__( 'Hover', 'btnsx' ),
-								'tooltip'		=>	__( 'Select gradient type for when button will be hovered.', 'btnsx' ),
+								'label'			=>	__( 'Hover', 'buttons-x' ),
+								'tooltip'		=>	__( 'Select gradient type for when button will be hovered.', 'buttons-x' ),
 								'options'		=>	array(
-									'vertical'			=>	__( 'Vertical ↓', 'btnsx' ),
-									'none'				=>	__( '[ 4 more types are available in Pro version ]', 'btnsx' )
+									'vertical'			=>	__( 'Vertical ↓', 'buttons-x' ),
+									'none'				=>	__( '[ 4 more types are available in Pro version ]', 'buttons-x' )
 								),
 								'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_gradient_type_hover' ) ),
 								'copy'			=>	true,
@@ -1496,7 +1502,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							),
 							'copy_class'		=>	'gradient-normal-copy',
 		        		);
-			        	$gradient_options[] 	= $this->gradient_options( $post->ID, $gradient_key, $gradient_id, __( 'Stop (Normal)', 'btnsx' ), 0, $fields );
+			        	$gradient_options[] 	= $this->gradient_options( $post->ID, $gradient_key, $gradient_id, __( 'Stop (Normal)', 'buttons-x' ), 0, $fields );
 			        }
 			        $gradient_key_hover = 'btnsx_gradient_stop_hover';
 			        $gradient_id_hover  = 'btnsx_opt_gradient_stop_hover';
@@ -1518,7 +1524,7 @@ if( !class_exists( 'Btnsx' ) ) {
 								),
 								'copy_class'		=>	'gradient-hover-copy',
 			        		);
-			        		$gradient_options[] 	= $this->gradient_options( $post->ID, $gradient_key_hover, $gradient_id_hover, __( 'Stop (Hover)', 'btnsx' ), $key, $fields );
+			        		$gradient_options[] 	= $this->gradient_options( $post->ID, $gradient_key_hover, $gradient_id_hover, __( 'Stop (Hover)', 'buttons-x' ), $key, $fields );
 			        		$gStep++;
 			        	}
 			        } else {
@@ -1535,11 +1541,11 @@ if( !class_exists( 'Btnsx' ) ) {
 							),
 							'copy_class'		=>	'gradient-hover-copy',
 		        		);
-			        	$gradient_options[] 	= $this->gradient_options( $post->ID, $gradient_key_hover, $gradient_id_hover, __( 'Stop (Hover)', 'btnsx' ), 0, $fields );
+			        	$gradient_options[] 	= $this->gradient_options( $post->ID, $gradient_key_hover, $gradient_id_hover, __( 'Stop (Hover)', 'buttons-x' ), 0, $fields );
 			        }
 			        // css
 					$gradient_options[] = array(
-						'text'		=>	__( 'CSS', 'btnsx' ),
+						'text'		=>	__( 'CSS', 'buttons-x' ),
 						'elements'		=> array(
 							array(
 								'type'			=>	'pro-banner'
@@ -1562,7 +1568,7 @@ if( !class_exists( 'Btnsx' ) ) {
         	$btnsx_default_options = array(
 				array(
 					'icon_class'	=>	'fa fa-magic',
-					'text'			=>	__( 'Animations', 'btnsx' ),
+					'text'			=>	__( 'Animations', 'buttons-x' ),
 					'group'			=>	'advanced',
 					'elements'		=>	array(
 						array(
@@ -1571,7 +1577,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					),
 					'inner_group'	=>	array(
 						array(
-							'text'			=>	__( 'Reveal Animations', 'btnsx' ),
+							'text'			=>	__( 'Reveal Animations', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -1579,7 +1585,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Hover Animations', 'btnsx' ),
+							'text'			=>	__( 'Hover Animations', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -1590,11 +1596,11 @@ if( !class_exists( 'Btnsx' ) ) {
 				),
 				array(
 					'icon_class'	=>	'fa fa-image',
-					'text'			=>	__( 'Background', 'btnsx' ),
+					'text'			=>	__( 'Background', 'buttons-x' ),
 					'group'			=>	'style',
 					'inner_group'	=>	array(
 						array(
-							'text'			=>	__( 'Color', 'btnsx' ),
+							'text'			=>	__( 'Color', 'buttons-x' ),
 							'id'			=>	'btnsx_background_1',
 							'elements'		=> array(
 								array(
@@ -1603,8 +1609,8 @@ if( !class_exists( 'Btnsx' ) ) {
 									'name'			=>	'btnsx_opt_background_color',
 									'placeholder'	=>	' ',
 									'tooltip'			=>	array(
-										'normal'		=>	__( 'Set button background color.', 'btnsx' ),
-										'hover'			=>	__( 'Set button background color for when the button will be hovered.', 'btnsx' )
+										'normal'		=>	__( 'Set button background color.', 'buttons-x' ),
+										'hover'			=>	__( 'Set button background color for when the button will be hovered.', 'buttons-x' )
 									),
 									'value'			=>	array(
 										'normal'		=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_background_color', 'field2' => 'normal', 'value' => '#f4f4f4' ) ),
@@ -1631,7 +1637,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Image', 'btnsx' ),
+							'text'			=>	__( 'Image', 'buttons-x' ),
 							'id'			=>	'btnsx_background_image_collapsible',
 							'elements'		=> array(
 								array(
@@ -1643,11 +1649,11 @@ if( !class_exists( 'Btnsx' ) ) {
 				),
 				array(
 					'icon_class'	=>	'fa fa-square-o',
-					'text'			=>	__( 'Border', 'btnsx' ),
+					'text'			=>	__( 'Border', 'buttons-x' ),
 					'group'			=>	'style',
 					'inner_group'	=>	array(
 						array(
-							'text'			=>	__( 'Normal', 'btnsx' ),
+							'text'			=>	__( 'Normal', 'buttons-x' ),
 							'id'			=>	'btnsx_border_normal_collapsible',
 							'copy'			=>	true, // copy enabled
 							'copy_text'		=>	'hover', // copy to hover
@@ -1667,13 +1673,13 @@ if( !class_exists( 'Btnsx' ) ) {
 								    'name'			=>	'btnsx_opt_border_normal',
 								    'placeholder'	=>	' ',
 								    'tooltip'		=>	array(
-										'size'			=>	__( 'Set border size in pixels.', 'btnsx' ),
-										'style'			=>	__( 'Set border style.', 'btnsx' ),
-										'color'			=>	__( 'Set border color.', 'btnsx' ),
-										'top'			=>	__( 'Enable/Disable top border.', 'btnsx' ),
-										'bottom'		=>	__( 'Enable/Disable bottom border.', 'btnsx' ),
-										'left'			=>	__( 'Enable/Disable left border.', 'btnsx' ),
-										'right'			=>	__( 'Enable/Disable right border.', 'btnsx' )
+										'size'			=>	__( 'Set border size in pixels.', 'buttons-x' ),
+										'style'			=>	__( 'Set border style.', 'buttons-x' ),
+										'color'			=>	__( 'Set border color.', 'buttons-x' ),
+										'top'			=>	__( 'Enable/Disable top border.', 'buttons-x' ),
+										'bottom'		=>	__( 'Enable/Disable bottom border.', 'buttons-x' ),
+										'left'			=>	__( 'Enable/Disable left border.', 'buttons-x' ),
+										'right'			=>	__( 'Enable/Disable right border.', 'buttons-x' )
 									),
 								    'value' 		=> array(
 								    	'size' 			=> $this->meta_values( $post->ID, array( 'field' => 'btnsx_border_normal', 'field2' => 'size', 'value' => '0' ) ),
@@ -1688,7 +1694,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Hover', 'btnsx' ),
+							'text'			=>	__( 'Hover', 'buttons-x' ),
 							'id'			=>	'btnsx_border_hover_collapsible',
 							'copy'			=>	true,
 							'copy_text'		=>	'normal',
@@ -1708,13 +1714,13 @@ if( !class_exists( 'Btnsx' ) ) {
 								    'name'			=>	'btnsx_opt_border_hover',
 								    'placeholder'	=>	' ',
 								    'tooltip'		=>	array(
-										'size'			=>	__( 'Set border size in pixels for when button is hovered.', 'btnsx' ),
-										'style'			=>	__( 'Set border style for when button is hovered.', 'btnsx' ),
-										'color'			=>	__( 'Set border colour for when button is hovered.', 'btnsx' ),
-										'top'			=>	__( 'Enable/Disable top border.', 'btnsx' ),
-										'bottom'		=>	__( 'Enable/Disable bottom border.', 'btnsx' ),
-										'left'			=>	__( 'Enable/Disable left border.', 'btnsx' ),
-										'right'			=>	__( 'Enable/Disable right border.', 'btnsx' )
+										'size'			=>	__( 'Set border size in pixels for when button is hovered.', 'buttons-x' ),
+										'style'			=>	__( 'Set border style for when button is hovered.', 'buttons-x' ),
+										'color'			=>	__( 'Set border colour for when button is hovered.', 'buttons-x' ),
+										'top'			=>	__( 'Enable/Disable top border.', 'buttons-x' ),
+										'bottom'		=>	__( 'Enable/Disable bottom border.', 'buttons-x' ),
+										'left'			=>	__( 'Enable/Disable left border.', 'buttons-x' ),
+										'right'			=>	__( 'Enable/Disable right border.', 'buttons-x' )
 									),
 								    'value' 		=> array(
 								    	'size' 			=> $this->meta_values( $post->ID, array( 'field' => 'btnsx_border_hover', 'field2' => 'size', 'value' => '0' ) ),
@@ -1729,7 +1735,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Radius (Normal) ', 'btnsx' ),
+							'text'			=>	__( 'Radius (Normal) ', 'buttons-x' ),
 							'id'			=>	'btnsx_border_normal_radius_collapsible',
 							'copy'			=>	true,
 							'copy_text'		=>	'hover',
@@ -1744,10 +1750,10 @@ if( !class_exists( 'Btnsx' ) ) {
 								    'id'		=>	'btnsx_opt_border_normal_radius',
 								    'name'		=>	'btnsx_opt_border_normal_radius',
 								    'tooltip'		=>	array(
-										'top_left'			=>	__( 'Set top left border radius in pixels.', 'btnsx' ),
-										'top_right'			=>	__( 'Set top right border radius in pixels.', 'btnsx' ),
-										'bottom_left'		=>	__( 'Set bottom left border radius in pixels.', 'btnsx' ),
-										'bottom_right'		=>	__( 'Set bottom right border radius in pixels.', 'btnsx' )
+										'top_left'			=>	__( 'Set top left border radius in pixels.', 'buttons-x' ),
+										'top_right'			=>	__( 'Set top right border radius in pixels.', 'buttons-x' ),
+										'bottom_left'		=>	__( 'Set bottom left border radius in pixels.', 'buttons-x' ),
+										'bottom_right'		=>	__( 'Set bottom right border radius in pixels.', 'buttons-x' )
 									),
 								    'value' 	=> array(
 								    	'top_left' 		=> $this->meta_values( $post->ID, array( 'field' => 'btnsx_border_normal_radius', 'field2' => 'top_left', 'value' => '0' ) ),
@@ -1759,7 +1765,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Radius (Hover) ', 'btnsx' ),
+							'text'			=>	__( 'Radius (Hover) ', 'buttons-x' ),
 							'id'			=>	'btnsx_border_hover_radius_collapsible',
 							'copy'			=>	true,
 							'copy_text'		=>	'normal',
@@ -1774,10 +1780,10 @@ if( !class_exists( 'Btnsx' ) ) {
 								    'id'		=>	'btnsx_opt_border_hover_radius',
 								    'name'		=>	'btnsx_opt_border_hover_radius',
 								    'tooltip'		=>	array(
-										'top_left'			=>	__( 'Set top left border radius in pixels for when button is hovered.', 'btnsx' ),
-										'top_right'			=>	__( 'Set top right border radius in pixels for when button is hovered.', 'btnsx' ),
-										'bottom_left'		=>	__( 'Set bottom left border radius in pixels for when button is hovered.', 'btnsx' ),
-										'bottom_right'		=>	__( 'Set bottom right border radius in pixels for when button is hovered.', 'btnsx' )
+										'top_left'			=>	__( 'Set top left border radius in pixels for when button is hovered.', 'buttons-x' ),
+										'top_right'			=>	__( 'Set top right border radius in pixels for when button is hovered.', 'buttons-x' ),
+										'bottom_left'		=>	__( 'Set bottom left border radius in pixels for when button is hovered.', 'buttons-x' ),
+										'bottom_right'		=>	__( 'Set bottom right border radius in pixels for when button is hovered.', 'buttons-x' )
 									),
 								    'value' 	=> array(
 								    	'top_left' 		=> $this->meta_values( $post->ID, array( 'field' => 'btnsx_border_hover_radius', 'field2' => 'top_left', 'value' => '0' ) ),
@@ -1792,14 +1798,14 @@ if( !class_exists( 'Btnsx' ) ) {
 				),
 				array(
         			'icon_class'	=>	'fa fa-columns',
-        			'text'			=>	__( 'Layout', 'btnsx' ),
+        			'text'			=>	__( 'Layout', 'buttons-x' ),
         			'group'			=>	'style',
         			'elements'		=> array(
 						array(
 							'type'			=>	'hidden',
 							'id'			=>	'btnsx_opt_id',
 							'name'			=>	'btnsx_opt_id',
-							'label'			=>	__( 'ID', 'btnsx' ),
+							'label'			=>	__( 'ID', 'buttons-x' ),
 							'value'			=>	$post->ID,
 						),
 						array(
@@ -1807,8 +1813,8 @@ if( !class_exists( 'Btnsx' ) ) {
 							'id'			=>	'btnsx_opt_width',
 							'name'			=>	'btnsx_opt_width',
 							'placeholder'	=>	' ',
-							'label'			=>	__( 'Width', 'btnsx' ),
-							'tooltip'		=>	__( 'Add button width in pixels. This gives the button a fixed width. Clearing the field removes fixed width.', 'btnsx' ),
+							'label'			=>	__( 'Width', 'buttons-x' ),
+							'tooltip'		=>	__( 'Add button width in pixels. This gives the button a fixed width. Clearing the field removes fixed width.', 'buttons-x' ),
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_width' ) )
 						),
 						array(
@@ -1816,23 +1822,23 @@ if( !class_exists( 'Btnsx' ) ) {
 							'id'			=>	'btnsx_opt_height',
 							'name'			=>	'btnsx_opt_height',
 							'placeholder'	=>	' ',
-							'label'			=>	__( 'Height', 'btnsx' ),
-							'tooltip'		=>	__( 'Add button height in pixels. This gives the button a fixed height. Clearing the field removes fixed height.', 'btnsx' ),
+							'label'			=>	__( 'Height', 'buttons-x' ),
+							'tooltip'		=>	__( 'Add button height in pixels. This gives the button a fixed height. Clearing the field removes fixed height.', 'buttons-x' ),
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_height' ) )
 						),
 						array(
 							'type'			=>	'select',
 							'id'			=>	'btnsx_opt_size',
 							'name'			=>	'btnsx_opt_size',
-							'placeholder'	=>	__( 'Choose size', 'btnsx' ),
-							'label'			=>	__( 'Size', 'btnsx' ),
-							'tooltip'		=>	__( 'These are some preset button sizes. Changing the size value automatically adjusts the font size and padding values of primary text.', 'btnsx' ),
+							'placeholder'	=>	__( 'Choose size', 'buttons-x' ),
+							'label'			=>	__( 'Size', 'buttons-x' ),
+							'tooltip'		=>	__( 'These are some preset button sizes. Changing the size value automatically adjusts the font size and padding values of primary text.', 'buttons-x' ),
 							'options'		=>	array(
-								'huge'	=> __( 'Huge', 'btnsx' ),
-								'large'	=> __( 'Large', 'btnsx' ),
-								'wide'	=> __( 'Wide', 'btnsx' ),
-								'small'	=> __( 'Small', 'btnsx' ),
-								'mini'	=> __( 'Mini', 'btnsx' )
+								'huge'	=> __( 'Huge', 'buttons-x' ),
+								'large'	=> __( 'Large', 'buttons-x' ),
+								'wide'	=> __( 'Wide', 'buttons-x' ),
+								'small'	=> __( 'Small', 'buttons-x' ),
+								'mini'	=> __( 'Mini', 'buttons-x' )
 							),
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_size' ) )
 						),
@@ -1840,8 +1846,8 @@ if( !class_exists( 'Btnsx' ) ) {
 							'type'			=>	'checkbox',
 							'id'			=>	'btnsx_opt_disabled',
 							'name'			=>	'btnsx_opt_disabled',
-							'label'			=>	__( 'Disabled', 'btnsx' ),
-							'tooltip'		=>	__( 'Make the button disabled by checking this field. Clicking the button won\'t be possible once disabled.', 'btnsx' ),
+							'label'			=>	__( 'Disabled', 'buttons-x' ),
+							'tooltip'		=>	__( 'Make the button disabled by checking this field. Clicking the button won\'t be possible once disabled.', 'buttons-x' ),
 							'class'			=>	'btnsx-checkbox',
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_disabled', 'value' => '0' ) )
 						),
@@ -1849,8 +1855,8 @@ if( !class_exists( 'Btnsx' ) ) {
 							'type'			=>	'checkbox',
 							'id'			=>	'btnsx_opt_embossed',
 							'name'			=>	'btnsx_opt_embossed',
-							'label'			=>	__( 'Embossed', 'btnsx' ),
-							'tooltip'		=>	__( 'Checking this field gives an embossed effect to button.', 'btnsx' ),
+							'label'			=>	__( 'Embossed', 'buttons-x' ),
+							'tooltip'		=>	__( 'Checking this field gives an embossed effect to button.', 'buttons-x' ),
 							'class'			=>	'btnsx-checkbox',
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_embossed', 'value' => '0' ) )
 						),
@@ -1858,8 +1864,8 @@ if( !class_exists( 'Btnsx' ) ) {
 							'type'			=>	'checkbox',
 							'id'			=>	'btnsx_opt_full_width',
 							'name'			=>	'btnsx_opt_full_width',
-							'label'			=>	__( 'Full Width', 'btnsx' ),
-							'tooltip'		=>	__( 'Make the button cover the entire width of the container.', 'btnsx' ),
+							'label'			=>	__( 'Full Width', 'buttons-x' ),
+							'tooltip'		=>	__( 'Make the button cover the entire width of the container.', 'buttons-x' ),
 							'class'			=>	'btnsx-checkbox',
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_full_width', 'value' => '0' ) )
 						),
@@ -1867,8 +1873,8 @@ if( !class_exists( 'Btnsx' ) ) {
 							'type'			=>	'checkbox',
 							'id'			=>	'btnsx_opt_container',
 							'name'			=>	'btnsx_opt_container',
-							'label'			=>	__( 'Container', 'btnsx' ),
-							'tooltip'		=>	__( 'Add a container div to button.', 'btnsx' ),
+							'label'			=>	__( 'Container', 'buttons-x' ),
+							'tooltip'		=>	__( 'Add a container div to button.', 'buttons-x' ),
 							'class'			=>	'btnsx-checkbox',
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_container', 'value' => '0' ) )
 						),
@@ -1876,8 +1882,8 @@ if( !class_exists( 'Btnsx' ) ) {
 							'type'			=>	'checkbox',
 							'id'			=>	'btnsx_opt_wrap_center',
 							'name'			=>	'btnsx_opt_wrap_center',
-							'label'			=>	__( 'Wrap Center', 'btnsx' ),
-							'tooltip'		=>	__( 'Makes the button centered. Very helpful when you want the button to be centered inside a big container.', 'btnsx' ),
+							'label'			=>	__( 'Wrap Center', 'buttons-x' ),
+							'tooltip'		=>	__( 'Makes the button centered. Very helpful when you want the button to be centered inside a big container.', 'buttons-x' ),
 							'class'			=>	'btnsx-checkbox',
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_wrap_center', 'value' => '0' ) )
 						)
@@ -1885,20 +1891,20 @@ if( !class_exists( 'Btnsx' ) ) {
 				),
 				array(
         			'icon_class'	=>	'fa fa-link',
-        			'text'			=>	__( 'Link', 'btnsx' ),
+        			'text'			=>	__( 'Link', 'buttons-x' ),
         			'group'			=>	'content',
         			'elements'		=> array(
 						array(
 							'type'			=>	'select',
 							'id'			=>	'btnsx_opt_link_type',
 							'name'			=>	'btnsx_opt_link_type',
-							'placeholder'	=>	__( 'Choose type', 'btnsx' ),
-							'label'			=>	__( 'Type', 'btnsx' ),
-							'tooltip'		=>	__( 'Choose the type of link required for the button.', 'btnsx' ),
+							'placeholder'	=>	__( 'Choose type', 'buttons-x' ),
+							'label'			=>	__( 'Type', 'buttons-x' ),
+							'tooltip'		=>	__( 'Choose the type of link required for the button.', 'buttons-x' ),
 							'options'		=>	array(
-								'none'				=> __( 'None', 'btnsx' ),
-								'url'				=> __( 'URL', 'btnsx' ),
-								'pro'				=> __( '[ 23 more link types supported in PRO version. ]', 'btnsx' )
+								'none'				=> __( 'None', 'buttons-x' ),
+								'url'				=> __( 'URL', 'buttons-x' ),
+								'pro'				=> __( '[ 23 more link types supported in PRO version. ]', 'buttons-x' )
 							),
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_link_type' ) )
 						),
@@ -1906,12 +1912,12 @@ if( !class_exists( 'Btnsx' ) ) {
 							'type'			=>	'select',
 							'id'			=>	'btnsx_opt_link_target',
 							'name'			=>	'btnsx_opt_link_target',
-							'placeholder'	=>	__( 'Choose target', 'btnsx' ),
-							'label'			=>	__( 'Target', 'btnsx' ),
-							'tooltip'		=>	__( 'Where would you like to open the new link? New window or Same Window?', 'btnsx' ),
+							'placeholder'	=>	__( 'Choose target', 'buttons-x' ),
+							'label'			=>	__( 'Target', 'buttons-x' ),
+							'tooltip'		=>	__( 'Where would you like to open the new link? New window or Same Window?', 'buttons-x' ),
 							'options'		=>	array(
-								'new_window'	=> __( 'New Window', 'btnsx' ),
-								'same_window'	=> __( 'Same Window', 'btnsx' )
+								'new_window'	=> __( 'New Window', 'buttons-x' ),
+								'same_window'	=> __( 'Same Window', 'buttons-x' )
 							),
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_link_target' ) )
 						),
@@ -1920,15 +1926,15 @@ if( !class_exists( 'Btnsx' ) ) {
 							'id'			=>	'btnsx_opt_link',
 							'name'			=>	'btnsx_opt_link',
 							'placeholder'	=>	' ',
-							'label'			=>	__( 'URL', 'btnsx' ),
-							'tooltip'		=>	__( 'Add a custom URL.', 'btnsx' ),
+							'label'			=>	__( 'URL', 'buttons-x' ),
+							'tooltip'		=>	__( 'Add a custom URL.', 'buttons-x' ),
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_link' ) )
 						)
 					)
         		),
 				array(
         			'icon_class'	=>	'fa fa-arrows',
-        			'text'			=>	__( 'Margin', 'btnsx' ),
+        			'text'			=>	__( 'Margin', 'buttons-x' ),
         			'group'			=>	'style',
         			'elements'		=> array(
 						array(
@@ -1937,11 +1943,11 @@ if( !class_exists( 'Btnsx' ) ) {
 							'name'			=>	'btnsx_opt_margin',
 							'placeholder'	=>	'',
 							'tooltip'		=>	array(
-								'all'			=>	__( 'Set margin for all sides. This field is not saved. It should be used to apply same margin value to all sides.', 'btnsx' ),
-								'top'			=>	__( 'Set top margin for button.', 'btnsx' ),
-								'bottom'		=>	__( 'Set bottom margin for button.', 'btnsx' ),
-								'left'			=>	__( 'Set left margin for button.', 'btnsx' ),
-								'right'			=>	__( 'Set right margin for button.', 'btnsx' ),
+								'all'			=>	__( 'Set margin for all sides. This field is not saved. It should be used to apply same margin value to all sides.', 'buttons-x' ),
+								'top'			=>	__( 'Set top margin for button.', 'buttons-x' ),
+								'bottom'		=>	__( 'Set bottom margin for button.', 'buttons-x' ),
+								'left'			=>	__( 'Set left margin for button.', 'buttons-x' ),
+								'right'			=>	__( 'Set right margin for button.', 'buttons-x' ),
 							),
 							'value'			=>	array(
 								'top'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_margin', 'field2' => 'top', 'value' => '0' ) ),
@@ -1955,7 +1961,7 @@ if( !class_exists( 'Btnsx' ) ) {
         		),
         		array(
         			'icon_class'	=>	'fa fa-arrows-alt',
-        			'text'			=>	__( 'Padding', 'btnsx' ),
+        			'text'			=>	__( 'Padding', 'buttons-x' ),
         			'group'			=>	'style',
 					'elements'		=> array(
 						array(
@@ -1964,11 +1970,11 @@ if( !class_exists( 'Btnsx' ) ) {
 							'name'			=>	'btnsx_opt_padding',
 							'placeholder'	=>	'',
 							'tooltip'		=>	array(
-								'all'			=>	__( 'Set padding for all sides. This field is not saved. It should be used to apply same padding value to all sides.', 'btnsx' ),
-								'top'			=>	__( 'Set top padding for button.', 'btnsx' ),
-								'bottom'		=>	__( 'Set bottom padding for button.', 'btnsx' ),
-								'left'			=>	__( 'Set left padding for button.', 'btnsx' ),
-								'right'			=>	__( 'Set right padding for button.', 'btnsx' ),
+								'all'			=>	__( 'Set padding for all sides. This field is not saved. It should be used to apply same padding value to all sides.', 'buttons-x' ),
+								'top'			=>	__( 'Set top padding for button.', 'buttons-x' ),
+								'bottom'		=>	__( 'Set bottom padding for button.', 'buttons-x' ),
+								'left'			=>	__( 'Set left padding for button.', 'buttons-x' ),
+								'right'			=>	__( 'Set right padding for button.', 'buttons-x' ),
 							),
 							'value'			=>	array(
 								'top'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_padding', 'field2' => 'top', 'value' => '10' ) ),
@@ -1981,7 +1987,7 @@ if( !class_exists( 'Btnsx' ) ) {
         		),
 				array(
         			'icon_class'	=>	'fa fa-css3',
-        			'text'			=>	__( 'Custom CSS', 'btnsx' ),
+        			'text'			=>	__( 'Custom CSS', 'buttons-x' ),
         			'group'			=>	'expert',
 					'elements'		=> array(
 						array(
@@ -1991,7 +1997,7 @@ if( !class_exists( 'Btnsx' ) ) {
         		),
         		array(
         			'icon_class'	=>	'fa fa-code',
-        			'text'			=>	__( 'Custom JS', 'btnsx' ),
+        			'text'			=>	__( 'Custom JS', 'buttons-x' ),
         			'group'			=>	'expert',
 					'elements'		=> array(
 						array(
@@ -2001,7 +2007,7 @@ if( !class_exists( 'Btnsx' ) ) {
         		),
         		array(
 					'icon_class'	=>	'fa fa-adjust',
-					'text'			=>	__( 'Gradient', 'btnsx' ),
+					'text'			=>	__( 'Gradient', 'buttons-x' ),
 					'group'			=>	'advanced',
 					'elements'			=>	array(
         				array(
@@ -2012,7 +2018,7 @@ if( !class_exists( 'Btnsx' ) ) {
 				),
         		array(
 					'icon_class'	=>	'fa fa-rocket',
-					'text'			=>	__( 'Icon', 'btnsx' ),
+					'text'			=>	__( 'Icon', 'buttons-x' ),
 					'group'			=>	'style',
 					'elements'		=>	array(
 						array(
@@ -2021,7 +2027,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					),
 					'inner_group'	=>	array(
 						array(
-							'text'			=>	__( 'Main', 'btnsx' ),
+							'text'			=>	__( 'Main', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2029,7 +2035,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Color', 'btnsx' ),
+							'text'			=>	__( 'Color', 'buttons-x' ),
 							'id'			=>	'btnsx_icon_color_collapsible',
 							'elements'		=>	array(
 								array(
@@ -2038,7 +2044,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Image', 'btnsx' ),
+							'text'			=>	__( 'Image', 'buttons-x' ),
 							'id'			=>	'btnsx_icon_image_collapsible',
 							'elements'		=>	array(
 								array(
@@ -2047,7 +2053,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Image Position', 'btnsx' ),
+							'text'			=>	__( 'Image Position', 'buttons-x' ),
 							'id'			=>	'btnsx-icon-image-position-tab',
 							'elements'		=> array(
 								array(
@@ -2056,7 +2062,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Shadow', 'btnsx' ),
+							'text'			=>	__( 'Shadow', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2064,7 +2070,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Divider', 'btnsx' ),
+							'text'			=>	__( 'Divider', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2072,7 +2078,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Animation', 'btnsx' ),
+							'text'			=>	__( 'Animation', 'buttons-x' ),
 							'elements'		=>	array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2080,7 +2086,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Padding', 'btnsx' ),
+							'text'			=>	__( 'Padding', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2091,41 +2097,41 @@ if( !class_exists( 'Btnsx' ) ) {
 				),
 				array(
 					'icon_class'	=>	'fa fa-pencil-square',
-					'text'			=>	__( 'Primary Text', 'btnsx' ),
+					'text'			=>	__( 'Primary Text', 'buttons-x' ),
 					'group'			=>	'content',
 					'inner_group'	=>	array(
 						array(
-							'text'			=>	__( 'Text', 'btnsx' ),
+							'text'			=>	__( 'Text', 'buttons-x' ),
 							'id'			=>	'btnsx_primary_text_1',
 							'elements'		=>	array(
 								array(
 									'type'			=>	'text',
 									'id'			=>	'btnsx_opt_text',
 									'name'			=>	'btnsx_opt_text',
-									'label'			=>	__( 'Text', 'btnsx' ),
-									'tooltip'		=>	__( 'Add main button text.', 'btnsx' ),
+									'label'			=>	__( 'Text', 'buttons-x' ),
+									'tooltip'		=>	__( 'Add main button text.', 'buttons-x' ),
 									'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_text', 'value' => 'Button' ) )
 								),
 								array(
 									'type'			=>	'select',
 									'id'			=>	'btnsx_opt_text_transform',
 									'name'			=>	'btnsx_opt_text_transform',
-									'placeholder'	=>	__( 'Choose option', 'btnsx' ),
-									'label'			=>	__( 'Transform', 'btnsx' ),
-									'tooltip'		=>	__( 'This field controls the capitalization of text.', 'btnsx' ),
+									'placeholder'	=>	__( 'Choose option', 'buttons-x' ),
+									'label'			=>	__( 'Transform', 'buttons-x' ),
+									'tooltip'		=>	__( 'This field controls the capitalization of text.', 'buttons-x' ),
 									'options'		=>	array(
-										''				=> __( 'None', 'btnsx' ),
-										'capitalize'	=> __( 'Capitalize', 'btnsx' ),
-										'uppercase'		=> __( 'Uppercase', 'btnsx' ),
-										'lowercase'		=> __( 'Lowercase', 'btnsx' ),
-										'inherit'		=> __( 'Inherit', 'btnsx' )
+										''				=> __( 'None', 'buttons-x' ),
+										'capitalize'	=> __( 'Capitalize', 'buttons-x' ),
+										'uppercase'		=> __( 'Uppercase', 'buttons-x' ),
+										'lowercase'		=> __( 'Lowercase', 'buttons-x' ),
+										'inherit'		=> __( 'Inherit', 'buttons-x' )
 									),
 									'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_text_transform' ) )
 								)
 							)
 						),
 						array(
-							'text'			=>	__( 'Font', 'btnsx' ),
+							'text'			=>	__( 'Font', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 	    							'type'			=>	'font',
@@ -2133,10 +2139,10 @@ if( !class_exists( 'Btnsx' ) ) {
 	    							'name'			=>	'btnsx_opt_text_font',
 	    							'placeholder'	=>	' ',
 	    							'tooltip'		=>	array(
-	    								'size'			=>	__( 'Add font size in pixels. This will make your primary text bigger or smaller depending up on the value specified.', 'btnsx' ),
-	    								'style'			=>	__( 'Select font style. This will style your primary text. Normal means as it is, italic means the text will appear slanted, oblique makes the text slanted + bold and inherit will get the style from parent element.', 'btnsx' ),
-	    								'weight'		=>	__( 'Select font weight. This adds weight to text like bold makes the text stronger. 100 is lightest and 900 is boldest.', 'btnsx' ),
-	    								'family'		=>	__( 'Select font family. Choose from among 100\'s of Google Web Fonts to style primary text.', 'btnsx' )
+	    								'size'			=>	__( 'Add font size in pixels. This will make your primary text bigger or smaller depending up on the value specified.', 'buttons-x' ),
+	    								'style'			=>	__( 'Select font style. This will style your primary text. Normal means as it is, italic means the text will appear slanted, oblique makes the text slanted + bold and inherit will get the style from parent element.', 'buttons-x' ),
+	    								'weight'		=>	__( 'Select font weight. This adds weight to text like bold makes the text stronger. 100 is lightest and 900 is boldest.', 'buttons-x' ),
+	    								'family'		=>	__( 'Select font family. Choose from among 100\'s of Google Web Fonts to style primary text.', 'buttons-x' )
 	    							),
 	    							'value'			=>	array(
 	    								'size'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_text_font', 'field2' => 'size', 'value' => '21' ) ),
@@ -2148,7 +2154,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Color', 'btnsx' ),
+							'text'			=>	__( 'Color', 'buttons-x' ),
 							'id'			=>	'btnsx_text_color_collapsible',
 							'elements'		=> array(
 								array(
@@ -2157,8 +2163,8 @@ if( !class_exists( 'Btnsx' ) ) {
 	    							'name'			=>	'btnsx_opt_text_color',
 	    							'placeholder'	=>	' ',
 	    							'tooltip'		=>	array(
-	    								'normal'		=>	__( 'Select text color.', 'btnsx' ),
-	    								'hover'			=>	__( 'Select text color for when button is hovered.', 'btnsx' )
+	    								'normal'		=>	__( 'Select text color.', 'buttons-x' ),
+	    								'hover'			=>	__( 'Select text color for when button is hovered.', 'buttons-x' )
 	    							),
 	    							'value'			=>	array(
 	    								'normal'		=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_text_color', 'field2' => 'normal', 'value' => '#999' ) ),
@@ -2185,7 +2191,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Shadow', 'btnsx' ),
+							'text'			=>	__( 'Shadow', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2193,7 +2199,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Padding', 'btnsx' ),
+							'text'			=>	__( 'Padding', 'buttons-x' ),
 							'elements'		=> array(
 								array(
         							'type'			=>	'trbl',
@@ -2201,11 +2207,11 @@ if( !class_exists( 'Btnsx' ) ) {
         							'name'			=>	'btnsx_opt_text_padding',
         							'placeholder'	=>	'',
         							'tooltip'		=>	array(
-        								'all'			=>	__( 'Set padding for all sides. This field is not saved. It should be used to apply same padding value to all sides.', 'btnsx' ),
-        								'top'			=>	__( 'Set top padding for primary text.', 'btnsx' ),
-        								'bottom'		=>	__( 'Set bottom padding for primary text.', 'btnsx' ),
-        								'left'			=>	__( 'Set left padding for primary text.', 'btnsx' ),
-        								'right'			=>	__( 'Set right padding for primary text.', 'btnsx' ),
+        								'all'			=>	__( 'Set padding for all sides. This field is not saved. It should be used to apply same padding value to all sides.', 'buttons-x' ),
+        								'top'			=>	__( 'Set top padding for primary text.', 'buttons-x' ),
+        								'bottom'		=>	__( 'Set bottom padding for primary text.', 'buttons-x' ),
+        								'left'			=>	__( 'Set left padding for primary text.', 'buttons-x' ),
+        								'right'			=>	__( 'Set right padding for primary text.', 'buttons-x' ),
         							),
         							'value'			=>	array(
 	    								'top'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_text_padding', 'field2' => 'top', 'value' => '0' ) ),
@@ -2220,7 +2226,7 @@ if( !class_exists( 'Btnsx' ) ) {
 				),
 				array(
 					'icon_class'	=>	'fa fa-pencil-square-o',
-					'text'			=>	__( 'Secondary Text', 'btnsx' ),
+					'text'			=>	__( 'Secondary Text', 'buttons-x' ),
 					'group'			=>	'content',
 					'elements'		=>	array(
 						array(
@@ -2229,7 +2235,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					),
 					'inner_group'	=>	array(
 						array(
-							'text'			=>	__( 'Text', 'btnsx' ),
+							'text'			=>	__( 'Text', 'buttons-x' ),
 							'elements'		=>	array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2237,7 +2243,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Font', 'btnsx' ),
+							'text'			=>	__( 'Font', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2245,7 +2251,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Color', 'btnsx' ),
+							'text'			=>	__( 'Color', 'buttons-x' ),
 							'id'			=>	'btnsx_text_secondary_color_collapsible',
 							'elements'		=> array(
 								array(
@@ -2254,7 +2260,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Shadow', 'btnsx' ),
+							'text'			=>	__( 'Shadow', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2262,7 +2268,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							)
 						),
 						array(
-							'text'			=>	__( 'Padding', 'btnsx' ),
+							'text'			=>	__( 'Padding', 'buttons-x' ),
 							'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -2274,7 +2280,7 @@ if( !class_exists( 'Btnsx' ) ) {
 				array(
 					'icon_class'	=>	'fa fa-cube',
 					'group'			=>	'advanced',
-					'text'			=>	__( 'Shadow', 'btnsx' ),
+					'text'			=>	__( 'Shadow', 'buttons-x' ),
 					'elements'			=>	array(
         				array(
         					'type'		=>	'shadow-limit'
@@ -3429,12 +3435,7 @@ if( !class_exists( 'Btnsx' ) ) {
 			   	}
 			
 			// Inline CSS
-				global $btnsx_settings;
-				if( isset( $btnsx_settings['css'] ) && $btnsx_settings['css'] === 'inline' || $css_inline === '1' ){
-					$css = '<style type="text/css" scoped>' . $this->generate_css( $id, false ) . '</style>';
-				} else {
-					$css = '';
-				}
+				$css = '<style type="text/css" scoped>' . $this->generate_css( $id, false ) . '</style>';
 
 			// Click Attribute
 				$on_click_attr = '';

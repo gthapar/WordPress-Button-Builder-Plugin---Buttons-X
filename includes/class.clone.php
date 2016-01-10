@@ -48,16 +48,7 @@ if( !class_exists( 'BtnsxClone' ) ) {
 	            return $actions;
 	        }
 	        if ( $post->post_type == 'buttons-x' ) {
-	        	$actions[ 'clone' ] = '<a href="edit.php?post_type=buttons-x&btnsx-clone=' . $post->ID . '">' . __( 'Clone', 'btnsx' ) . '</a>';
-	        }
-	        if ( $post->post_type == 'buttons-x-social' ) {
-	        	$actions[ 'clone' ] = '<a href="edit.php?post_type=buttons-x-social&btnsx-clone=' . $post->ID . '">' . __( 'Clone', 'btnsx' ) . '</a>';
-	        }
-	        if ( $post->post_type == 'buttons-x-dual' ) {
-	        	$actions[ 'clone' ] = '<a href="edit.php?post_type=buttons-x-dual&btnsx-clone=' . $post->ID . '">' . __( 'Clone', 'btnsx' ) . '</a>';
-	        }
-	        if ( $post->post_type == 'buttons-x-cs' ) {
-	        	$actions[ 'clone' ] = '<a href="edit.php?post_type=buttons-x-cs&btnsx-clone=' . $post->ID . '">' . __( 'Clone', 'btnsx' ) . '</a>';
+	        	$actions[ 'clone' ] = '<a href="edit.php?post_type=buttons-x&btnsx-clone=' . $post->ID . '">' . __( 'Clone', 'buttons-x' ) . '</a>';
 	        }
 	        return $actions;
 	    }
@@ -94,7 +85,7 @@ if( !class_exists( 'BtnsxClone' ) ) {
 				exit;
 			} else {
 				$post_type_obj = get_post_type_object( $post->post_type );
-				wp_die( esc_attr( __( 'Copy creation failed, could not find original:', 'btnsx' ) ) . ' ' . htmlspecialchars( $id ) );
+				wp_die( esc_attr( __( 'Copy creation failed, could not find original:', 'buttons-x' ) ) . ' ' . htmlspecialchars( $id ) );
 			}
 	    }
 
@@ -122,15 +113,7 @@ if( !class_exists( 'BtnsxClone' ) ) {
 			$new_post_id = wp_insert_post( $new_post );
 
 			// post type
-			if( $post->post_type == 'buttons-x-social' ) {
-				$post_type = 'buttons-x-social';
-			} elseif( $post->post_type == 'buttons-x-dual' ) {
-				$post_type = 'buttons-x-dual';
-			} elseif( $post->post_type == 'buttons-x-cs' ) {
-				$post_type = 'buttons-x-cs';
-			} else {
-				$post_type = 'buttons-x';
-			}
+			$post_type = 'buttons-x';
 
 			// set a proper slug
 			$post_name = wp_unique_post_slug( $post->post_name . '-' . $new_post_id, $new_post_id, 'publish', $post_type, '' );
@@ -139,15 +122,7 @@ if( !class_exists( 'BtnsxClone' ) ) {
 			$new_post[ 'post_name' ] = $post_name;
 
 			// add post meta
-			if( $post->post_type == 'buttons-x-social' ) {
-				$meta_key = 'btnsx-social';
-			} elseif( $post->post_type == 'buttons-x-dual' ) {
-				$meta_key = 'btnsx-dual';
-			} elseif( $post->post_type == 'buttons-x-cs' ) {
-				$meta_key = 'btnsx-cs';
-			} else {
-				$meta_key = 'btnsx';
-			}
+			$meta_key = 'btnsx';
 			$post_meta = get_post_meta( $post->ID, $meta_key, true );
 			add_post_meta( $new_post_id, $meta_key, $post_meta );
 

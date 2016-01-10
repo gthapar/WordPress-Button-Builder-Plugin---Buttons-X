@@ -161,7 +161,7 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 				global $btnsx_settings;
 				foreach ( $data as $type => $value ) {
 					foreach( $value as $id => $val ) {
-						$title[ $id ] = isset( $title[ $id ] ) ? $title[ $id ] : __( 'No Title', 'btnsx' );
+						$title[ $id ] = isset( $title[ $id ] ) ? $title[ $id ] : __( 'No Title', 'buttons-x' );
 						if( !in_array( $title[ $id ], ( $type === 'buttons-x' ? $title_array : '' ) ) ) {
 							$args = array(
 								'post_title'	=> $title[ $id ], // The title of post.
@@ -178,22 +178,22 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 								$tags 		= wp_set_object_terms( $post_id, $taxonomies[ $id ][ 'btnsx_tag' ], $tag );
 							}
 							if ( is_wp_error( $packs ) ) {
-								echo sprintf( __( 'Error assigning packs for button %d.', 'btnsx' ), $post_id );
+								echo sprintf( __( 'Error assigning packs for button %d.', 'buttons-x' ), $post_id );
 							}
 							if ( is_wp_error( $tags ) ) {
-								echo sprintf( __( 'Error assigning tags for button %d.', 'btnsx' ), $post_id );
+								echo sprintf( __( 'Error assigning tags for button %d.', 'buttons-x' ), $post_id );
 							}
 							if( $type == 'buttons-x' ){
 								update_post_meta( $post_id, 'btnsx', $val );
 							}
-							echo sprintf( __( 'Button "%s" imported successfully.', 'btnsx' ), $title[ $id ] ) . '|';
+							echo sprintf( __( 'Button "%s" imported successfully.', 'buttons-x' ), $title[ $id ] ) . '|';
 						} else {
-							echo sprintf( __( 'Button with same name "%s" already exists.', 'btnsx' ), $title[ $id ] ) . '|';
+							echo sprintf( __( 'Button with same name "%s" already exists.', 'buttons-x' ), $title[ $id ] ) . '|';
 						}
 					}
 				}
 			} else {
-				echo __( 'No button selected.', 'btnsx' );
+				echo __( 'No button selected.', 'buttons-x' );
 			}
 
 			wp_die();
@@ -222,7 +222,7 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 								}
 							});
 							console.log(buttons);
-							btnText = '<?php _e( "Import", 'btnsx' ); ?>';
+							btnText = '<?php _e( "Import", 'buttons-x' ); ?>';
 							// disble the button to avoid multiple clicks
 						  	$( this ).attr( 'disabled', 'disabled' ).html( '<i class="fa fa-refresh fa-spin"></i>' );
 						  	var data = {
@@ -236,7 +236,7 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 						  		var split = response.split( '|' );
 						  		// if nonce fails then not authorized else settings saved
 						  		if( response === '-1' ){
-							  		toast( '<?php _e( "Not Authorized!", 'btnsx' ); ?>', '#btnsx-click-import', btnText );
+							  		toast( '<?php _e( "Not Authorized!", 'buttons-x' ); ?>', '#btnsx-click-import', btnText );
 						  		} else {
 						  			$.each( split, function( i, v ){
 						  				if( v != '' ){
@@ -248,7 +248,7 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 						  		}
 						  	});
 						});
-						var btnText = '<?php _e( "Import", 'btnsx' ); ?>';
+						var btnText = '<?php _e( "Import", 'buttons-x' ); ?>';
 						function optimizedImport( json, start, finish ) {
 							var data = {
 								'action'	: 'upload',									// wp ajax action
@@ -327,7 +327,7 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 	        $format = self::isJson( $json );
 	        // Is it of json format?
 	        if ( $format == false ){
-	            wp_die( __( 'There was an error importing the buttons. File content should be in valid "JSON" format.', 'btnsx' ) );
+	            wp_die( __( 'There was an error importing the buttons. File content should be in valid "JSON" format.', 'buttons-x' ) );
 	        } else {
 	            return $decoded;
 	        }

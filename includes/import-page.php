@@ -14,7 +14,7 @@ if ( !defined( 'ABSPATH' ) )
 			ob_start();
 			?>
 				<div class="col s12">
-					<h6><?php _e('Select the predefined button styles to import','btnsx'); ?></h6>
+					<h6><?php _e('Select the predefined button styles to import','buttons-x'); ?></h6>
 				</div>
 			<?php
 			$html_head = ob_get_clean();
@@ -22,7 +22,7 @@ if ( !defined( 'ABSPATH' ) )
 			?>
 				<div class="col s12">
 					<br>
-					<button id="btnsx-click-import" class="btn btn-import btn-settings"><?php _e( 'Import', 'btnsx' ); ?></button>
+					<button id="btnsx-click-import" class="btn btn-import btn-settings"><?php _e( 'Import', 'buttons-x' ); ?></button>
 				</div>
 			<?php
 			$html = ob_get_clean();
@@ -32,7 +32,7 @@ if ( !defined( 'ABSPATH' ) )
 					$btnsx_default_options = array(
 						array(
 		        			'icon_class'	=>	'fa fa-star',
-		        			'text'			=>	__( 'Demo Buttons', 'btnsx' ),
+		        			'text'			=>	__( 'Demo Buttons', 'buttons-x' ),
 		        			'elements'		=> array(
 		        				array(
 									'type'			=>	'html',
@@ -42,28 +42,28 @@ if ( !defined( 'ABSPATH' ) )
 		        					'type'			=>	'checkbox',
 		        					'id'			=>	'btnsx_opt_predefined_style_classic',
 		        					'name'			=>	'btnsx_opt_predefined_style[]',
-		        					'label'			=>	__( 'Classic', 'btnsx' ),
+		        					'label'			=>	__( 'Classic', 'buttons-x' ),
 		        					'value'			=>	'3208'
 		        				),
 		        				array(
 		        					'type'			=>	'checkbox',
 		        					'id'			=>	'btnsx_opt_predefined_style_flat',
 		        					'name'			=>	'btnsx_opt_predefined_style[]',
-		        					'label'			=>	__( 'Flat', 'btnsx' ),
+		        					'label'			=>	__( 'Flat', 'buttons-x' ),
 		        					'value'			=>	'1259'
 		        				),
 		        				array(
 		        					'type'			=>	'checkbox',
 		        					'id'			=>	'btnsx_opt_predefined_style_gradient',
 		        					'name'			=>	'btnsx_opt_predefined_style[]',
-		        					'label'			=>	__( 'Gradient', 'btnsx' ),
+		        					'label'			=>	__( 'Gradient', 'buttons-x' ),
 		        					'value'			=>	'3804'
 		        				),
 		        				array(
 		        					'type'			=>	'checkbox',
 		        					'id'			=>	'btnsx_opt_predefined_style_outlined',
 		        					'name'			=>	'btnsx_opt_predefined_style[]',
-		        					'label'			=>	__( 'Outlined', 'btnsx' ),
+		        					'label'			=>	__( 'Outlined', 'buttons-x' ),
 		        					'value'			=>	'3770'
 		        				),
 		        				array(
@@ -74,7 +74,7 @@ if ( !defined( 'ABSPATH' ) )
 		        		),
 		        		array(
 		        			'icon_class'	=>	'fa fa-upload',
-		        			'text'			=>	__( 'Manual Import', 'btnsx' ),
+		        			'text'			=>	__( 'Manual Import', 'buttons-x' ),
 		        			'elements'		=> array(
 								array(
 									'type'			=>	'pro-banner'
@@ -95,17 +95,17 @@ if ( !defined( 'ABSPATH' ) )
 			</div>
 			<div class="col l3 m12">
 				<div class="help-links" style="padding: 10px;">
-		      		<p><?php _e( 'Helpful Links:', 'btnsx' ); ?></p>
+		      		<p><?php _e( 'Helpful Links:', 'buttons-x' ); ?></p>
 			        <ul>
-			        	<li><a href="https://www.button.sx/product-category/add-ons/"><?php _e( 'Button Add-ons', 'btnsx' ); ?></a></li>
-			        	<li><a target="_blank" href="https://www.button.sx/product-category/packs/"><?php _e( 'Button Packs', 'btnsx' ); ?></a></li>
-			        	<li><a target="_blank" href="https://gautamthapar.atlassian.net/wiki/display/BX/"><?php _e( 'Documentation', 'btnsx' ); ?></a></li>
-			        	<li><a target="_blank" href="http://gautamthapar.ticksy.com"><?php _e( 'Pro Support', 'btnsx' ); ?></a></li>
-			        	<li><a target="_blank" href="https://www.button.sx/"><?php _e('Official Website','btnsx'); ?></a></li>
-			        	<li><a target="_blank" href="https://twitter.com/Gautam_Thapar"><?php _e('Twitter','btnsx'); ?></a></li>
+			        	<li><a href="https://www.button.sx/product-category/add-ons/"><?php _e( 'Button Add-ons', 'buttons-x' ); ?></a></li>
+			        	<li><a target="_blank" href="https://www.button.sx/product-category/packs/"><?php _e( 'Button Packs', 'buttons-x' ); ?></a></li>
+			        	<li><a target="_blank" href="https://gautamthapar.atlassian.net/wiki/display/BX/"><?php _e( 'Documentation', 'buttons-x' ); ?></a></li>
+			        	<li><a target="_blank" href="http://gautamthapar.ticksy.com"><?php _e( 'Pro Support', 'buttons-x' ); ?></a></li>
+			        	<li><a target="_blank" href="https://www.button.sx/"><?php _e('Official Website','buttons-x'); ?></a></li>
+			        	<li><a target="_blank" href="https://twitter.com/Gautam_Thapar"><?php _e('Twitter','buttons-x'); ?></a></li>
 			        </ul>
 			        <br>
-				    <a href="http://btn.sx/1IUqaqK" style="font-weight:700;">GET PRO VERSION</a>
+				    <a href="http://btn.sx/1IUqaqK" style="font-weight:700;"><?php _e('GET PRO VERSION','btnsx'); ?></a>
 			    </div>
 			</div>
 		</div>

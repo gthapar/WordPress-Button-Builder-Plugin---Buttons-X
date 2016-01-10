@@ -35,13 +35,13 @@ if ( !defined( 'ABSPATH' ) )
 		        	$btnsx_default_options = array(
 		        		array(
 		        			'icon_class'	=>	'fa fa-pencil',
-		        			'text'			=>	__( 'General', 'btnsx' ),
+		        			'text'			=>	__( 'General', 'buttons-x' ),
 		        			'elements'		=> array(
 								array(
 									'type'			=>	'radio',
 									'name'			=>	'css',
-									'label'			=>	__( 'CSS', 'btnsx' ),
-									'tooltip'		=>	__( 'Select CSS to be displayed inline or through external file.', 'btnsx' ),
+									'label'			=>	__( 'CSS', 'buttons-x' ),
+									'tooltip'		=>	__( 'Select CSS to be displayed inline or through external file.', 'buttons-x' ),
 									'options'		=>	array(
 										'css_external'	=>	'external <span style="color:#fff;background-color:#ee6e73;padding:2px 3px;font-size:9px;font-weight:bold;border-radius:4px;margin-left:5px;">Pro Feature</span>',
 										'css_inline'	=>	'inline'
@@ -52,7 +52,7 @@ if ( !defined( 'ABSPATH' ) )
 						),
 						array(
 		        			'icon_class'	=>	'fa fa-exchange',
-		        			'text'			=>	__( 'Free Vs Pro', 'btnsx' ),
+		        			'text'			=>	__( 'Free Vs Pro', 'buttons-x' ),
 		        			'elements'		=> array(
 								array(
 									'type'			=>	'html',
@@ -122,28 +122,28 @@ if ( !defined( 'ABSPATH' ) )
 		      	</style>
 		      	<div class="col m12 l3">
 		      		<div class="col s12 col-pad-css" style="display:none;">
-		      			<button id="btnsx-settings-css-submit" name="btnsx-settings-css-submit" class="btn btn-save-css btn-settings" type="submit"><span id="btnsx-settings-css-text"><?php _e( 'Save & Regenerate CSS', 'btnsx' ); ?></span></button>
+		      			<button id="btnsx-settings-css-submit" name="btnsx-settings-css-submit" class="btn btn-save-css btn-settings" type="submit"><span id="btnsx-settings-css-text"><?php _e( 'Save & Regenerate CSS', 'buttons-x' ); ?></span></button>
 		      		</div>
 			        <div class="col s6 col-pad-settings">
-				    	<button id="btnsx-settings-submit" class="btn btn-save btn-settings" type="submit"><?php _e( 'Save', 'btnsx' ); ?></button>
+				    	<button id="btnsx-settings-submit" class="btn btn-save btn-settings" type="submit"><?php _e( 'Save', 'buttons-x' ); ?></button>
 				    </div>
 				    <div class="col s6 col-pad-settings">
-				    	<button id="btnsx-settings-reset" class="btn btn-reset btn-settings" type="submit"><?php _e( 'Reset', 'btnsx' ); ?></button>
+				    	<button id="btnsx-settings-reset" class="btn btn-reset btn-settings" type="submit"><?php _e( 'Reset', 'buttons-x' ); ?></button>
 				    </div>
 		      	</div>
 		      	<div class="col m12 l3">
 		      		<div class="help-links" style="padding: 10px;">
-			      		<p><?php _e( 'Helpful Links:', 'btnsx' ); ?></p>
+			      		<p><?php _e( 'Helpful Links:', 'buttons-x' ); ?></p>
 				        <ul>
-				        	<li><a href="https://www.button.sx/product-category/add-ons/"><?php _e( 'Button Add-ons', 'btnsx' ); ?></a></li>
-				        	<li><a target="_blank" href="https://www.button.sx/product-category/packs/"><?php _e( 'Button Packs', 'btnsx' ); ?></a></li>
-				        	<li><a target="_blank" href="https://gautamthapar.atlassian.net/wiki/display/BX/"><?php _e( 'Documentation', 'btnsx' ); ?></a></li>
-				        	<li><a target="_blank" href="http://gautamthapar.ticksy.com"><?php _e( 'Pro Support', 'btnsx' ); ?></a></li>
-				        	<li><a target="_blank" href="https://www.button.sx/"><?php _e('Official Website','btnsx'); ?></a></li>
-				        	<li><a target="_blank" href="https://twitter.com/Gautam_Thapar"><?php _e('Twitter','btnsx'); ?></a></li>
+				        	<li><a href="https://www.button.sx/product-category/add-ons/"><?php _e( 'Button Add-ons', 'buttons-x' ); ?></a></li>
+				        	<li><a target="_blank" href="https://www.button.sx/product-category/packs/"><?php _e( 'Button Packs', 'buttons-x' ); ?></a></li>
+				        	<li><a target="_blank" href="https://gautamthapar.atlassian.net/wiki/display/BX/"><?php _e( 'Documentation', 'buttons-x' ); ?></a></li>
+				        	<li><a target="_blank" href="http://gautamthapar.ticksy.com"><?php _e( 'Pro Support', 'buttons-x' ); ?></a></li>
+				        	<li><a target="_blank" href="https://www.button.sx/"><?php _e('Official Website','buttons-x'); ?></a></li>
+				        	<li><a target="_blank" href="https://twitter.com/Gautam_Thapar"><?php _e('Twitter','buttons-x'); ?></a></li>
 				        </ul>
 				        <br>
-				        <a href="http://btn.sx/1IUqaqK" style="font-weight:700;">GET PRO VERSION</a>
+				        <a href="http://btn.sx/1IUqaqK" style="font-weight:700;"><?php _e('GET PRO VERSION','btnsx'); ?></a>
 				    </div>
 		      	</div>
 	      	</form>

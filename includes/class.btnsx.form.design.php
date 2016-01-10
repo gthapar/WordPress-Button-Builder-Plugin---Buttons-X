@@ -134,8 +134,8 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 															'min'			=>	( isset( $el['min'] ) ) ? $el['min'] : NULL,
 															'max'			=>	( isset( $el['max'] ) ) ? $el['max'] : NULL,
 															'step'			=>	( isset( $el['step'] ) ) ? $el['step'] : NULL,
-															'on_text'		=>	( isset( $el['on_text'] ) ) ? $el['on_text'] : __( 'On', 'btnsx' ),
-															'off_text'		=>	( isset( $el['off_text'] ) ) ? $el['off_text'] : __( 'Off', 'btnsx' ),
+															'on_text'		=>	( isset( $el['on_text'] ) ) ? $el['on_text'] : __( 'On', 'buttons-x' ),
+															'off_text'		=>	( isset( $el['off_text'] ) ) ? $el['off_text'] : __( 'Off', 'buttons-x' ),
 															'data'			=>	( isset( $el['data'] ) ) ? $el['data'] : NULL,
 															'value'			=>	( isset( $el['value'] ) ) ? $el['value'] : NULL,
 															'options'		=>	( isset( $el['options'] ) ) ? $el['options'] : array(),
@@ -169,7 +169,7 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 																</div>
 															</div>
 															<div class="col m2" style="padding:0;">
-																<button id="<?php echo esc_attr( $copy_btn ); ?>" class="<?php echo isset( $ig['multiple'] ) ? 'btnsx-duplicate btnsx-btn-add' : ''; echo isset( $ig['copy'] ) ? ' btnsx-copy ' : ''; echo isset( $ig['clone_class'] ) ? ' btn-' . esc_attr( $ig['clone_class'] ) : ''; ?>" data-highlight="<?php echo isset( $ig['copy_ids']['highlight'] ) ? $ig['copy_ids']['highlight'] : ''; ?>" data-old-input="<?php echo isset( $ig['copy_ids']['old_input'] ) ? $ig['copy_ids']['old_input'] : ''; ?>" data-new-input="<?php echo isset( $ig['copy_ids']['new_input'] ) ? $ig['copy_ids']['new_input'] : ''; ?>" data-old-select="<?php echo isset( $ig['copy_ids']['old_select'] ) ? $ig['copy_ids']['old_select'] : ''; ?>" data-new-select="<?php echo isset( $ig['copy_ids']['new_select'] ) ? $ig['copy_ids']['new_select'] : ''; ?>" data-old-color="<?php echo isset( $ig['copy_ids']['old_color'] ) ? $ig['copy_ids']['old_color'] : ''; ?>" data-new-color="<?php echo isset( $ig['copy_ids']['new_color'] ) ? $ig['copy_ids']['new_color'] : ''; ?>"><?php echo isset( $ig['multiple'] ) ? __( 'Add More', 'btnsx' ) : ''; echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'normal' ? __( 'Copy to normal', 'btnsx' ) : ''; echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'hover' ? __( 'Copy to hover', 'btnsx' ) : ''; ?></button>
+																<button id="<?php echo esc_attr( $copy_btn ); ?>" class="<?php echo isset( $ig['multiple'] ) ? 'btnsx-duplicate btnsx-btn-add' : ''; echo isset( $ig['copy'] ) ? ' btnsx-copy ' : ''; echo isset( $ig['clone_class'] ) ? ' btn-' . esc_attr( $ig['clone_class'] ) : ''; ?>" data-highlight="<?php echo isset( $ig['copy_ids']['highlight'] ) ? $ig['copy_ids']['highlight'] : ''; ?>" data-old-input="<?php echo isset( $ig['copy_ids']['old_input'] ) ? $ig['copy_ids']['old_input'] : ''; ?>" data-new-input="<?php echo isset( $ig['copy_ids']['new_input'] ) ? $ig['copy_ids']['new_input'] : ''; ?>" data-old-select="<?php echo isset( $ig['copy_ids']['old_select'] ) ? $ig['copy_ids']['old_select'] : ''; ?>" data-new-select="<?php echo isset( $ig['copy_ids']['new_select'] ) ? $ig['copy_ids']['new_select'] : ''; ?>" data-old-color="<?php echo isset( $ig['copy_ids']['old_color'] ) ? $ig['copy_ids']['old_color'] : ''; ?>" data-new-color="<?php echo isset( $ig['copy_ids']['new_color'] ) ? $ig['copy_ids']['new_color'] : ''; ?>"><?php echo isset( $ig['multiple'] ) ? __( 'Add More', 'buttons-x' ) : ''; echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'normal' ? __( 'Copy to normal', 'buttons-x' ) : ''; echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'hover' ? __( 'Copy to hover', 'buttons-x' ) : ''; ?></button>
 															</div>
 														</div>
 
@@ -181,10 +181,10 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 																</div>
 															</div>
 															<div class="col m2" style="padding:0;">
-																<button id="<?php echo esc_attr( $copy_btn ); ?>" class="<?php echo isset( $ig['copy'] ) ? ' btnsx-copy ' : ''; ?>" data-highlight="<?php echo isset( $ig['copy_ids']['highlight'] ) ? $ig['copy_ids']['highlight'] : ''; ?>" data-old-input="<?php echo isset( $ig['copy_ids']['old_input'] ) ? $ig['copy_ids']['old_input'] : ''; ?>" data-new-input="<?php echo isset( $ig['copy_ids']['new_input'] ) ? $ig['copy_ids']['new_input'] : ''; ?>" data-old-select="<?php echo isset( $ig['copy_ids']['old_select'] ) ? $ig['copy_ids']['old_select'] : ''; ?>" data-new-select="<?php echo isset( $ig['copy_ids']['new_select'] ) ? $ig['copy_ids']['new_select'] : ''; ?>" data-old-color="<?php echo isset( $ig['copy_ids']['old_color'] ) ? $ig['copy_ids']['old_color'] : ''; ?>" data-new-color="<?php echo isset( $ig['copy_ids']['new_color'] ) ? $ig['copy_ids']['new_color'] : ''; ?>"><?php echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'normal' ? __( 'Copy to normal', 'btnsx' ) : ''; echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'hover' ? __( 'Copy to hover', 'btnsx' ) : ''; ?></button>
+																<button id="<?php echo esc_attr( $copy_btn ); ?>" class="<?php echo isset( $ig['copy'] ) ? ' btnsx-copy ' : ''; ?>" data-highlight="<?php echo isset( $ig['copy_ids']['highlight'] ) ? $ig['copy_ids']['highlight'] : ''; ?>" data-old-input="<?php echo isset( $ig['copy_ids']['old_input'] ) ? $ig['copy_ids']['old_input'] : ''; ?>" data-new-input="<?php echo isset( $ig['copy_ids']['new_input'] ) ? $ig['copy_ids']['new_input'] : ''; ?>" data-old-select="<?php echo isset( $ig['copy_ids']['old_select'] ) ? $ig['copy_ids']['old_select'] : ''; ?>" data-new-select="<?php echo isset( $ig['copy_ids']['new_select'] ) ? $ig['copy_ids']['new_select'] : ''; ?>" data-old-color="<?php echo isset( $ig['copy_ids']['old_color'] ) ? $ig['copy_ids']['old_color'] : ''; ?>" data-new-color="<?php echo isset( $ig['copy_ids']['new_color'] ) ? $ig['copy_ids']['new_color'] : ''; ?>"><?php echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'normal' ? __( 'Copy to normal', 'buttons-x' ) : ''; echo isset( $ig['copy_text'] ) && $ig['copy_text'] === 'hover' ? __( 'Copy to hover', 'buttons-x' ) : ''; ?></button>
 															</div>
 															<div class="col m2" style="padding:0;">
-																<button id="<?php echo esc_attr( $copy_btn ); ?>" class="<?php echo isset( $ig['multiple'] ) ? 'btnsx-duplicate btnsx-btn-add' : ''; echo isset( $ig['clone_class'] ) ? ' btn-' . esc_attr( $ig['clone_class'] ) : ''; ?>"><?php echo isset( $ig['multiple'] ) ? __( 'Add More', 'btnsx' ) : ''; ?></button>
+																<button id="<?php echo esc_attr( $copy_btn ); ?>" class="<?php echo isset( $ig['multiple'] ) ? 'btnsx-duplicate btnsx-btn-add' : ''; echo isset( $ig['clone_class'] ) ? ' btn-' . esc_attr( $ig['clone_class'] ) : ''; ?>"><?php echo isset( $ig['multiple'] ) ? __( 'Add More', 'buttons-x' ) : ''; ?></button>
 															</div>
 														</div>
 														
@@ -213,8 +213,8 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 																			'min'			=>	( isset( $el['min'] ) ) ? $el['min'] : NULL,
 																			'max'			=>	( isset( $el['max'] ) ) ? $el['max'] : NULL,
 																			'step'			=>	( isset( $el['step'] ) ) ? $el['step'] : NULL,
-																			'on_text'		=>	( isset( $el['on_text'] ) ) ? $el['on_text'] : __( 'On', 'btnsx' ),
-																			'off_text'		=>	( isset( $el['off_text'] ) ) ? $el['off_text'] : __( 'Off', 'btnsx' ),
+																			'on_text'		=>	( isset( $el['on_text'] ) ) ? $el['on_text'] : __( 'On', 'buttons-x' ),
+																			'off_text'		=>	( isset( $el['off_text'] ) ) ? $el['off_text'] : __( 'Off', 'buttons-x' ),
 																			'data'			=>	( isset( $el['data'] ) ) ? $el['data'] : NULL,
 																			'value'			=>	( isset( $el['value'] ) ) ? $el['value'] : NULL,
 																			'options'		=>	( isset( $el['options'] ) ) ? $el['options'] : array(),
@@ -250,7 +250,7 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 									foreach( $difficulty as $k => $v ){
 										if( $k === 'content' ){
 											if( $tabs['show_group'] === true ) {
-												echo '<span id="btnsx-content-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Content', 'btnsx' ) . '</span></a></span>';
+												echo '<span id="btnsx-content-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Content', 'buttons-x' ) . '</span></a></span>';
 											}
 											$sorted = array();
 											// Let's make our array ready for sorting
@@ -268,7 +268,7 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 									foreach( $difficulty as $k => $v ){
 										if( $k === 'style' ){
 											if( $tabs['show_group'] === true ) {
-												echo '<span id="btnsx-style-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Style', 'btnsx' ) . '</span></a></span>';
+												echo '<span id="btnsx-style-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Style', 'buttons-x' ) . '</span></a></span>';
 											}
 											$sorted = array();
 											// Let's make our array ready for sorting
@@ -286,7 +286,7 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 									foreach( $difficulty as $k => $v ){
 										if( $k === 'advanced' ){
 											if( $tabs['show_group'] === true ) {
-												echo '<span id="btnsx-advanced-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Advanced', 'btnsx' ) . '</span></a></span>';
+												echo '<span id="btnsx-advanced-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Advanced', 'buttons-x' ) . '</span></a></span>';
 											}
 											$sorted = array();
 											// Let's make our array ready for sorting
@@ -304,7 +304,7 @@ if( !class_exists( 'BtnsxFormDesign' ) ) {
 									foreach( $difficulty as $k => $v ){
 										if( $k === 'expert' ){
 											if( $tabs['show_group'] === true ) {
-												echo '<span id="btnsx-expert-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Expert', 'btnsx' ) . '</span></a></span>';
+												echo '<span id="btnsx-expert-options" class="btnsx-tabs-group"><a href="javascript:void()" class=""><span>' . __( 'Expert', 'buttons-x' ) . '</span></a></span>';
 											}
 											$sorted = array();
 											// Let's make our array ready for sorting

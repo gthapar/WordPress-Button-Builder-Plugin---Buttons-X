@@ -36,20 +36,10 @@ if( !class_exists( 'BtnsxWapi' ) ) {
 			self::$url = 'https://www.button.sx/wp-content/uploads/data/products.json';
 			// delete_transient( 'btnsx_remote_packs_addons' );
 			if ( false === ( self::$products = get_transient( 'btnsx_remote_packs_addons' ) ) ) {
-				// make sure curl is installed
-				if (function_exists('curl_init')) {
-					$curl = curl_init();
-					curl_setopt($curl, CURLOPT_URL, self::$url);
-					curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-					curl_setopt($curl, CURLOPT_HEADER, false);
-					curl_setopt($curl, CURLOPT_CONNECTTIMEOUT ,0); 
-					curl_setopt($curl, CURLOPT_TIMEOUT, 60); //timeout in seconds
-					self::$products = curl_exec($curl);
-					curl_close($curl);
-					set_transient( 'btnsx_remote_packs_addons', self::$products, 24 * 60 * 60 );
-				} else {
-					self::$products = file_get_contents( self::$url );
-					set_transient( 'btnsx_remote_packs_addons', self::$products, 24 * 60 * 60 );
+				$response = wp_remote_get( self::$url, array( 'timeout' => 120 ) );
+				if( is_array($response) ) {
+				  	self::$products = $response['body'];
+				  	set_transient( 'btnsx_remote_packs_addons', self::$products, 24 * 60 * 60 );
 				}
 			}
 			self::$products = json_decode( get_transient( 'btnsx_remote_packs_addons' ) );
@@ -83,10 +73,10 @@ if( !class_exists( 'BtnsxWapi' ) ) {
 			            .plugin-card .column-compatibility, .plugin-card .column-updated{ width: calc(100% - 100px)!important; }
 			        </style>
 			        <div id="btnsx-addons" class="wrap">
-			            <h1><?php printf( __( 'Add-ons', 'btnsx' ), BTNSX__VERSION ); ?></h1>
+			            <h1><?php printf( __( 'Add-ons', 'buttons-x' ), BTNSX__VERSION ); ?></h1>
 			            <p></p>
 			            <div class="error"> 
-					        <p><?php _e( 'We take no gaurantee that an add-on will work with this lite version of Buttons X.', 'btnsx' ); ?></p>
+					        <p><?php _e( 'We take no gaurantee that an add-on will work with this lite version of Buttons X.', 'buttons-x' ); ?></p>
 					    </div>
 						<p></p>			    
 			            <div class="wp-list-table widefat plugin-install">
@@ -146,7 +136,7 @@ if( !class_exists( 'BtnsxWapi' ) ) {
 					            		}
 					            	} else {
 					            		echo '<div class="error"> 
-									        <p>' . __( 'Something went wrong! Please try again later.', 'btnsx' ) . '</p>
+									        <p>' . __( 'Something went wrong! Please try again later.', 'buttons-x' ) . '</p>
 									    </div>';
 									}
 								?>
@@ -173,10 +163,10 @@ if( !class_exists( 'BtnsxWapi' ) ) {
 			            .btnsx-thumb, .btnsx-thumb img { width: 298px!important;height: 298px!important; }
 			        </style>
 			        <div id="btnsx-packs" class="wrap">
-			            <h1><?php printf( __( 'Packs', 'btnsx' ), BTNSX__VERSION ); ?></h1>
+			            <h1><?php printf( __( 'Packs', 'buttons-x' ), BTNSX__VERSION ); ?></h1>
 			            <p></p>
 			            <div class="error"> 
-					        <p><?php _e( 'We take no gaurantee that a pack will work with this lite version of Buttons X.', 'btnsx' ); ?></p>
+					        <p><?php _e( 'We take no gaurantee that a pack will work with this lite version of Buttons X.', 'buttons-x' ); ?></p>
 					    </div>
 						<p></p>	
 			            <div class="theme-browser rendered">
@@ -191,11 +181,11 @@ if( !class_exists( 'BtnsxWapi' ) ) {
 													<div class="theme-screenshot btnsx-thumb">
 														<img src="<?php echo $v->featured_src; ?>" alt="">
 													</div>
-													<a target="_blank" href="<?php echo $v->permalink; ?>"><span class="more-details"><?php _e('Pack Details','btnsx'); ?></span></a>
+													<a target="_blank" href="<?php echo $v->permalink; ?>"><span class="more-details"><?php _e('Pack Details','buttons-x'); ?></span></a>
 													<div class="theme-author">By Gautam Thapar</div>
 													<h3 class="theme-name"><?php echo $v->title; ?></h3>
 													<div class="theme-actions btnsx-pack-actions">
-														<a class="button button-primary load-customize hide-if-no-customize" href="<?php echo $v->permalink; ?>"><?php _e('Download','btnsx'); ?></a>
+														<a class="button button-primary load-customize hide-if-no-customize" href="<?php echo $v->permalink; ?>"><?php _e('Download','buttons-x'); ?></a>
 													</div>
 												</div>
 					            			<?php
@@ -204,7 +194,7 @@ if( !class_exists( 'BtnsxWapi' ) ) {
 				            		}
 				            	} else {
 				            		echo '<div class="error"> 
-									        <p>' . __( 'Something went wrong! Please try again later.', 'btnsx' ) . '</p>
+									        <p>' . __( 'Something went wrong! Please try again later.', 'buttons-x' ) . '</p>
 									    </div>';
 				            	}
 			    			?>

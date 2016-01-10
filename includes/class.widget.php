@@ -21,8 +21,8 @@ class Btnsx_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'btnsx_widget', // Base ID
-			__( 'Buttons X', 'btnsx' ), // Name
-			array( 'description' => __( 'Beautiful buttons.', 'btnsx' ), ) // Args
+			__( 'Buttons X', 'buttons-x' ), // Name
+			array( 'description' => __( 'Beautiful buttons.', 'buttons-x' ), ) // Args
 		);
 	}
 
@@ -60,7 +60,7 @@ class Btnsx_Widget extends WP_Widget {
 			$title = $instance[ 'title' ];
 		}
 		else {
-			$title = __( 'Buttons X', 'btnsx' );
+			$title = __( 'Buttons X', 'buttons-x' );
 		}
 		if ( isset( $instance[ 'select' ] ) ) {
 			$select = esc_attr($instance['select']); // Added
@@ -70,11 +70,11 @@ class Btnsx_Widget extends WP_Widget {
 		}
 		?>
 		<p>
-		<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'btnsx' ); ?></label>
+		<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'buttons-x' ); ?></label>
 		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'select' ) ); ?>"><?php _e( 'Button:', 'btnsx' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'select' ) ); ?>"><?php _e( 'Button:', 'buttons-x' ); ?></label>
 			<?php 
 
 				global $wpdb;
@@ -84,7 +84,8 @@ class Btnsx_Widget extends WP_Widget {
 	                "SELECT ID, post_title
 	                    FROM $wpdb->posts 
 	                    WHERE $wpdb->posts.post_type = %s
-	                    AND $wpdb->posts.post_status = %s",
+	                    AND $wpdb->posts.post_status = %s
+	                    ORDER BY ID DESC",
 	                $btnsx_post,
 	                $btnsx_post_status
 	            ) );
@@ -98,14 +99,14 @@ class Btnsx_Widget extends WP_Widget {
 				if( $btnsx == false ){
 			?>
 
-				<option value=""><?php _e( 'No Buttons Found!', 'btnsx' ); ?></option>
+				<option value=""><?php _e( 'No Buttons Found!', 'buttons-x' ); ?></option>
 
 			<?php
 				} else {
 
 			?>
 
-				<option value=""><?php _e( 'None', 'btnsx' ); ?></option>
+				<option value=""><?php _e( 'None', 'buttons-x' ); ?></option>
 
 			<?php
 

@@ -48,10 +48,10 @@ if( !class_exists( 'BtnsxAjax' ) ) {
 
 			if( $_POST['post_type'] == 'buttons-x' ){
 				if( update_post_meta( $_POST['post_id'], 'btnsx', ''  ) ) {
-					wp_die( __( 'Reset Successful', 'btnsx' ) );
+					wp_die( __( 'Reset Successful', 'buttons-x' ) );
 				} 
 			} else {
-				wp_die( __( 'Setting fields are already at their default values. Reset not required.', 'btnsx' ) );
+				wp_die( __( 'Setting fields are already at their default values. Reset not required.', 'buttons-x' ) );
 			}
 		}
  		
@@ -157,12 +157,12 @@ if( !class_exists( 'BtnsxAjax' ) ) {
 			// if the value are changed update our options else do nothing
 			if( !empty( $diff ) ) {	
 				if( update_option( 'btnsx_settings', $form ) ) {
-					wp_die( __( 'Settings Saved', 'btnsx' ) );
+					wp_die( __( 'Settings Saved', 'buttons-x' ) );
 				} else {
-					wp_die( __( 'Settings Not Saved', 'btnsx' ) );
+					wp_die( __( 'Settings Not Saved', 'buttons-x' ) );
 				}
 			} else {
-				wp_die( __( 'No change detected', 'btnsx' ) );
+				wp_die( __( 'No change detected', 'buttons-x' ) );
 			}
 		}
 
@@ -176,9 +176,9 @@ if( !class_exists( 'BtnsxAjax' ) ) {
 			check_ajax_referer( 'btnsx-settings', 'security' );
 
 			if( update_option( 'btnsx_settings', array() ) ) {
-				wp_die( __( 'Reset Successful', 'btnsx' ) );
+				wp_die( __( 'Reset Successful', 'buttons-x' ) );
 			} else {
-				wp_die( __( 'Setting fields are already at their default values. Reset not required.', 'btnsx' ) );
+				wp_die( __( 'Setting fields are already at their default values. Reset not required.', 'buttons-x' ) );
 			}
 		}
 
