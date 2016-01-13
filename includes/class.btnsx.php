@@ -310,18 +310,18 @@ if( !class_exists( 'Btnsx' ) ) {
 		            <div class="wp-badge btnsx-badge"><span class="dashicons-before dashicons-btnsx-logo"></span><?php printf( __( 'Version %1$s', 'buttons-x' ), BTNSX__VERSION ); ?></div>
 		            <hr>
 		            <div class="feature-section one-col">
-		            	<h4><?php echo 'v' . BTNSX__VERSION . ' '; _e('Changelog'); ?></h4>
-		            	<ol>
+		            	<!-- <h4><?php // echo 'v' . BTNSX__VERSION . ' '; _e('Changelog'); ?></h4> -->
+		            	<!-- <ol>
 		            		<li>Fixed: Localisation issues.</li>
 							<li>Fixed: Widget displaying older buttons at top when selecting a button.</li>
 							<li>Improved: Add-ons and Packs list data fetching.</li>
 		            	</ol>
-		            	<h4><?php echo 'v1.7.8 '; _e('Changelog'); ?></h4>
+		            	<h4><?php // echo 'v1.7.8 '; _e('Changelog'); ?></h4>
 		            	<ol>
 		            		<li>Addition: Predefined button styles added under Import > Demo Buttons.</li>
 							<li>Improvement: Font weight selection mechanism for Google Fonts improved.</li>
 							<li>Fixed: Box shadow not appearing on frontend.</li>
-		            	</ol>
+		            	</ol> -->
 		            	<br>
 		            	<h3><?php _e('Introduction','buttons-x'); ?></h3>
 		            	<br>

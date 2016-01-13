@@ -221,7 +221,6 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 									buttons.push($(this).val());
 								}
 							});
-							console.log(buttons);
 							btnText = '<?php _e( "Import", 'buttons-x' ); ?>';
 							// disble the button to avoid multiple clicks
 						  	$( this ).attr( 'disabled', 'disabled' ).html( '<i class="fa fa-refresh fa-spin"></i>' );
@@ -232,7 +231,7 @@ if( !class_exists( 'BtnsxPortation' ) ) {
 							};
 							// fire ajax
 						  	$.post( ajaxurl, data, function( response ) {
-						  		console.log( response );
+						  		// console.log( response );
 						  		var split = response.split( '|' );
 						  		// if nonce fails then not authorized else settings saved
 						  		if( response === '-1' ){

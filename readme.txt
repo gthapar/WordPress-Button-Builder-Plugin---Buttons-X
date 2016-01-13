@@ -4,7 +4,7 @@ Donate Link: http://btn.sx/1VHtcaP
 Tags: button, buttons, button plugin, button builder, button maker, button generator, CSS button generator, css3 button generator, responsive buttons, social share, social buttons, morphing buttons
 Requires at least: 4.0
 Tested up to: 4.4.1
-Stable tag: 1.7.9
+Stable tag: 0.7.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -153,7 +153,7 @@ For manual installation:
 1. Copy the plugin zip file up to your server and unzip it somewhere on the file system.
 1. Copy the "btnsx" folder into the /wp-content/plugins directory of your WordPress installation.
 1. Login to your website and go to the Plugins section of your admin panel.
-1. Look for "Buttons X - Lite“ and click Activate.
+1. Look for "Buttons X Lite“ and click Activate.
 
 
 == Screenshots ==
@@ -166,7 +166,11 @@ For manual installation:
 
 == Frequently Asked Questions ==
 
-Coming soon..
+**Q. Can lite and paid versions work together?**
+A. No, you need to remove the lite version before installing the paid version.
+
+**Q. Will I lose my buttons if I upgrade from lite to paid?**
+A. No, you won't.
 
 == Upgrade Notice ==
 
@@ -174,18 +178,9 @@ Nothing yet..
 
 == Changelog ==
 
-= 1.7.9 =
+= 0.7.8 = 
+ - Fixed: Font weight not changing based on Google Fonts font selection.
 
- - Fixed: Localisation issues.
- - Fixed: Widget displaying older buttons at top when selecting a button.
- - Improved: Add-ons and Packs list data fetching.
-
-= 1.7.8 = 
-
- - Addition: Predefined button styles added under Import > Demo Buttons.
- - Improvement: Font weight selection mechanism for Google Fonts improved.
- - Fixed: Box shadow not appearing on frontend.
-
-= 1.7.7 = 
+= 0.7.7 = 
 
  - Initial release.

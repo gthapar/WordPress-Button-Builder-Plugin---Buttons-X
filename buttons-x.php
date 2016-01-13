@@ -1,15 +1,14 @@
 <?php
 /*
-Plugin Name: Buttons X - Lite
+Plugin Name: Buttons X Lite
 Plugin URI: https://www.button.sx/
 Description: WordPress button builder plugin. Create unlimited CSS3 buttons. The only complete call to action button builder for WordPress.
-Version: 1.7.9
+Version: 0.7.8
 Author: Gautam Thapar
 Author URI: http://www.gautamthapar.me/
 License: GPLv2 or later
 Text Domain: buttons-x
 Domain Path: /languages/
-Network: true
 */
 
 // Make sure we don't expose any info if called directly
@@ -17,7 +16,7 @@ if ( !defined( 'ABSPATH' ) ){
 	exit;
 }
 
-define( 'BTNSX__VERSION', '1.7.9' );
+define( 'BTNSX__VERSION', '0.7.8' );
 define( 'BTNSX__MIN_WP_VERSION', '4.0' );
 define( 'BTNSX__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'BTNSX__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );

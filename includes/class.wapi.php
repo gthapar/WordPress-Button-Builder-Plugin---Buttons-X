@@ -97,11 +97,11 @@ if( !class_exists( 'BtnsxWapi' ) ) {
 														$btn = '<a target="_blank" class="install-now button button-disabled" href="#">'.__("Installed","btnsx").'</a>';
 													}
 													if( $v->attributes[1]->options[0] <= BTNSX__VERSION ){
-														$compHTML = $comp[0];
-														$compClass = $compClassArr[0];
+														$compHTML = $comp[2];
+														$compClass = $compClassArr[2];
 													}elseif( $v->attributes[1]->options[0] > BTNSX__VERSION ){
-														$compHTML = $comp[1];
-														$compClass = $compClassArr[1];
+														$compHTML = $comp[2];
+														$compClass = $compClassArr[2];
 													}else{
 														$compHTML = $comp[2];
 														$compClass = $compClassArr[2];
