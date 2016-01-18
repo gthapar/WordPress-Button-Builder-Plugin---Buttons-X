@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Buttons X Lite
-Plugin URI: https://www.button.sx/
+Plugin URI: https://www.button.sx/lite/
 Description: WordPress button builder plugin. Create unlimited CSS3 buttons. The only complete call to action button builder for WordPress.
 Version: 0.7.8
 Author: Gautam Thapar
