@@ -295,7 +295,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		        <div class="wrap about-wrap">
 		            <h1><?php printf( __( 'Welcome to Buttons X %1$s', 'buttons-x' ), BTNSX__VERSION ); ?></h1>
 		            <div class="about-text">
-		            	<?php printf( __( 'Thank you for installing!.', 'buttons-x' ), BTNSX__VERSION ); ?>
+		            	<?php printf( __( 'Thank you for installing! You are awesome.', 'buttons-x' ), BTNSX__VERSION ); ?>
 		            	<br><br>
 		            	<!-- Social Buttons -->
 			            	<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://www.button.sx" data-text="Build any kind of button imaginable right from your WordPress Dashboard with Buttons X!" data-via="btnsx" data-related="gautam_thapar" data-hashtags="ButtonsX">Tweet</a>

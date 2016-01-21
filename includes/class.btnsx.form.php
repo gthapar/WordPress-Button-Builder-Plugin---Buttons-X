@@ -54,24 +54,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 			/* Restore original Post Data */
 			wp_reset_postdata();
 
-			$output = '';
-			foreach ( $options as $k => $l ) {
-				if( is_array( $selected ) ) {
-					if( in_array( $k, $selected ) ) {
-						$output .= '<option value="' . $k . '" selected>' . $l . '</option>';
-					} else {
-						$output .= '<option value="' . $k . '">' . $l . '</option>';
-					}
-				} else {
-					if( $k == $selected ){
-						$output .= '<option value="' . $k . '" selected>' . $l . '</option>';
-					} else {
-						$output .= '<option value="' . $k . '">' . $l . '</option>';
-					}
-				}
-			}
-
-			return $output;
+			return $options;
 		}
 
 		/**
@@ -84,7 +67,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 			$post_types = get_post_types( array( 'public' => true ) );
 			$options = array();
 			foreach ( $post_types as $key => $type ) {
-				if( !in_array( $type, array( 'buttons-x', 'buttons-x-social' ) ) ) {
+				if( !in_array( $type, array( 'buttons-x', 'buttons-x-social', 'buttons-x-dual', 'buttons-x-cs' ) ) ) {
 					$args = array(
 						'post_type' => $type,
 						'post_status' => 'publish'
@@ -446,6 +429,24 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 						</div>
 					</div>
 					<?php break;
+
+				case 'cpt': 
+
+					echo $this->input(
+						array(
+						    'type'			=>	'select',
+						    'id'			=>	$input['id'],
+						    'name'			=>	$input['name'],
+						    'placeholder'	=>	$input['placeholder'],
+						    'label'			=>	$input['label'],
+						    'tooltip'		=>	$input['tooltip'],
+						    'multiselect'	=>	$input['multiselect'],
+						    'options'		=>	$this->cpt( $input['cpt'], $input['value'] ),
+						    'value'			=> $input['value']
+						)
+					);
+
+					break;
 
 				case 'checkbox': 
 					$checkbox_value = isset( $input['value'] ) ? 'value="' . esc_attr( $input['value'] ) . '"' : '';
