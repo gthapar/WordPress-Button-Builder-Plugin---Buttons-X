@@ -140,7 +140,7 @@ if ( !defined( 'ABSPATH' ) )
 				        	<li><a target="_blank" href="https://gautamthapar.atlassian.net/wiki/display/BX/"><?php _e( 'Documentation', 'buttons-x' ); ?></a></li>
 				        	<li><a target="_blank" href="http://gautamthapar.ticksy.com"><?php _e( 'Pro Support', 'buttons-x' ); ?></a></li>
 				        	<li><a target="_blank" href="https://www.button.sx/"><?php _e('Official Website','buttons-x'); ?></a></li>
-				        	<li><a target="_blank" href="https://twitter.com/Gautam_Thapar"><?php _e('Twitter','buttons-x'); ?></a></li>
+				        	<li><a target="_blank" href="https://twitter.com/btnsx"><?php _e('Twitter','buttons-x'); ?></a></li>
 				        </ul>
 				        <br>
 				        <a href="http://btn.sx/1IUqaqK" style="font-weight:700;"><?php _e('GET PRO VERSION','btnsx'); ?></a>

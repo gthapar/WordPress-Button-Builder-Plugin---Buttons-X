@@ -12,7 +12,7 @@ if ( !defined( 'ABSPATH' ) )
 	exit;
 
 if( !class_exists( 'Btnsx' ) ) {
-	
+
 	class Btnsx {
 
 		private static $instance;
@@ -295,7 +295,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		        <div class="wrap about-wrap">
 		            <h1><?php printf( __( 'Welcome to Buttons X %1$s', 'buttons-x' ), BTNSX__VERSION ); ?></h1>
 		            <div class="about-text">
-		            	<?php printf( __( 'Thank you for installing! You are awesome.', 'buttons-x' ), BTNSX__VERSION ); ?>
+		            	<?php printf( __( 'Thank you for installing! You are awesome. This version fixes ACF PRO scripts conflict causing button edit screen to not load.', 'buttons-x' ), BTNSX__VERSION ); ?>
 		            	<br><br>
 		            	<!-- Social Buttons -->
 			            	<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="https://www.button.sx" data-text="Build any kind of button imaginable right from your WordPress Dashboard with Buttons X!" data-via="btnsx" data-related="gautam_thapar" data-hashtags="ButtonsX">Tweet</a>
@@ -310,26 +310,14 @@ if( !class_exists( 'Btnsx' ) ) {
 		            <div class="wp-badge btnsx-badge"><span class="dashicons-before dashicons-btnsx-logo"></span><?php printf( __( 'Version %1$s', 'buttons-x' ), BTNSX__VERSION ); ?></div>
 		            <hr>
 		            <div class="feature-section one-col">
-		            	<!-- <h4><?php // echo 'v' . BTNSX__VERSION . ' '; _e('Changelog'); ?></h4> -->
-		            	<!-- <ol>
-		            		<li>Fixed: Localisation issues.</li>
-							<li>Fixed: Widget displaying older buttons at top when selecting a button.</li>
-							<li>Improved: Add-ons and Packs list data fetching.</li>
-		            	</ol>
-		            	<h4><?php // echo 'v1.7.8 '; _e('Changelog'); ?></h4>
-		            	<ol>
-		            		<li>Addition: Predefined button styles added under Import > Demo Buttons.</li>
-							<li>Improvement: Font weight selection mechanism for Google Fonts improved.</li>
-							<li>Fixed: Box shadow not appearing on frontend.</li>
-		            	</ol> -->
 		            	<br>
 		            	<h3><?php _e('Introduction','buttons-x'); ?></h3>
 		            	<br>
 		            	<p><?php _e( 'Hi there,', 'buttons-x' ); ?></p>
-						<p><?php 
-							echo sprintf( wp_kses(__( 'I am <a href="%s">Gautam Thapar</a> and I am the author of this plugin. I am working hard to make sure you have pleasant experience while using this plugin. In case you face any issues or get stuck somehwere then kindly let me know using the <a href="%s">support forum</a>.', 'buttons-x'), array( 'a' => array( 'href' => array() ) ) ), 'http://btn.sx/1JwsbAp', 'https://wordpress.org/support/plugin/buttons-x/' ); 
-							echo '&nbsp;'; 
-							_e( 'I will do my best to solve your issues as soon as possible.', 'buttons-x' ); 
+						<p><?php
+							echo sprintf( wp_kses(__( 'I am <a href="%s">Gautam Thapar</a> and I am the author of this plugin. I am working hard to make sure you have pleasant experience while using this plugin. In case you face any issues or get stuck somehwere then kindly let me know using the <a href="%s">support forum</a>.', 'buttons-x'), array( 'a' => array( 'href' => array() ) ) ), 'http://btn.sx/1JwsbAp', 'https://wordpress.org/support/plugin/buttons-x/' );
+							echo '&nbsp;';
+							_e( 'I will do my best to solve your issues as soon as possible.', 'buttons-x' );
 							?>
 						</p>
 						<p><?php _e( 'This is a <b>LITE version</b> of Buttons X and so it is limited in functionality. But it does contain enough to help you build beautiful CSS3 buttons.', 'buttons-x' ); ?></p>
@@ -400,7 +388,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		            <div class="changelog point-releases">
 		                <h3><?php _e('Release Notes','buttons-x'); ?></h3>
 		                <ol>
-		                	<li>Initial Release.</li>
+		                	<li>Fixed ACF Pro scripts conflict causing button edit screen to not load.</li>
 		                </ol>
 		            </div>
 		        </div>
@@ -572,10 +560,10 @@ if( !class_exists( 'Btnsx' ) ) {
 					<div id="modal<?php echo esc_attr( $id ); ?>" class="modal preview-modal">
 						<div class="btnsx-preview-overlay" style="<?php echo sanitize_text_field( $background_overlay ); echo 'background-color:'.sanitize_text_field( $background ).';'; ?>"></div>
 					    <div class="modal-content">
-					    	<?php 
+					    	<?php
 					    		// Filter Short Code Attributes
-					    		$default = array ( 
-					    			'id' => $id, 
+					    		$default = array (
+					    			'id' => $id,
 					    			'css_inline' => '1'
 					    		);
 								$filter = apply_filters( 'btnsx_list_preview_filter', array(), $default );
@@ -587,7 +575,7 @@ if( !class_exists( 'Btnsx' ) ) {
 									}
 								}
 								$options = wp_parse_args( $filtered, $default );
-					    		echo $this->shortcode( $options ); 
+					    		echo $this->shortcode( $options );
 					    	?>
 					    	<a href="#!" class="modal-action modal-close" style="position:absolute;bottom:10px;right:10px;"><i class="fa fa-close"></i></a>
 					    </div>
@@ -665,6 +653,9 @@ if( !class_exists( 'Btnsx' ) ) {
 				wp_enqueue_script( 'btnsx' . '-js' );
 				wp_deregister_script( 'select2' ); // WooCommerce Product Faq Manager
 				wp_dequeue_script( 'select2' ); // WooCommerce Product Faq Manager
+				wp_dequeue_script( 'acf-input' ); // ACF
+				wp_dequeue_script( 'acf-pro-input' ); // ACF
+				wp_dequeue_script( 'acf-field-group' ); // ACF
 			}
 			if ( in_array( $screen->id, array( 'edit-buttons-x-cs' ) ) ) {
 				wp_enqueue_script('jquery-ui-sortable');
@@ -729,19 +720,19 @@ if( !class_exists( 'Btnsx' ) ) {
 		 * @return string
 		 */
 		public function register_settings_page() {
-			add_submenu_page( 
-				'btnsx', 
-				'Buttons X', 
-				'Import', 
-				'manage_options', 
+			add_submenu_page(
+				'btnsx',
+				'Buttons X',
+				'Import',
+				'manage_options',
 				'buttons-x-import',
 				array( $this, 'import_page_callback' )
 			);
-			add_submenu_page( 
-				'btnsx', 
-				'Buttons X', 
-				'Settings', 
-				'manage_options', 
+			add_submenu_page(
+				'btnsx',
+				'Buttons X',
+				'Settings',
+				'manage_options',
 				'buttons-x-settings',
 				array( $this, 'settings_page_callback' )
 			);
@@ -760,7 +751,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		/**
 		 * Register settings
 		 * @since  0.1
-		 * @return 
+		 * @return
 		 */
 		public function register_settings() {
 			register_setting( 'btnsx_settings_group', 'btnsx_settings' );
@@ -888,7 +879,7 @@ if( !class_exists( 'Btnsx' ) ) {
         /**
          * Register custom taxonomies for button post type
          * @since  0.1
-         * @return 
+         * @return
          */
         public function register_taxonomies() {
 		    // Add new taxonomy, make it hierarchical (like categories)
@@ -1053,7 +1044,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		    	return array();
 		    }
 		}
-		
+
 		/**
 	     * Prints the box content.
 	     * @param WP_Post $post The object for the current post/page.
@@ -1115,7 +1106,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					color: <?php echo sanitize_text_field( $_wp_admin_css_colors[$current_color]->colors[3] ); ?>;
 				}
 	        </style>
-	        <?php 
+	        <?php
 	        endif;
 	        ?>
 	        <!-- Overlay -->
@@ -1129,7 +1120,7 @@ if( !class_exists( 'Btnsx' ) ) {
 	        	</div>
 	        	<style type="text/css" id="btnsx-preview-btn-css"></style>
 	        </div>
-	       	
+
 	    	<?php
 	    }
 
@@ -1248,12 +1239,12 @@ if( !class_exists( 'Btnsx' ) ) {
 			);
 			return $box_shadow_options;
 		}
-		
+
 		/**
 		 * Fetch meta values
 		 * @since  0.1
 		 * @param  int   	$post_id ID for the current post/page.
-		 * @param  array    $params 
+		 * @param  array    $params
 		 * @return string
 		 */
 		public function meta_values( $post_id, $params = array( 'field' => '', 'field2' => '', 'value' => '' ) ) {
@@ -1297,7 +1288,7 @@ if( !class_exists( 'Btnsx' ) ) {
 	         * Use get_post_meta() to retrieve an existing value
 	         * from the database and use the value for the form.
 	         */
-	        
+
 	        	// Custom Options
 			        $meta_values = array();
 			        $meta_values = get_post_meta( $post->ID, 'btnsx', true );
@@ -1417,7 +1408,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		    				)
 						)
 					);
-					
+
 					// Configure Gradient Options
 					$gradient_options = array();
 					// type
@@ -1904,7 +1895,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							'options'		=>	array(
 								'none'				=> __( 'None', 'buttons-x' ),
 								'url'				=> __( 'URL', 'buttons-x' ),
-								'pro'				=> __( '[ 23 more link types supported in PRO version. ]', 'buttons-x' )
+								'pro'				=> __( '[ 44 more link types supported in PRO version. ]', 'buttons-x' )
 							),
 							'value'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_link_type' ) )
 						),
@@ -1954,7 +1945,7 @@ if( !class_exists( 'Btnsx' ) ) {
 								'bottom'		=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_margin', 'field2' => 'bottom', 'value' => '0' ) ),
 								'left'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_margin', 'field2' => 'left', 'value' => '0' ) ),
 								'right'			=>	$this->meta_values( $post->ID, array( 'field' => 'btnsx_margin', 'field2' => 'right', 'value' => '0' ) )
-								
+
 							)
 						)
 					)
@@ -2360,7 +2351,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		            'btnsx_link_type' 					=> sanitize_text_field( isset( $_POST['btnsx_opt_link_type'] ) ? $_POST['btnsx_opt_link_type'] : '' ),
 		            'btnsx_link_target' 				=> sanitize_text_field( isset( $_POST['btnsx_opt_link_target'] ) ? $_POST['btnsx_opt_link_target'] : '' ),
 		            'btnsx_link_relationship' 			=> sanitize_text_field( isset( $_POST['btnsx_opt_link_relationship'] ) ? $_POST['btnsx_opt_link_relationship'] : '' ),
-		            'btnsx_link' 						=> sanitize_text_field( isset( $_POST['btnsx_opt_link'] ) ? $_POST['btnsx_opt_link'] : '' ),
+		            'btnsx_link' 						=> esc_url_raw( isset( $_POST['btnsx_opt_link'] ) ? $_POST['btnsx_opt_link'] : '' ),
 		            'btnsx_margin' 						=> array(
 		            	'top' 								=> sanitize_text_field( isset( $_POST['btnsx_opt_margin_top'] ) ? $_POST['btnsx_opt_margin_top'] : '' ),
 		            	'right' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_margin_right'] ) ? $_POST['btnsx_opt_margin_right'] : '' ),
@@ -2373,7 +2364,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		            	'bottom' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_padding_bottom'] ) ? $_POST['btnsx_opt_padding_bottom'] : '' ),
 		            	'left' 								=> sanitize_text_field( isset( $_POST['btnsx_opt_padding_left'] ) ? $_POST['btnsx_opt_padding_left'] : '' ),
 		            ),
-	            
+
 	            // Primary Text
 		            'btnsx_text' 						=> sanitize_text_field( isset( $_POST['btnsx_opt_text'] ) ? $_POST['btnsx_opt_text'] : '' ),
 		            'btnsx_text_transform' 				=> sanitize_text_field( isset( $_POST['btnsx_opt_text_transform'] ) ? $_POST['btnsx_opt_text_transform'] : '' ),
@@ -2395,7 +2386,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		            ),
 
 	            // Background
-		            'btnsx_background_color' 			=> array( 
+		            'btnsx_background_color' 			=> array(
 		            	'normal' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_background_color_normal'] ) ? $_POST['btnsx_opt_background_color_normal'] : '' ),
 		            	'hover' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_background_color_hover'] ) ? $_POST['btnsx_opt_background_color_hover'] : '' )
 		            ),
@@ -2407,7 +2398,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		            	'color' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_gradient_stop_normal_color'] ) ? serialize( $_POST['btnsx_opt_gradient_stop_normal_color'] ) : '' ),
 		            	'location' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_gradient_stop_normal_location'] ) ? serialize(  $_POST['btnsx_opt_gradient_stop_normal_location'] ) : '' )
 		            ),
-		            'btnsx_gradient_stop_hover' 		=> array( 
+		            'btnsx_gradient_stop_hover' 		=> array(
 		            	'color' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_gradient_stop_hover_color'] ) ? serialize( $_POST['btnsx_opt_gradient_stop_hover_color'] ) : '' ),
 		            	'location' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_gradient_stop_hover_location'] ) ? serialize( $_POST['btnsx_opt_gradient_stop_hover_location'] ) : '' )
 		            ),
@@ -2461,7 +2452,7 @@ if( !class_exists( 'Btnsx' ) ) {
 		            	'position' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_box_shadow_hover_position'] ) ? serialize( $_POST['btnsx_opt_box_shadow_hover_position'] ) : '' ),
 		            	'color' 							=> sanitize_text_field( isset( $_POST['btnsx_opt_box_shadow_hover_color'] ) ? serialize( $_POST['btnsx_opt_box_shadow_hover_color'] ) : '' )
 		            ),
-				
+
 				// Tab
 					'btnsx_tab'							=> sanitize_text_field( isset( $_POST['btnsx_opt_tab'] ) ? $_POST['btnsx_opt_tab'] : '' ),
 					'btnsx_tab_content'					=> sanitize_text_field( isset( $_POST['btnsx_opt_tab_content'] ) ? $_POST['btnsx_opt_tab_content'] : '' ),
@@ -2470,7 +2461,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					'btnsx_tab_group_advanced'			=> sanitize_text_field( isset( $_POST['btnsx_opt_tab_group_advanced'] ) ? $_POST['btnsx_opt_tab_group_advanced'] : '' ),
 					'btnsx_tab_group_expert'			=> sanitize_text_field( isset( $_POST['btnsx_opt_tab_group_expert'] ) ? $_POST['btnsx_opt_tab_group_expert'] : '' ),
 	        );
-			
+
 			// filter to save custom options
 			$btnsx_filtered_data = apply_filters( 'btnsx_save_data_filter', array(), $btnsx_data );
         	$btnsx_data_mixed = wp_parse_args( $btnsx_filtered_data, $btnsx_data );
@@ -2525,7 +2516,7 @@ if( !class_exists( 'Btnsx' ) ) {
 	    		$meta_value = $serializable != false ? unserialize( $this->meta_values( $id, $field ) ) : $this->meta_values( $id, $field );
 	    		// store value
 		    	$variable = $variable != '' ? $variable : $meta_value;
-				
+
 				if( $type['css'] === true && $type['class'] === false && $type['attribute'] === false ) {
 					if( $variable != '' ){
 						$variable = sanitize_text_field( $type['css_prefix'] ) . ':' . sanitize_text_field( $variable ) . sanitize_text_field( $type['css_suffix'] ) . ';';
@@ -3156,15 +3147,15 @@ if( !class_exists( 'Btnsx' ) ) {
 
 	    /**
 	     * Button short code
-	     * @param $atts 
+	     * @param $atts
 	     * @since 0.1
 	     */
 	    public function shortcode( $atts, $content = '' ) {
 
 	    	$default = array(
-			
+
 				// General
-				
+
 					// main
 					'id'								=>	'',
 					'width'								=>	'',
@@ -3175,7 +3166,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					'full_width'						=>	'',
 					'container'							=>	'',
 					'wrap_center'						=>	'',
-					
+
 					// link
 					'link_type'							=>	'',
 					'link_target'						=>	'',
@@ -3202,7 +3193,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					'padding_left'						=>	'',
 
 				// Primary Text
-					
+
 					// text
 					'text'								=>	'',
 					'text_transform'					=>	'',
@@ -3221,16 +3212,16 @@ if( !class_exists( 'Btnsx' ) ) {
 					'text_padding_top'					=>	'',
 					'text_padding_right'				=>	'',
 					'text_padding_bottom'				=>	'',
-					'text_padding_left'					=>	'', 
-					 
-				// Background 
-				 
+					'text_padding_left'					=>	'',
+
+				// Background
+
 					// color
 					'background_color_normal'			=>	'',
 					'background_color_hover'			=>	'',
 
 				// Gradient
-				 
+
 					// type
 					'gradient_type_normal'				=>	'',
 					'gradient_type_hover'				=>	'',
@@ -3244,7 +3235,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					'gradient_stop_location_hover'		=>	'',
 
 				// Border
-				 
+
 					// main
 					'border_size_normal'				=>	'',
 					'border_style_normal'				=>	'',
@@ -3264,7 +3255,7 @@ if( !class_exists( 'Btnsx' ) ) {
 					'border_bottom_right_radius_hover'	=>	'',
 
 				// Box Shadow
-				 
+
 					// Normal
 					'shadow_horizontal'					=>	'',
 					'shadow_vertical'					=>	'',
@@ -3281,19 +3272,19 @@ if( !class_exists( 'Btnsx' ) ) {
 					'shadow_position_hover'				=>	'',
 					'shadow_color_hover'				=>	'',
 
-				// Miscellaneous 
-				
+				// Miscellaneous
+
 					'container'							=>	'',
 					'wrap_center'						=>	'',
 
 				// Additional
-					
+
 					// 'link_override'					=>  '',
 					'css_inline'						=> '',
 					'on_click_content'					=> '',
 
 			);
-			
+
 			// Filter Short Code Attributes
 			$filter = apply_filters( 'btnsx_shortcode_attributes', array(), $default );
 			$filtered = array();
@@ -3308,7 +3299,7 @@ if( !class_exists( 'Btnsx' ) ) {
 	    	extract( shortcode_atts( $options, $atts ) );
 
 			// General
-			
+
 				// $id // will be defined (required)
 				// $size // used only for modifying other parameters during button creation
 				$disabled							= $disabled != '' ? $disabled : $this->meta_values( $id, array( 'field' => 'btnsx_disabled' ) );
@@ -3323,7 +3314,7 @@ if( !class_exists( 'Btnsx' ) ) {
 				if( $full_width == '1' ){
 					$full_width = ' btnsx-btn-block';
 				}
-				
+
 				// link
 				$link_type							= $link_type != '' ? $link_type : $this->meta_values( $id, array( 'field' => 'btnsx_link_type' ) );
 				$link_target						= $link_target != '' ? $link_target : $this->meta_values( $id, array( 'field' => 'btnsx_link_target' ) );
@@ -3345,64 +3336,8 @@ if( !class_exists( 'Btnsx' ) ) {
 				$link_woocommerce_id				= $link_woocommerce_id != '' ? $link_woocommerce_id : $this->meta_values( $id, array( 'field' => 'btnsx_link_woocommerce_id' ) );
 				$link_redirect_url					= $link_redirect_url != '' ? $link_redirect_url : $this->meta_values( $id, array( 'field' => 'btnsx_link_redirect_url' ) );
 
-				$backtotop_class = '';
-
-				if( $link_type == 'back_to_top' ) {
-					$link = "javascript:void(0)";
-		   			$backtotop_class = " btnsx-top";
-				} elseif( $link_type == 'post' ) {
-					$link = $link_post;
-				} elseif( $link_type == 'admin_page' ) {
-					$link = admin_url();
-				} elseif( $link_type == 'home_page' ) {
-					$link = site_url();
-				} elseif( $link_type == 'edd_checkout' ) {
-					$link = site_url() . '/checkout?edd_action=add_to_cart&download_id=' . $link_edd_id;
-				}  elseif( $link_type == 'edd_staright_to_gateway' ) {
-					$link = site_url() . '/checkout?edd_action=straight_to_gateway&download_id=' . $link_edd_id;
-				}  elseif( $link_type == 'woocommerce_add_to_cart' ) {
-					$link = get_permalink() . '?add-to-cart=' . $link_woocommerce_id;
-				} elseif( $link_type == 'login' ) {
-					$link = wp_login_url();
-				} elseif( $link_type == 'login_redirect_current_page' ) {
-					$link = wp_login_url( get_permalink() );
-				} elseif( $link_type == 'login_redirect_home_page' ) {
-					$link = wp_login_url( home_url() );
-				} elseif( $link_type == 'login_redirect_custom_page' ) {
-					$link = wp_login_url( site_url( $link_redirect_url ) );
-				} elseif( $link_type == 'logout' ) {
-					$link = wp_logout_url();
-				} elseif( $link_type == 'logout_redirect_current_page' ) {
-					$link = wp_logout_url( get_permalink() );
-				} elseif( $link_type == 'logout_redirect_home_page' ) {
-					$link = wp_logout_url( home_url() );
-				} elseif( $link_type == 'logout_redirect_custom_page' ) {
-					$link = wp_logout_url( site_url( $link_redirect_url ) );
-				} elseif( $link_type == 'lost_password' ) {
-					$link = wp_lostpassword_url();
-				} elseif( $link_type == 'lost_password_redirect_current_page' ) {
-					$link = wp_lostpassword_url( get_permalink() );
-				} elseif( $link_type == 'lost_password_redirect_home_page' ) {
-					$link = wp_lostpassword_url( home_url() );
-				} elseif( $link_type == 'lost_password_redirect_custom_page' ) {
-					$link = wp_lostpassword_url( site_url( $link_redirect_url ) );
-				} elseif( $link_type == 'previous_page' ) {
-					$link = 'javascript:void(0)';
-				} elseif( $link_type == 'register' ) {
-					$link = wp_registration_url();
-				} elseif( $link_type == 'url' ) {
-					$link = $link;
-				} else {
-					$link = 'javascript:void(0)';
-				}
-
-				// Previous Page JS
-					if( $link_type == 'previous_page' ) {
-						$on_click_content .= 'window.history.go(-1);return false;';
-					}
-
 			// Primary Text
-				
+
 				// text
 				$text								= $text != '' ? $text : $this->meta_values( $id, array( 'field' => 'btnsx_text' ) );
 				$text_font_family					= $text_font_family != '' ? $text_font_family : $this->meta_values( $id, array( 'field' => 'btnsx_text_font', 'field2' => 'family' ) );
@@ -3433,7 +3368,7 @@ if( !class_exists( 'Btnsx' ) ) {
 			   		$wrap_before = '';
 			   		$wrap_after = '';
 			   	}
-			
+
 			// Inline CSS
 				$css = '<style type="text/css" scoped>' . $this->generate_css( $id, false ) . '</style>';
 
@@ -3488,9 +3423,9 @@ return do_shortcode(
 '
 <!-- Buttons X - Start -->
 ' . $css . $wrap_before . $container_before . $btn_before_filter_as_string . '
-<a href="' . esc_attr( $link ) . '" id="btnsx-' . $id . '"' . $link_target . $link_relationship . ' class="btnsx-btn' . esc_attr( $disabled ) . esc_attr( $embossed ) . esc_attr( $full_width ) . esc_attr( $backtotop_class ) . esc_attr( $btn_class_filter_as_string ) . '" ' . $text_font_family . $btn_atts_filter_as_string . '>
+<a href="' . esc_url( $link ) . '" id="btnsx-' . $id . '"' . $link_target . $link_relationship . ' class="btnsx-btn' . esc_attr( $disabled ) . esc_attr( $embossed ) . esc_attr( $full_width ) . esc_attr( $btn_class_filter_as_string ) . '" ' . $text_font_family . $btn_atts_filter_as_string . '>
 	' . '<span class="btnsx-text-primary ' . $btn_text_class_filter_as_string . '">' . $text . '</span>'
-	. do_shortcode( $content ) . 
+	. do_shortcode( $content ) .
 '</a>
 ' . $btn_after_filter_as_string . $container_after . $wrap_after . '
 <!-- Buttons X - End -->

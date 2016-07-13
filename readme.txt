@@ -3,8 +3,8 @@ Contributors: gautamanizer
 Donate Link: http://btn.sx/1VHtcaP
 Tags: button, buttons, button plugin, button builder, button maker, button generator, CSS button generator, css3 button generator, responsive buttons, social share, social buttons, morphing buttons
 Requires at least: 4.0
-Tested up to: 4.4.1
-Stable tag: 0.7.9
+Tested up to: 4.5.3
+Stable tag: 0.8.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -155,7 +155,6 @@ For manual installation:
 1. Login to your website and go to the Plugins section of your admin panel.
 1. Look for "Buttons X Lite“ and click Activate.
 
-
 == Screenshots ==
 
 1. Button overview.
@@ -177,6 +176,19 @@ A. No, you won't.
 Nothing yet..
 
 == Changelog ==
+
+= 0.8.3 = 
+ - Fixed: ACF scripts conflict.
+
+= 0.8.2 = 
+ - Fixed: ACF Pro scripts conflict.
+ - Fixed: URL escape.
+
+= 0.8.1 = 
+ - Fixed: Javascript bug preventing from loading button edit screen.
+
+= 0.8.0 = 
+ - Fixed: Font bug.
 
 = 0.7.9 = 
  - Fixed: CPT field not being displayed.
