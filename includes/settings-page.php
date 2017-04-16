@@ -143,7 +143,7 @@ if ( !defined( 'ABSPATH' ) )
 				        	<li><a target="_blank" href="https://twitter.com/btnsx"><?php _e('Twitter','buttons-x'); ?></a></li>
 				        </ul>
 				        <br>
-				        <a href="http://btn.sx/1IUqaqK" style="font-weight:700;"><?php _e('GET PRO VERSION','btnsx'); ?></a>
+				        <a href="https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar" style="font-weight:700;"><?php _e('GET PRO VERSION','btnsx'); ?></a>
 				    </div>
 		      	</div>
 	      	</form>

@@ -1,10 +1,10 @@
 === Button Builder - Buttons X ===
 Contributors: gautamanizer
-Donate Link: http://btn.sx/1VHtcaP
+Donate Link: https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar
 Tags: button, buttons, button plugin, button builder, button maker, button generator, CSS button generator, css3 button generator, responsive buttons, social share, social buttons, morphing buttons
 Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 0.8.3
+Tested up to: 4.7.3
+Stable tag: 0.8.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,17 +14,17 @@ Buttons X is the most powerful button builder plugin for WordPress. The only com
 
 A **button builder** plugin that can build any kind of buttons imaginable right from your WordPress Dashboard! 
 
-[Buttons X](http://btn.sx/1UAVlhk) is a *WordPress button builder* plugin which comes with free extensions and free button packs. It is packed with functionality that allows countless button variations to be made easily without any coding.
+[Buttons X](https://www.button.sx) is a *WordPress button builder* plugin which comes with free extensions and free button packs. It is packed with functionality that allows countless button variations to be made easily without any coding.
 
 Buttons are *Fully Responsive* and, of course are *fully CSS3 Compliant*.
 
-[Buttons X](http://btn.sx/1UAVlhk) is easy to use and is packed with powerful features that will blow your mind, including a seamless live preview while you work!
+[Buttons X](https://www.button.sx) is easy to use and is packed with powerful features that will blow your mind, including a seamless live preview while you work!
 
 *THE EASY-TO-USE BUTTON EDITOR MAKES IT A SNAP TO GENERATE AWESOME CSS3 BUTTONS IN NO TIME AT ALL!*
 
 *Absolutely No Coding Required!*
 
-[Buttons X](http://btn.sx/1UAVlhk) is a Marketers dream making any kind of Call To Action button as simple as editing some text.
+[Buttons X](https://www.button.sx) is a Marketers dream making any kind of Call To Action button as simple as editing some text.
 
 The *Buttons X Options Panel* is a comprehensive and smart dashboard that allows you to create buttons on the fly with every kind of option available to modify. Select anything and everything from Font Weights to Shadow Colour, Position, Padding and Blur. 
 
@@ -74,7 +74,7 @@ The *Buttons X Options Panel* is a comprehensive and smart dashboard that allows
 
 = Test Pro for free  =
 
-[Buttons X - Pro demo](http://btn.sx/1UAVlhk)
+[Buttons X - Pro demo](https://www.button.sx)
 
 = Import demo buttons =
 
@@ -108,15 +108,16 @@ NOTE: Passing parameters to the short code overrides those settings saved as par
 
 = Where to buy Pro =
 
-[Buttons X pro version](http://btn.sx/1VHtcaP) is available on CodeCanyon for **only $21**.
+[Buttons X pro version](https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar) is available on CodeCanyon for **only $21**.
 
 *Upgrade your button creating experience today!*
 
 = Add-ons =
- - [Tooltips](http://btn.sx/1POk95r) is available for **free**.
- - [Google Analytics](http://btn.sx/1OFa3Vm) is available for **free**.
- - [Morphing Buttons](http://btn.sx/1PjtvDo) is available on CodeCanyon for **only $5**.
- - [Advanced Analytics](http://btn.sx/1OgXIDk) is available on CodeCanyon for **only $12**.
+ - [Tooltips](https://www.button.sx/product/tooltips/) is available for **free**.
+ - [Google Analytics](https://www.button.sx/product/google-analytics/) is available for **free**.
+ - [Morphing Buttons](http://codecanyon.net/item/morphing-buttons-buttons-x-addon/13583740?ref=GautamThapar) is available on CodeCanyon for **only $5**.
+ - [Advanced Analytics](
+http://codecanyon.net/item/advanced-analytics-buttons-x-addon/14344214?ref=GautamThapar) is available on CodeCanyon for **only $12**.
 
 = Documentation =
 
@@ -134,7 +135,7 @@ I manage technical queries through support forums under the support tab on this 
 
 [Follow on Twitter](http://www.twitter.com/btnsx/)
 
-[Official Website](http://btn.sx/1UAVlhk)
+[Official Website](https://www.button.sx/)
 
 == Installation ==
 
@@ -176,6 +177,12 @@ A. No, you won't.
 Nothing yet..
 
 == Changelog ==
+
+= 0.8.5 = 
+ - Fixed: Dead URL's.
+
+= 0.8.4 = 
+ - Fixed: Undefined Offset error message when using button shadow.
 
 = 0.8.3 = 
  - Fixed: ACF scripts conflict.

@@ -1058,7 +1058,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'pro-banner': ?>
 
 					<div class="col m<?php echo $input['size']; ?>">
-						<?php echo '<div class="btnsx-tabs-pro-banner">This is a <u>Pro Only</u> feature. Get <a href="http://btn.sx/1IUqaqK">Pro version</a>!</div>'; ?>
+						<?php echo '<div class="btnsx-tabs-pro-banner">This is a <u>Pro Only</u> feature. Get <a href="https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar">Pro version</a>!</div>'; ?>
 					</div>
 
 					<?php break;
@@ -1066,7 +1066,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'gradient-limit': ?>
 
 					<div class="col m<?php echo $input['size']; ?>">
-						<?php echo '<div class="btnsx-tabs-free-limit">This being a lite version supports only vertical gradient and 2 stops. Pro version supports unlimited stops. Get <a href="http://btn.sx/1IUqaqK">Pro version</a>!</div>'; ?>
+						<?php echo '<div class="btnsx-tabs-free-limit">This being a lite version supports only vertical gradient and 2 stops. Pro version supports unlimited stops. Get <a href="https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar">Pro version</a>!</div>'; ?>
 					</div>
 
 					<?php break;
@@ -1074,7 +1074,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'shadow-limit': ?>
 
 					<div class="col m<?php echo $input['size']; ?>">
-						<?php echo '<div class="btnsx-tabs-free-limit">This being a lite version supports only 2 layers of shadow. Pro version supports unlimited layers. Get <a href="http://btn.sx/1IUqaqK">Pro version</a>!</div>'; ?>
+						<?php echo '<div class="btnsx-tabs-free-limit">This being a lite version supports only 2 layers of shadow. Pro version supports unlimited layers. Get <a href="https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar">Pro version</a>!</div>'; ?>
 					</div>
 
 					<?php break;
@@ -1082,7 +1082,7 @@ if( !class_exists( 'BtnsxFormElements' ) ) {
 				case 'preview-bg-img-banner': ?>
 
 					<div class="col m<?php echo $input['size']; ?>">
-						<?php echo '<div class="preview-bg-img-banner">Preview background image is supported in Pro version. Get <a href="http://btn.sx/1IUqaqK">Pro version</a>!</div>'; ?>
+						<?php echo '<div class="preview-bg-img-banner">Preview background image is supported in Pro version. Get <a href="https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar">Pro version</a>!</div>'; ?>
 					</div>
 
 					<?php break;

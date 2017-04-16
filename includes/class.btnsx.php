@@ -315,18 +315,18 @@ if( !class_exists( 'Btnsx' ) ) {
 		            	<br>
 		            	<p><?php _e( 'Hi there,', 'buttons-x' ); ?></p>
 						<p><?php
-							echo sprintf( wp_kses(__( 'I am <a href="%s">Gautam Thapar</a> and I am the author of this plugin. I am working hard to make sure you have pleasant experience while using this plugin. In case you face any issues or get stuck somehwere then kindly let me know using the <a href="%s">support forum</a>.', 'buttons-x'), array( 'a' => array( 'href' => array() ) ) ), 'http://btn.sx/1JwsbAp', 'https://wordpress.org/support/plugin/buttons-x/' );
+							echo sprintf( wp_kses(__( 'I am <a href="%s">Gautam Thapar</a> and I am the author of this plugin. I am working hard to make sure you have pleasant experience while using this plugin. In case you face any issues or get stuck somehwere then kindly let me know using the <a href="%s">support forum</a>.', 'buttons-x'), array( 'a' => array( 'href' => array() ) ) ), 'http://codecanyon.net/user/gautamthapar/portfolio?ref=GautamThapar', 'https://wordpress.org/support/plugin/buttons-x/' );
 							echo '&nbsp;';
 							_e( 'I will do my best to solve your issues as soon as possible.', 'buttons-x' );
 							?>
 						</p>
 						<p><?php _e( 'This is a <b>LITE version</b> of Buttons X and so it is limited in functionality. But it does contain enough to help you build beautiful CSS3 buttons.', 'buttons-x' ); ?></p>
-						<p><?php echo sprintf( wp_kses( __( 'Please try it out and if you feel the plugin is useful then do buy the <a href="%s"><strong>PRO version</strong></a> to unlock all the features.', 'buttons-x' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'http://btn.sx/1IUqaqK' ) ); ?></p>
+						<p><?php echo sprintf( wp_kses( __( 'Please try it out and if you feel the plugin is useful then do buy the <a href="%s"><strong>PRO version</strong></a> to unlock all the features.', 'buttons-x' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar' ) ); ?></p>
 						<!-- @TODO - Contact Link -->
 						<p><?php _e( 'If you face any issue, please do'); ?> <a target="_blank" href="https://wordpress.org/support/plugin/buttons-x/"><?php _e( 'contact me', 'buttons-x' ); ?></a>. <?php _e( 'I will be more than happy to help you!', 'buttons-x' ); ?></p>
 						<p><?php _e( 'Warm Regards' ); ?>, Gautam Thapar.</p>
 						<br>
-						<h4><?php echo sprintf( wp_kses( __( '<a href="%s"><strong>Try Pro for FREE!</strong></a>', 'buttons-x' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'http://btn.sx/1UAVlhk' ) ); ?></h4>
+						<h4><?php echo sprintf( wp_kses( __( '<a href="%s"><strong>Try Pro for FREE!</strong></a>', 'buttons-x' ), array(  'a' => array( 'href' => array() ), 'strong' => array() ) ), esc_url( 'https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar' ) ); ?></h4>
 						<br>
 						<!-- Begin MailChimp Signup Form -->
 							<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
@@ -355,7 +355,7 @@ if( !class_exists( 'Btnsx' ) ) {
 							<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 						<!--End mc_embed_signup-->
 						<br>
-						<h3>Free Vs Pro <a href="http://btn.sx/1IUqaqK" style="font-size:14px;">[ Get Pro ]</a></h3>
+						<h3>Free Vs Pro <a href="https://codecanyon.net/item/buttons-x-powerful-button-builder-for-wordpress/12710619?ref=GautamThapar" style="font-size:14px;">[ Get Pro ]</a></h3>
 						<div class="btnsx">
 							<?php echo $this->free_vs_pro(); ?>
 					    </div>
@@ -2937,19 +2937,19 @@ if( !class_exists( 'Btnsx' ) ) {
 		        $shadow_count = count( $shadow_horizontal );
 		        for ( $i = 0; $i < $shadow_count; $i++ ) {
 		        	if( isset( $shadow_horizontal[$i] ) ){
-			        	if( $shadow_horizontal[$i] != '' ) {
+			        	if( isset($shadow_horizontal[$i]) && $shadow_horizontal[$i] != '' ) {
 		            		$shadow_horizontal[$i] = $shadow_horizontal[$i] . 'px ';
 		            	}
-		            	if( $shadow_vertical[$i] != '' ) {
+		            	if( isset($shadow_vertical[$i]) && $shadow_vertical[$i] != '' ) {
 		            		$shadow_vertical[$i] = $shadow_vertical[$i] . 'px ';
 		            	}
-		            	if( $shadow_blur[$i] != '' ) {
+		            	if( isset($shadow_blur[$i]) && $shadow_blur[$i] != '' ) {
 		            		$shadow_blur[$i] = $shadow_blur[$i] . 'px ';
 		            	}
-		            	if( $shadow_spread[$i] != '' ) {
+		            	if( isset($shadow_spread[$i]) &&$shadow_spread[$i] != '' ) {
 		            		$shadow_spread[$i] = $shadow_spread[$i] . 'px ';
 		            	}
-		            	if( $shadow_color[$i] != '' ) {
+		            	if( isset($shadow_color[$i]) && $shadow_color[$i] != '' ) {
 		            		$shadow_color[$i] = $shadow_color[$i] . ' ';
 		            	}
 			            if( !is_array( $shadow_horizontal ) ) {
@@ -3038,19 +3038,19 @@ if( !class_exists( 'Btnsx' ) ) {
 		        $shadow_count_hover = count( $shadow_horizontal_hover );
 		        for ( $i = 0; $i < $shadow_count_hover; $i++ ) {
 		        	if( isset( $shadow_horizontal_hover[$i] ) ){
-			        	if( $shadow_horizontal_hover[$i] != '' ) {
+			        	if( isset($shadow_horizontal_hover[$i]) && $shadow_horizontal_hover[$i] != '' ) {
 		            		$shadow_horizontal_hover[$i] = $shadow_horizontal_hover[$i] . 'px ';
 		            	}
-		            	if( $shadow_vertical_hover[$i] != '' ) {
+		            	if( isset($shadow_vertical_hover[$i]) && $shadow_vertical_hover[$i] != '' ) {
 		            		$shadow_vertical_hover[$i] = $shadow_vertical_hover[$i] . 'px ';
 		            	}
-		            	if( $shadow_blur_hover[$i] != '' ) {
+		            	if( isset($shadow_blur_hover[$i]) && $shadow_blur_hover[$i] != '' ) {
 		            		$shadow_blur_hover[$i] = $shadow_blur_hover[$i] . 'px ';
 		            	}
-		            	if( $shadow_spread_hover[$i] != '' ) {
+		            	if( isset($shadow_spread_hover[$i]) && $shadow_spread_hover[$i] != '' ) {
 		            		$shadow_spread_hover[$i] = $shadow_spread_hover[$i] . 'px ';
 		            	}
-		            	if( $shadow_color_hover[$i] != '' ) {
+		            	if( isset($shadow_color_hover[$i]) && $shadow_color_hover[$i] != '' ) {
 		            		$shadow_color_hover[$i] = $shadow_color_hover[$i] . ' ';
 		            	}
 			            if( !is_array( $shadow_horizontal_hover ) ) {
