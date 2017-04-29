@@ -4,7 +4,7 @@ Donate Link: https://codecanyon.net/item/buttons-x-powerful-button-builder-for-w
 Tags: button, buttons, button plugin, button builder, button maker, button generator, CSS button generator, css3 button generator, responsive buttons, social share, social buttons, morphing buttons
 Requires at least: 4.0
 Tested up to: 4.7.3
-Stable tag: 0.8.5
+Stable tag: 0.8.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -177,6 +177,9 @@ A. No, you won't.
 Nothing yet..
 
 == Changelog ==
+
+= 0.8.6 = 
+ - Fixed: WPML primary text translation.
 
 = 0.8.5 = 
  - Fixed: Dead URL's.

@@ -2466,6 +2466,15 @@ if( !class_exists( 'Btnsx' ) ) {
 			$btnsx_filtered_data = apply_filters( 'btnsx_save_data_filter', array(), $btnsx_data );
         	$btnsx_data_mixed = wp_parse_args( $btnsx_filtered_data, $btnsx_data );
 
+        	//WMPL
+		    /**
+		     * register strings for translation
+		     */
+		    if( has_action('wpml_register_single_string') ) {
+		    	do_action( 'wpml_register_single_string', 'btnsx-'.$post_id, 'Primary Text', $btnsx_data_mixed['btnsx_text'] );
+		    }
+		    //WMPL
+
         	// var_dump( $btnsx_data_mixed );
         	// wp_die();
 
@@ -2480,10 +2489,11 @@ if( !class_exists( 'Btnsx' ) ) {
 	     * @return boolean
 	     */
 	    public function is_serialized( $str ) {
-	    	if( $str != '' )
+	    	if( $str != '' ){
 		    	return ( $str == serialize( false ) || @unserialize( $str ) !== false );
-		    else
+	    	} else {
 		    	return false;
+	    	}
 		}
 
 	    /**
@@ -3339,8 +3349,8 @@ if( !class_exists( 'Btnsx' ) ) {
 			// Primary Text
 
 				// text
-				$text								= $text != '' ? $text : $this->meta_values( $id, array( 'field' => 'btnsx_text' ) );
-				$text_font_family					= $text_font_family != '' ? $text_font_family : $this->meta_values( $id, array( 'field' => 'btnsx_text_font', 'field2' => 'family' ) );
+				$text = $text != '' ? $text : apply_filters('wpml_translate_single_string', $this->meta_values( $id, array( 'field' => 'btnsx_text' ) ), 'btnsx-'.$id, 'Primary Text' );
+				$text_font_family = $text_font_family != '' ? $text_font_family : $this->meta_values( $id, array( 'field' => 'btnsx_text_font', 'field2' => 'family' ) );
 				if( $text_font_family != '' ){
 					$text_font_family = ' data-font-primary="' . esc_attr( $text_font_family ) . '"';
 				}
@@ -3423,7 +3433,7 @@ return do_shortcode(
 '
 <!-- Buttons X - Start -->
 ' . $css . $wrap_before . $container_before . $btn_before_filter_as_string . '
-<a href="' . esc_url( $link ) . '" id="btnsx-' . $id . '"' . $link_target . $link_relationship . ' class="btnsx-btn' . esc_attr( $disabled ) . esc_attr( $embossed ) . esc_attr( $full_width ) . esc_attr( $btn_class_filter_as_string ) . '" ' . $text_font_family . $btn_atts_filter_as_string . '>
+<a href="' . esc_attr( $link ) . '" id="btnsx-' . $id . '"' . $link_target . $link_relationship . ' class="btnsx-btn' . esc_attr( $disabled ) . esc_attr( $embossed ) . esc_attr( $full_width ) . esc_attr( $btn_class_filter_as_string ) . '" ' . $text_font_family . $btn_atts_filter_as_string . '>
 	' . '<span class="btnsx-text-primary ' . $btn_text_class_filter_as_string . '">' . $text . '</span>'
 	. do_shortcode( $content ) .
 '</a>
